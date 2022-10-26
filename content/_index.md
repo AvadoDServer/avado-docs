@@ -1,10 +1,57 @@
 ---
-description: Avado Documentation welcome page
-type: page
-creatordisplayname: Administrator
 title: Welcome to the Avado Documentation website
-head: <label>Welcome</label>
+description: Avado Documentation welcome page
+geekdocNav: false
+geekdocAlign: center
+geekdocAnchor: false
 ---
+
+Geekdoc is a simple Hugo theme for documentations. It is intentionally designed as a fast and lean theme and may not fit the requirements of complex projects. If a more feature-complete theme is required there are a lot of got alternatives out there.
+
+{{< button size="large" relref="avado-setup" >}}Getting Started{{< /button >}}
+
+## Feature overview
+
+{{< columns >}}
+
+### Clean and simple design
+
+Stay focused on exploring the content and don't get overwhelmed by a complex design.
+
+<--->
+
+### Light and mobile-friendly
+
+The theme is powered by less than 1 MB and looks impressive on mobile devices as well as on a regular Desktop.
+
+<--->
+
+### Easy customization
+
+The look and feel can be easily customized by CSS custom properties (variables), features can be adjusted by Hugo parameters.
+
+{{< /columns >}}
+
+{{< columns >}}
+
+### Zero initial configuration
+
+Getting started in minutes. The theme is shipped with a default configuration and works out of the box.
+
+<--->
+
+### Handy shortcodes
+
+We included some (hopefully) useful custom shortcodes so you don't have to and can focus on writing amazing docs.
+
+<--->
+
+### Dark mode
+
+Powerful dark mode that detects your system preferences or can be controlled by a toggle switch.
+
+{{< /columns >}}
+
 # Welcome to the Avado Documentation website
 
 Congratulations on being part of the AVADO community !
