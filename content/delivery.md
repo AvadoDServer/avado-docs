@@ -3,7 +3,8 @@ title: AVADO delivery
 description: AVADO delivery page
 type: page
 creatordisplayname: Administrator
-
+aliases:
+  - /en/avado-delivery
 ---
 
 You probably ordered your AVADO here: <https://ava.do/shop>

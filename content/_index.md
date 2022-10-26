@@ -1,7 +1,7 @@
 ---
 title: Welcome to the Avado Documentation website
 description: Avado Documentation welcome page
-geekdocNav: false
+geekdocNav: true
 geekdocAlign: center
 geekdocAnchor: false
 ---
