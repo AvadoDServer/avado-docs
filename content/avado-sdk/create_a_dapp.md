@@ -1,5 +1,5 @@
 ---
-title: reate your DApp for the AVADO DAppstore
+title: Create your DApp for the AVADO DAppstore
 aliases:
   - /en/developers/building-an-avado-package
 ---

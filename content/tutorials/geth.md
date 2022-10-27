@@ -2,13 +2,13 @@
 title: Setting up Ethereum Node (Geth)
 ---
 
+{{< toc >}}
 
+This guide describes the steps of installing and configuring Geth, the recommended Ethereum client.
 
->  This guide describes the steps of installing and configuring Geth, the recommended Ethereum client.
-{.is-success}
-
-> Read all instructions in their entirety before proceeding for the best setup experience. 
-{.is-warning}
+{{< hint type=important >}}
+Read all instructions in their entirety before proceeding for the best setup experience. 
+{{< /hint >}}
 
 ## Step 0 : Install Geth from the DappStore
 > Navigate to the DappStore and locate the dapp named `Ethereum Node (Geth)`.
