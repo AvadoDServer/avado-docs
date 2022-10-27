@@ -1,0 +1,10 @@
+---
+more:
+  - name: Buy now
+    ref: "https://ava.do/shop"
+    icon: "gdoc_heart"
+    external: true
+  - name: View Source
+    ref: "https://github.com/AvadoDServer/avado-docs"
+    external: true
+    icon: "gdoc_github"

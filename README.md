@@ -31,3 +31,4 @@ You can find a demo and the full documentation at <https://geekdocs.de>.
 * YouTube
   * Short code: `{{< youtube w7Ft2ymGmfc >}}`
   * Doc: <https://gohugo.io/content-management/shortcodes/#example-youtube-input>
+* icon-sets: https://geekdocs.de/features/icon-sets/

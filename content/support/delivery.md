@@ -11,14 +11,19 @@ You probably ordered your AVADO here: <https://ava.do/shop>
 
 ## Official telegram handles and Shipping addresses
 
-Bernd Lapp - <https://t.me/CoachB>
-Stefaan Ponnet - <https://t.me/Sponnet2>
+{{< hint type=important title="We will never DM first" >}}
+Please click on the profiles below to verify that you are talking to the correct person.
+{{< /hint >}}
+
+* Bernd Lapp - <https://t.me/CoachB>
+* Stefaan Ponnet - <https://t.me/Sponnet2>
 
 CoachB is the only person you can contact for sending back a broken device.
 
-> ⚠️ **We will never DM first**. Please click on our profile (<https://t.me/CoachB> or <https://t.me/Sponnet2>) to verify that you are talking to the correct person.
-
 If you are asked to send the device back, our shipping addresses are as follows:
+
+
+{{< columns >}}
 
 ### Switzerland
 
@@ -28,7 +33,7 @@ Hasenbuelweg 206
 300 Zug
 Switzerland
 ```
-
+<--->
 ### Europe
 
 ```
@@ -38,7 +43,7 @@ Nauheimer Strasse 28
 65468 Trebur
 Germany
 ```
-
+<--->
 ### US West Coast
 
 ```
@@ -48,7 +53,7 @@ Seattle, WA
 98125-4940
 USA
 ```
-
+<--->
 ### US East Coast
 
 ```
@@ -57,10 +62,10 @@ SOUNDSTAKING NE
 07728 Freehold, NJ
 USA
 ```
+{{< /columns >}}
+
 
 These are the official shipping addresses. Don't send your device anywhere else.
-
-
 
 ## Shipping FAQ
 
