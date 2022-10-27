@@ -1,10 +1,10 @@
 ---
 more:
-  - name: Buy now
+  - name: Avado shop
     ref: "https://ava.do/shop"
     icon: "cart-shopping-solid"
     external: true
-  - name: View Source
+  - name: View source
     ref: "https://github.com/AvadoDServer/avado-docs"
     external: true
     icon: "gdoc_github"

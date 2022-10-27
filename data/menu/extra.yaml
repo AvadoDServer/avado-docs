@@ -1,6 +1,6 @@
 ---
 header:
-  - name: Buy now
+  - name: Avado shop
     ref: "https://ava.do/shop"
     icon: "cart-shopping-solid"
     external: true
