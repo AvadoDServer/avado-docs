@@ -58,3 +58,6 @@ params:
 
   geekdocImageLazyLoading: true
   geekdocDarkModeDim: true
+
+# https://gohugo.io/templates/internal/#google-analytics
+googleAnalytics: UA-2782512-17
