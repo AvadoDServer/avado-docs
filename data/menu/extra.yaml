@@ -1,0 +1,10 @@
+---
+header:
+  - name: Buy now
+    ref: "https://ava.do/shop"
+    icon: "cart-shopping-solid"
+    external: true
+  - name: YouTube
+    ref: https://www.youtube.com/avadocloud
+    icon: youtube
+    external: true

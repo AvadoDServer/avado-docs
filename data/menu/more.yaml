@@ -2,7 +2,7 @@
 more:
   - name: Buy now
     ref: "https://ava.do/shop"
-    icon: "gdoc_heart"
+    icon: "cart-shopping-solid"
     external: true
   - name: View Source
     ref: "https://github.com/AvadoDServer/avado-docs"
