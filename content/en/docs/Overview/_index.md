@@ -29,10 +29,3 @@ Help your user know if your project will help them. Useful information can inclu
 
 * **What is it *not yet* good for?**: Highlight any useful features that are coming soon.
 
-## Where should I go next?
-
-Give your users next steps from the Overview. For example:
-
-* [Getting Started](/docs/getting-started/): Get started with $project
-* [Examples](/docs/examples/): Check out some example code!
-
