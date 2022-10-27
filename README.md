@@ -17,3 +17,17 @@ The theme is based on [GeekDocs](https://github.com/thegeeklab/hugo-geekdoc).
 
 You can find a demo and the full documentation at <https://geekdocs.de>.
 
+
+## Authoring tips
+
+* Hint boxes (tip, important):
+  * Examples: <https://geekdocs.de/shortcodes/hints/>
+  * Code: <https://github.com/thegeeklab/hugo-geekdoc/blob/main/exampleSite/content/en/shortcodes/hints.md>
+* Images:
+  * Short code: `{{< figure src="surge_strip.jpeg"}}`
+  * Parameters: <https://gohugo.io/content-management/shortcodes/#figure>
+* Table of Contents:
+  * Short code: `{{< toc >}}`
+* YouTube
+  * Short code: `{{< youtube w7Ft2ymGmfc >}}`
+  * Doc: <https://gohugo.io/content-management/shortcodes/#example-youtube-input>
