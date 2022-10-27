@@ -64,9 +64,9 @@ _**Note: In the i3, i5 and HOPR Avado Models the CMOS Battery is located under t
 
 Using a small flat head screw driver gently insert it into the "U" shaped side of the battery seat and slowly lift the Lithium battery out from its pocket.
 
-![](/cmos_1.jpg)
+![](cmos_1.jpg)
 
-![](/battery.jpg)
+![](battery.jpg)
 
 ### STEP SIX
 

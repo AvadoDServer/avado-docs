@@ -32,3 +32,16 @@ You can find a demo and the full documentation at <https://geekdocs.de>.
   * Short code: `{{< youtube w7Ft2ymGmfc >}}`
   * Doc: <https://gohugo.io/content-management/shortcodes/#example-youtube-input>
 * icon-sets: https://geekdocs.de/features/icon-sets/
+
+
+### Link checking
+
+Install [Broken-link-checker](https://github.com/stevenvachon/broken-link-checker):
+```
+npm install broken-link-checker -g
+```
+
+Run the checker: (local links only)
+```
+blc http://localhost:1313 --exclude-external --recursive --ordered
+```
