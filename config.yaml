@@ -1,6 +1,6 @@
 ---
-baseURL: https://geekdocs.de/
-title: Geekdocs
+baseURL: https://docs.ava.do/
+title: Avado Docs
 theme: hugo-geekdoc
 
 pygmentsUseClasses: true
@@ -47,14 +47,14 @@ params:
   geekdocToC: 3
   geekdocTagsToMenu: true
 
-  geekdocRepo: https://github.com/thegeeklab/hugo-geekdoc123
-  geekdocEditPath: edit/main/exampleSite
+  geekdocRepo: https://github.com/AvadoDServer/avado-docs
+  geekdocEditPath: edit/master/
 
   geekdocSearch: true
   geekdocSearchShowParent: true
 
-  geekdocLegalNotice: https://thegeeklab.de/legal-notice/#contact-information
-  geekdocPrivacyPolicy: https://thegeeklab.de/legal-notice/#privacy-policy
+  # geekdocLegalNotice: https://thegeeklab.de/legal-notice/#contact-information
+  # geekdocPrivacyPolicy: https://thegeeklab.de/legal-notice/#privacy-policy
 
   geekdocImageLazyLoading: true
   geekdocDarkModeDim: true
