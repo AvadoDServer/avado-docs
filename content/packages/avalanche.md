@@ -2,7 +2,7 @@
 title: Avalanche
 description: Setting up Avalanche node
 tags: [avalanche, tutorial]
-aliases: [/en/tutorials/avalanche-node]
+aliases: ["/en/tutorials/avalanche-node"]
 ---
 
 {{< youtube JM7idIZi8mw >}}

@@ -1,5 +1,6 @@
 ---
 title: Setting up Ethereum Node (Geth)
+aliases: ["/en/tutorials/geth"]
 ---
 
 {{< toc >}}

@@ -1,6 +1,7 @@
 ---
 title: Setting up an account for Tornado Cash v2
 description: Getting started from scratch (fresh setup)
+aliases: ["/en/tutorials/tornadocash"]
 ---
 
 {{< hint type=warning >}}

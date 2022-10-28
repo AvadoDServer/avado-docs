@@ -4,6 +4,7 @@ description: Avado Documentation welcome page
 geekdocNav: true
 geekdocAlign: center
 geekdocAnchor: false
+aliases: ["/en/home"]
 ---
 
 Congratulations on being part of the AVADO community !

@@ -2,7 +2,7 @@
 title: Setting up RYO Cloud
 description: Setting up RYO Cloud
 draft: true
-aliases: /en/tutorials/ryo-cloud
+aliases: ["/en/tutorials/ryo-cloud"]
 ---
 
 ## What is RYO Cloud (aka Run You Own Cloud)?

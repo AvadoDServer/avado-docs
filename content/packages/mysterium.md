@@ -1,6 +1,7 @@
 ---
 title: Mysterium VPN node
 description: Setting up a Mysterium VPN node
+aliases: ["/en/tutorials/mysterium"]
 ---
 
 ## What is Mysterium

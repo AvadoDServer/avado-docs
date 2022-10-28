@@ -2,6 +2,7 @@
 title: Teku
 description: "Setting up Teku: ETH2.0 beacon chain and validator"
 tags: [eth, ethereum, geth, tutorial]
+aliases: ["/en/tutorials/teku"]
 ---
 
 # Teku

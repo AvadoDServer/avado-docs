@@ -2,6 +2,7 @@
 title: Remote Connection 
 description: How to set up an easy remote connection to your AVADO
 weight: 0
+aliases: ["/en/tutorials/remote-connect"]
 ---
 
 # What is Remote Connect

@@ -1,11 +1,7 @@
 ---
 title: Reset/Retrieve WiFi password
 description: I messed up ! Please help me
-published: true
-date: 2022-09-14T16:45:02.892Z
-tags: 
-editor: markdown
-dateCreated: 2021-06-17T00:16:39.986Z
+aliases: ["/en/troubleshooting/general"]
 ---
 
 # WiFi problems 

@@ -1,10 +1,8 @@
 ---
 title: Resetting your BIOS
 description: A Step by Step Explanation
-published: true
-date: 2021-11-05T06:18:47.293Z
 tags: [troubleshooting]
-dateCreated: 2021-11-05T06:13:22.177Z
+aliases: ["/en/troubleshooting/resetting-your-BIOS"]
 ---
 There may be some circumstances in a troubleshooting scenario where you are advised to '**Reset your BIOS**' to see if that resolves your issue.
 

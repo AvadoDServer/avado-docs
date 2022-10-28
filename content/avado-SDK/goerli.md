@@ -2,6 +2,7 @@
 title: Setting up a Goerli node
 description: Setting up a Goerli node
 tags: [tutorial, goerli]
+aliases: ["/en/tutorials/goerli"]
 ---
 
 ## What is Görli (aka Goerli)?

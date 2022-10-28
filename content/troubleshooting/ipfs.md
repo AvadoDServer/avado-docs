@@ -1,9 +1,9 @@
 ---
 title: Reinstall the IPFS package
 description: IPFS package
-date: 2022-09-15T10:45:25.387Z
 tags: [ipfs]
-dateCreated: 2022-09-14T17:23:42.925Z
+draft: true
+aliases: ["/en/troubleshooting/ipfs"]
 ---
 
 # I removed my IPFS package, what now ?

@@ -2,6 +2,7 @@
 title: Monero
 description: How to set up a Monero node
 tags: [monero]
+aliases: ["/en/tutorials/monero"]
 ---
 
 ## What is Monero?

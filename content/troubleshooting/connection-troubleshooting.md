@@ -1,11 +1,6 @@
 ---
 title: Connection troubleshooting
-description: 
-published: true
-date: 2022-06-02T09:40:16.042Z
-tags: 
-editor: markdown
-dateCreated: 2022-06-02T09:40:16.042Z
+aliases: ["/en/troubleshooting/connection-troubleshooting"]
 ---
 
 # Help - I cannot connect to my AVADO!

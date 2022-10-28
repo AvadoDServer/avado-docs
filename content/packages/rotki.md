@@ -2,6 +2,7 @@
 title: Rotki
 description: How to install and use Rotki on Avado
 tags: [avado, dapp, rotki]
+aliases: ["/en/tutorials/rotki"]
 ---
 
 ## About Rotki

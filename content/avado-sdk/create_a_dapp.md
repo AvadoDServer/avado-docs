@@ -1,7 +1,6 @@
 ---
 title: Create your DApp for the AVADO DAppstore
-aliases:
-  - /en/developers/building-an-avado-package
+aliases: ["/en/developers/building-an-avado-package"]
 ---
 
 # Create your DApp for the AVADO DAppstore

@@ -1,6 +1,7 @@
 ---
 title: Swarm (Mainnet)
 description: Set up a Swarm mainnet node on AVADO
+aliases: ["/en/tutorials/swarm"]
 ---
 
 This is the BEE client - configured for mainnet

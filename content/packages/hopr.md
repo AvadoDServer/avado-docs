@@ -1,12 +1,9 @@
-<!--
+---
 title: HOPR Client
 description: Setting up HOPR Client
-published: true
-date: 2022-01-18T22:14:21.327Z
-tags: hopr, tutorial
-editor: ckeditor
-dateCreated: 2021-03-04T13:05:29.540Z
--->
+tags: [hopr, tutorial]
+aliases: ["/en/tutorials/hopr"]
+---
 
 {{< toc >}}
 

@@ -1,13 +1,8 @@
 ---
-title: Connection troubleshooting
+title: Manually opening network ports on the AVADO
 description: Manually  opening ports on your router to your AVADO
-published: true
-date: 2021-07-25T16:42:47.248Z
-tags: 
-dateCreated: 2021-07-25T16:42:47.248Z
+aliases: ["/en/troubleshooting/manually-opening-ports"]
 ---
-
-# Manually opening network ports on the AVADO
 
 Certain packages - like blockchain nodes - usually need to open a couple of ports on your router to work well. 
 

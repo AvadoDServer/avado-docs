@@ -1,6 +1,7 @@
 ---
 title: Getting started
 weight: -30
+aliases: ["/en/tutorials/avado-setup"]
 ---
 With AVADO anyone can easily run Web3 applications like **staking or** **running blockchain nodes for personal use.**
 

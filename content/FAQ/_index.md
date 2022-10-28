@@ -2,6 +2,7 @@
 title: FAQ
 description: Frequently Asked Questions
 weight: 40
+aliases: ["/en/faq"]
 ---
 
 # LAN

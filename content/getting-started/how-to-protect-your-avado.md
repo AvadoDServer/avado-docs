@@ -2,6 +2,7 @@
 title: How to Protect your Avado
 description: For optimal use & a longer lifespan
 weight: 20
+aliases: ["/en/tutorials/how-to-protect-your-avado"]
 ---
 {{< toc >}}
 

@@ -1,6 +1,7 @@
 ---
 title: Move ETH2 validators to a new location
 description: Move ETH2
+aliases: ["/en/tutorials/move-eth2-validators"]
 ---
 
 ## READ AND UNDERSTAND BEFORE ATTEMPTING
