@@ -46,11 +46,11 @@ OR (same destination)
 
 If the UI tells you to send xDai and wxHopr you are running the right version.
 
-![](hopr_log-to-fund.jpg)
+ {{< figure src="hopr_log-to-fund.jpg" >}}
 
 If not: restart HOPR Client in the DApps tab.
 
-![](hopr_log-error.jpg)
+ {{< figure src="hopr_log-error.jpg" >}}
 
 ## After the installation
 
@@ -179,19 +179,19 @@ Use [https://omni.xdaichain.com/](https://omni.xdaichain.com/) to change Hopr to
     Warning message.  
      
 
-![](xdaichain-transaction-hopr_2_xhopr.jpg)
+ {{< figure src="xdaichain-transaction-hopr_2_xhopr.jpg" >}}
 
 Click Continue (By hitting the "continue" button, you are representing that you’ve read our [Terms of Service](https://forum.poa.network/t/end-user-licensing-agreement-and-terms-of-service/2197) in full, and that you agree to be legally bound by them.)
 
 *   Connect your wallet  
     WalletConnect or MetaMask
 
-![](xdaichain_walletconnect_hopr_2_xhopr.jpg)
+ {{< figure src="xdaichain_walletconnect_hopr_2_xhopr.jpg" >}}
 
 *   You should be connected to the "xDai Chain"  
      
 
-![](xdaichain_metamask_connected_hopr_2_xhopr.jpg)
+ {{< figure src="xdaichain_metamask_connected_hopr_2_xhopr.jpg" >}}
 
 *   Select the wallet where you HOPR tokens are
 *   At the left side select “HOPR Token on xDai”  
@@ -209,15 +209,15 @@ Now that you've got that xDAI…
 1.  Go to: [https://app.honeyswap.org/#/swap](https://app.honeyswap.org/#/swap)
 2.  Select the proper tokens to swap and fill out the amount to swap. In this example 8 xDAI will be converted to HOPR (xHOPR). You can also fill out 10 as the HOPR amount to swap to. You wil see there is a little gas fee (in xDAI ?). So be sure you have some xDAI left in your wallet.
 
-![](transaction_xdai_to_hopr-xhopr_via-honyswap.jpg)
+ {{< figure src="transaction_xdai_to_hopr-xhopr_via-honyswap.jpg" >}}
 
 Get your MetaMask wallet connected to xDAI Chain.
 
-![](transaction_xdai_to_hopr-xhopr.jpg)
+ {{< figure src="transaction_xdai_to_hopr-xhopr.jpg" >}}
 
 Press “Confirm”
 
-![](transaction_xdai_to_hopr-xhopr_confirmed.jpg)
+ {{< figure src="transaction_xdai_to_hopr-xhopr_confirmed.jpg" >}}
 
 FYI: if you convert xDAI to HOPR, the HOPR you see is actually xHOPR.
 
@@ -229,11 +229,11 @@ Use [https://wrapper.hoprnet.org](https://wrapper.hoprnet.org)/ change xHopr to
 
 Go to [https://wrapper.hoprnet.org](https://wrapper.hoprnet.org)/ > “Utility to wrap `(xHOPR -> wxHOPR)` (and unwrap `(wxHOPR -> xHOPR)` xHOPR tokens.)”
 
-![](swap_xhopr_to_wxhopr.jpg)
+ {{< figure src="swap_xhopr_to_wxhopr.jpg" width="500" >}}
 
 Connect to your wallet and put the amout of 10 to wrap.
 
-![](swap_xhopr_to_wxhopr_connected.jpg)
+ {{< figure src="swap_xhopr_to_wxhopr_connected.jpg" width="500" >}}
 
 Click on “Swap to wxHOPR”.
 
@@ -249,25 +249,25 @@ Connect your MetaMask.
 Don't forget to put the max amount of 10 wxHOPR before clicking “Next”.  
  
 
-![](metamask-sent-10wxhorp_to_wxhopr-network_10.jpg)
+ {{< figure src="metamask-sent-10wxhorp_to_wxhopr-network_10.jpg" >}}
 
 Click "Next". You wil see there is a little gas fee (in xDAI ?). So be sure you have some xDAI left in your wallet.
 
-![](metamask-sent-10wxhorp_to_wxhopr-network_confirm_10.jpg)
+ {{< figure src="metamask-sent-10wxhorp_to_wxhopr-network_confirm_10.jpg" >}}
 
 Click “Confirm”
 
-![](metamask-sent-10wxhorp_to_wxhopr-network_pending_10.jpg)
+ {{< figure src="metamask-sent-10wxhorp_to_wxhopr-network_pending_10.jpg" >}}
 
 You'll see the transaction is pending. Wait a little, message will go to status “Send wxHOPR".
 
-![](metamask-sent-10wxhorp_to_wxhopr-network_sent_10.jpg)
+ {{< figure src="metamask-sent-10wxhorp_to_wxhopr-network_sent_10.jpg" >}}
 
 #### Step 5: You're all set
 
 Your log file should NOT be mentioning to fund your node anymore. There is no need to restart the HOPR DApp.
 
-![](hopr_log_after-wxhopr-fund.jpg)
+ {{< figure src="hopr_log_after-wxhopr-fund.jpg" >}}
 
 Happy HOPR-ing!
 

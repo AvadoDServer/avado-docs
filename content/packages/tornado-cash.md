@@ -33,20 +33,20 @@ In Metamask - click on the top right icon. This will be the account used as a To
 
 **It is important that this be a new account that is funded anonymously and does not link to other transaction history coming in our out. The following guide will explain the steps to accomplish this important concept.**
 
-![](tc1.png)
+ {{< figure src="tc1.png" >}}
 
 Select create account and then name the relayer account whatever you like.
 
-![](tc2.png)
+ {{< figure src="tc2.png" >}}
 
-![](tc3.png)
+ {{< figure src="tc3.png" >}}
 
 Step 2 : Fund This Account Through tornado.cash by Making two 1 ETH Deposits
 ----------------------------------------------------------------------------
 
 Go to https://tornado.cash/ and select launch app. By using tornado.cash, the account used to make the deposit with will not be linkable to the relayer account when following the instructions in this guide.
 
-![](tornadodotcash.png)
+ {{< figure src="tornadodotcash.png" >}}
 
 tornado.cash
 
@@ -54,23 +54,23 @@ Once you launch the app, first open the Metamask extension in the web browser an
 
 Hit Connect on the tornado.cash page to link to Metamask and confirm in Metamask that the account used to make the deposit is connected via Web3 which you will see as a green dot which says “Connected” in Metamask. The tornado.cash site will then be connected to the account that will be used to make the deposit. Please note that due to the tornado cash requirement of maintaining a minimum balance of 1 ETH in your relayer wallet, the easiest (and least expensive) way of doing this is to make two seperate desposits to tornado.cash consisting of 1 ETH each. Therefore simply follow the instructions for making a 1 ETH deposit to tornado.cash and then repeat to make a second deposit.
 
-![](tc_deposit_2.png)
+ {{< figure src="tc_deposit_2.png" >}}
 
-![](wallet_connect.png)
+ {{< figure src="wallet_connect.png" >}}
 
-![](rainy_day_2.png)
+ {{< figure src="rainy_day_2.png" >}}
 
 Connected to tornado.cash
 
 Once you have confirmed that you are connected to the Metamask account and are ready to make the deposit, click _**Deposit**_ on the tornado.cash page and the browser will download a text file containing the deposit note. **Please backup the note.** If you lose it, you won't get your deposit back. Treat your note as a private key - never share it with anyone, including tornado.cash developers. Check the box to confirm that you have backed up your note and then click _**Send Deposit**_.
 
-![](note_bkup.png)
+ {{< figure src="note_bkup.png" >}}
 
 After you send the deposit, the TC wheel will spin and you will be asked to confirm the transaction in Metamask. Suck it up and hit _**Confirm**_. No whining.
 
-![](confirm_tx.png)
+ {{< figure src="confirm_tx.png" >}}
 
-![](no_whining.png)
+ {{< figure src="no_whining.png" >}}
 
 Remember that these funds will be used to fund a clean relayer account and privacy as a relayer is worth it. It is essential to the concept of a decentralized, premium relayer service. The balance of the relayer account will only increase unless it relays a stable coin transaction, which is not common but can occur. Please also note that **depositing 0.1 ETH is not enough** and will not meet the minimum requirements for the relayer pool. 
 
@@ -78,7 +78,7 @@ Remember that these funds will be used to fund a clean relayer account and priva
 
 **No exceptions.**
 
-![](deposit_complete_2.png)
+ {{< figure src="deposit_complete_2.png" >}}
 
 **After you make the deposit, your note will be shown on the main tornado.cash page**
 
@@ -93,13 +93,13 @@ After waiting for a while (**24 hours at the very least**, 72 hours recommended)
 
 > Please note that not enough time has passed for the note used in this example and there are no subsequent deposits yet. This is being used as an example to create the guide only.
 
-![](withdraw.png)
+ {{< figure src="withdraw.png" >}}
 
 When selecting settings, you will see a window with a dropdown menu where you can choose the relayer service to process the withdrawal. 
 
 If you would like to use **v2.odanrot.eth** as a relayer service, that is smart because someone in our RYO pool will process the transaction and earn the reward. Hit save to confirm your relayer selection.
 
-![](settings.png)
+ {{< figure src="settings.png" >}}
 
 When you are taken back to the main page, select _**Withdraw**_ and the transaction will start processing and be mined. 
 
@@ -109,11 +109,11 @@ When you are taken back to the main page, select _**Withdraw**_ and the transact
 2.  Relayer is now sending your transaction. It will respond with a transaction hash soon...  
      
 
-![](withdrawing_1-eth_tc.jpg)
+ {{< figure src="withdrawing_1-eth_tc.jpg" >}}
 
 Screen refreshes to the main screen showing:
 
-![](withdrawingnote_1-eth_tc.jpg)
+ {{< figure src="withdrawingnote_1-eth_tc.jpg" >}}
 
 After completion - you should have a little under 2 ETH in the fresh relayer account that was created in **Step 1**. This can be verified by looking at the account address in Metamask or on Etherscan.
 
@@ -130,9 +130,9 @@ The URL of the Ethereum node to use assumes that, in support of decentralization
 
 Click on _**Change settings**_. 
 
-![](settings_1.png)
+ {{< figure src="settings_1.png" >}}
 
-![](settings_2.png)
+ {{< figure src="settings_2.png" >}}
 
 Make sure to set the fee to **0.05% (screenshots OUTDATED!)**
 
@@ -142,21 +142,21 @@ Open Metamask and select the relayer account that was created in **Step 1**.
 
 Click on the 3 dots and select “account details”.
 
-![](tc9.png)
+ {{< figure src="tc9.png" >}}
 
 In that screen click on “_**Export Private Key**_”.
 
-![](tc10.png)
+ {{< figure src="tc10.png" >}}
 
 Enter your Metamask password and press “_**Confirm**_”.
 
-![](tc11.png)
+ {{< figure src="tc11.png" >}}
 
 Copy this private key, close the Metamask window and go back to the Tornado cash settings page.
 
 Paste the private key in the “Signing Key” field and click _**Save and start package**_.
 
-![](private_key.png)
+ {{< figure src="private_key.png" >}}
 
 **Follow ALL of the steps above to fund this account through tornado.cash with a 1 ETH transaction** 
 
@@ -165,11 +165,11 @@ Step 5: Share the Relayer in the RYO Cloud
 
 Install the RYO client from the Dappstore.
 
-![](ryo.png)
+ {{< figure src="ryo.png" >}}
 
 Open the package and click on _**Edit settings**_. Toggle the switch to share the Tornadocash relayer v2 and any other packages you wish to share in the cloud. Enter the name of your relayer node and the ETH address for RYO rewards. **Please note that this is NOT the TC relayer account address.** Please enter a different ETH address here. The RYO is not monetized at this time but it may be in the future so it's good to have an address in for when that time comes but **do not make the mistake of pasting the relayer address here**.
 
-![](ryo_settings.png)
+ {{< figure src="ryo_settings.png" >}}
 
 Then click on _**Save and start package**_. 
 
@@ -191,7 +191,7 @@ Don't forget to promote the tornado.cash relayer service **v2.odanrot.eth** on s
 
 **Happy fishing!**
 
-![](squids.jpg)
+ {{< figure src="squids.jpg" >}}
 
 Jigging for squid
 

@@ -14,7 +14,7 @@ How to install and run it:
 1.  Go to: “DAppStore” > Proof Of Stake Blockchain nodes (Stake your crypto to earn rewards)
 2.  Select: Current version of “Avalanche node” 
 
-![](avalanche-install.jpg)
+ {{< figure src="avalanche-install.jpg" >}}
 
 1.  A new screen will show
 2.  Click the “INSTALL” -button

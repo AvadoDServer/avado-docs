@@ -49,7 +49,7 @@ For now this is not required, but it will be after the merge!
 
 Setting up Teku is really easy and the defaults are probably OK for you.
 
-![teku-settings.png](teku-settings.png)
+ {{< figure src="teku-settings.png" >}}
 
 If you messed up, you can use the "Reset defaults" to reset to the default Avado settings
 
@@ -65,8 +65,8 @@ You can find the details at https://docs.teku.consensys.net/en/latest/HowTo/Get-
 ## Add validators
 
 1. To add a validator click the "Add validator" field to expand it:
-  ![add_validator.png](add_validator.png)
-  ![add_validator_exp.png](add_validator_exp.png)
+   {{< figure src="add_validator.png" >}}
+   {{< figure src="add_validator_exp.png" >}}
 1. Next, click "Choose keystore file..." and browse to the keystore file (json) you downloaded from the [Key generator package](/en/tutorials/prysmvalidator#step-3-download-zip-file-with-your-generated-keys)
 1. Enter the keystore password
 1. (Optional) If you have a slashing protection file, upload the file here.

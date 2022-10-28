@@ -17,7 +17,7 @@ It shows when it was bought and what device it represents, but it does not revea
 
 We care about privacy but also need to be able to identify that the user has bought our device. We’re solving this difficult problem by using NFTs.
 
-![](we-respect-your-privacy.jpg)
+ {{< figure src="we-respect-your-privacy.jpg" >}}
 
 ### **What are the use cases for AVADO NFT?**
 
@@ -65,7 +65,7 @@ To identify these users, HOPR will look for the NFT tokens, including metadata t
 * HOPR PC and AVADO devices
 * The date of purchase for each device
 
-![](hopr-boxes.jpeg)
+ {{< figure src="hopr-boxes.jpeg" >}}
 
 Hopr boxes
 
@@ -73,7 +73,7 @@ Hopr boxes
 
 Every AVADO owner, no matter if you purchased the device in 2018 or today, can go to [NFT.AVA.DO](https://nft.ava.do/) and mint their token. Your e-mail address will be used to start the process, and you should have Metamask enabled in your browser.
 
-![](avado-nft.png)
+ {{< figure src="avado-nft.png" >}}
 
 Follow the instructions on the page and if you have any questions, feel free to ask in our [Telegram group](http://trk.klclick.com/ls/click?upn=06CjBsXsDahfUNQOIWXJ9boAyYZ4xY1BLEeCVXv-2BDH9oB9s-2FoDcR72uQczG8CmAKRSWC1G2CCJQHD-2BCh8QC9JAf4kVgXFIAckh-2Bgf0lj47p8-2BnV249afyfpY6RKqKfTTToAx-2FM7hNwoZWfo7MtgA7bPhO6yJQkdBB1O-2Fu1Kaay7HzP2u6UMwENHnq41oSg8cpqlE2Fdy2KM048UPP-2FOrYg-3D-3DhsQq_r95Xg7-2BqhKQOvO-2B4rh9Lgk3SqOcbYmV-2FVbU1eJ6ArEZRdeARqKrK83yBeYvQj2XRb3w79DNt82mzi5idc4aUjTTT6sKk8qeqKHxV5bg8BCt61-2FU-2FXMpBAOf3VHLkwO-2F-2BbNSHqSWTX0rU5czHMgyzn7wri9EfChf0MMBeuHfU-2FT460n4-2Bk26Il90z-2B32sNZqu6yzSlPXVw-2FjRTlDBXpqqdc-2FJ6oIdyyjcugN37JRESkj9KEsAoPji3sOThBqPbRX8gUcuO8jxkJOCrlbxqIzVrTPQWVC6EmJYxzc6dLiHt0BZwkh6BeGSYodT98yL1tMr9ADxqgFzL-2BMNJKDPc7HKyapiymCFyRiAYXJf6CsPvgJXRMm0YIu6BeLCTnxVjvHpZyLY-2F41-2FwV5hTsnYuyws9w-3D-3D). 
 

@@ -17,7 +17,7 @@ Navigate to the DappStore and locate the dapp named `Ethereum Node (Geth)`.
 
 {{< /hint >}}
 
-![geth-dappstore-install.png](geth-dappstore-install.png)
+ {{< figure src="geth-dappstore-install.png" >}}
 
 {{< hint type=info >}}
 Click `Install`
@@ -42,7 +42,7 @@ Once you start synchronization, it is strongly recommended that you not restart 
 
 {{< /hint >}}
 
-![geth-synced.png](geth-synced.png)
+ {{< figure src="geth-synced.png" >}}
 
 ## (Optional) Configuration and Tuning
 {{< hint type=important >}}
@@ -58,14 +58,14 @@ All of these configuration changes will be made on the management  page for Geth
 
 {{< /hint >}}
 
-![geth-mgmt-1.png](geth-mgmt-1.png)
+ {{< figure src="geth-mgmt-1.png" >}}
 
 {{< hint type=info >}}
 Each change is made by appending to or editing the value of the `EXTRA_OPTS` environment variable.
 
 {{< /hint >}}
 
-![geth-mgmt-2.png](geth-mgmt-2.png)
+ {{< figure src="geth-mgmt-2.png" >}}
 
 {{< hint type=danger >}}
 When appending new options to the field make sure that there is a space between your option and any other options otherwise Geth may fail to start correctly after the change is applied.
@@ -117,7 +117,7 @@ It offers significant improvements both in time and the bandwith required to syn
 
 {{< /hint >}}
 
-![snap-sync-times.png](snap-sync-times.png)
+ {{< figure src="snap-sync-times.png" >}}
 
 {{< hint type=important >}}
 This option will not change anything about your node if it is already synchronized, **DO NOT ADD IT**.
@@ -135,7 +135,7 @@ Append this option `--syncmode=snap` to use snap sync instead of fast sync and c
 
 After the change has applied, reset the dapp.
 
-![geth-reset.png](geth-reset.png)
+ {{< figure src="geth-reset.png" >}}
 
 ## Running a light-client
 
@@ -166,7 +166,7 @@ Then press the `RESET` button for the GETH package and over the next couple of m
 
 Here is an example of what to look for when inspecting the Geth logs to see if peers are connecting. In this case the light client has found 2 peers which is good! It will work.
 
-![light_peers.jpg](light_peers.jpg)
+ {{< figure src="light_peers.jpg" >}}
 
 
 ## Pruning Your Geth Node
@@ -195,13 +195,13 @@ Please note the step of setting up a fallback endpoint will not work after the m
 
 To set up a fallback endpoint on Infura, go to Infura.io and sign up for an account. Then, open a new project for “ETHEREUM” not “ETH 2”. Once you have initiated your project, copy the https: line for the mainnet as shown
 
-![infura_endpoint.png](infura_endpoint.png)
+ {{< figure src="infura_endpoint.png" >}}
 
 Go to My DApps and then click on `Manage` for the ETH2.0 Prysm beacon chain package.
 
 In the Environment variables field, you will see the EXTRA_OPTS line.
 
-![ev_field0.png](ev_field0.png)
+ {{< figure src="ev_field0.png" >}}
 
 Under where it says value, the complete default line of text says this:
 `--http-web3provider=http://my.ethchain-geth.public.dappnode.eth:8545 --grpc-gateway-corsdomain=http://prysm-beacon-chain-mainnet.avadopackage.com,http://eth2validator.avadopackage.com`
@@ -217,11 +217,11 @@ Note that the url https://mainnet.infura.io/v3/yourprojectid should contain the 
 
 Your EXTRA_OPTS line should now look like this:
 
-![fallback_opts2.png](fallback_opts2.png)
+ {{< figure src="fallback_opts2.png" >}}
 
 Then click on the `Update environment variables` button and then `Restart` the Prysm Beacon package. Now you have set a fallback ETH1 client that is hosted by a web3 provider (like Infura or Alchemy) so that when you stop your local Geth client, the Beacon node will fallback to the alternative endpoint. You can test this yourself by pausing your local Geth package and inspecting the Beacon logs to verify that the package continues to run with the alternative ETH1 endpoint.
 
-![alt_endpoint3.png](alt_endpoint3.png)
+ {{< figure src="alt_endpoint3.png" >}}
 
 ### Pruning Geth
 
@@ -239,7 +239,7 @@ Then click on the `Update environment variables` button and then `Restart` the G
 
 Geth will start the process of Pruning your Geth package. You can check in the Geth logs on your progress. You must wait for the process to complete which could take overnight or up to 24 hours. Be patient and wait until the logs indicate it has completed.
 
-![prune_logs.jpeg](prune_logs.jpeg)
+ {{< figure src="prune_logs.jpeg" >}}
 
 Once the process is completed, go back into the Geth package and paste back in the EXTRA_OPTS line you removed earlier:
 `--http.api eth,net,web3,txpool`

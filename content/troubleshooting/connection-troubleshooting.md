@@ -33,14 +33,14 @@ Disable VPN software you might have running on your computer like
 On your MAC go to `system preferences` -> `network`
 
 You should see the Wi-Fi connection to the AVADO network (in this screenshot it is renamed to AVADO-i5 - yours will be called AVADO by default)
-![2022-06-02_11.34.34.jpg](2022-06-02_11.34.34.jpg)
+ {{< figure src="2022-06-02_11.34.34.jpg" >}}
 
 Then click on the `Advanced` button and verify if you have an `IPv4 Address` that is in the rance `172.22.12.xxx`
 
-![2022-06-02_11.34.43.jpg](2022-06-02_11.34.43.jpg)
+ {{< figure src="2022-06-02_11.34.43.jpg" >}}
 
 Then go to the `DNS` tab and verify if you have exactly this setting. there should be only one DNS server and it should be `172.33.1.2`
 
-![2022-06-02_11.34.51.jpg](2022-06-02_11.34.51.jpg)
+ {{< figure src="2022-06-02_11.34.51.jpg" >}}
 
 If all that is the case you should be able to access the http://my.ava.do/ URL that leads you to the AVADO admin page.

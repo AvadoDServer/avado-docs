@@ -21,11 +21,11 @@ https://wiki.ava.do/faq#wifi
 ## Step 1: Open the `Connect (VPN)` item in the left menu bar of your Avado Home Screen
 After you have connected to the Avado WiFi and can access the Avado dashboard through the web interface, you can set up a VPN connection on whatever device you are connected with. You can set up VPN connections for all your devices if you like, such as your desktop/laptop and mobile device(s). Steps for setting up your VPN on various devices and operating systems are discussed below.
 
-![vpn_menu.png](vpn_menu.png)
+ {{< figure src="vpn_menu.png" >}}
 
 When the Users menu opens, you will see a pre-configured user named `dappnode_admin`. Admin rights for this user should be set to on by default. It is recommended to add additional users for your desktop/laptop and mobile device(s). You can remove Admin privleges or delete access for individual users if needed for unfortunate events such as losing your device. :( 
 
-![users.png](users.png)
+ {{< figure src="users.png" >}}
 
 To add additional users simply name the `user login` whatever you like and click `Add user`. **Be sure to turn on Admin privileges** for the new user so you can access your Avado through the web interface once you are connected to the VPN. 
 
@@ -35,14 +35,14 @@ To add additional users simply name the `user login` whatever you like and click
 ## Step 2: Share the profile you wish to configure.
 After clicking on `Share`, you will see three icons come up. Click on the download icon to access the page for the OpenVPN configuration files.
 
-![share_config.png](share_config.png)
+ {{< figure src="share_config.png" >}}
 
 
 
 ## Step 3: Download the configuration files for remote use and local (LAN) use.
 After clicking on the download icon, a new page will load and there are buttons at the top of the page for downloading each of the configuration files. Go ahead and download both for local and remote use. Save them somewhere handy on your device and note the location of the files on your device.
 
-![download_config_2.png](download_config_2.png)
+ {{< figure src="download_config_2.png" >}}
 
 ## Step 4: **DISCONNECT FROM YOUR AVADO WiFi**
 Once you have downloaded the Local (LAN) and remote configuration files, you should disconnect from the Avado WiFi network and re-connect to your home network. **This step is important and easy to overlook.** If you forget to disconnect from the Avado WiFi network and re-connect to your home network, when you try to connect with your VPN client in the next steps it won't work. :(
@@ -67,19 +67,19 @@ Once the installer has downloaded, run it and follow the prompts to install the 
 
 Open the OpenVPN application and click on the 3 bar menu icon in the upper left corner and then select `Import Profile`.
 
-![import_file_menu.png](import_file_menu.png)
+ {{< figure src="import_file_menu.png" >}}
 
 Start by importing the Local (LAN) profile. Select `File` and then follow the prompt and drag the Local (LAN) file (*AVADO-VPN_local.ovpn*) into the window to import it.
 
-![import_file.png](import_file.png)
+ {{< figure src="import_file.png" >}}
 
 Once you have imported the file, you will see a screen telling you that the file has been imported. Select the check box for `Connect after import` and then click on `Add.`
 
-![import_file_2.png](import_file_2.png)
+ {{< figure src="import_file_2.png" >}}
 
 If you have followed the steps correctly and you are connected to your home network (not Avado WiFi), you should see the following screen indicating you are connected to your VPN. 
 
-![import_file_connect.png](import_file_connect.png)
+ {{< figure src="import_file_connect.png" >}}
 
 You can now access http://my.avado/#/dashboard from your web browser while connected to your home network! :)
 
@@ -101,19 +101,19 @@ Begin by typing the address of your router into the address bar of your browser.
 
 Look for the `Advanced` tab and then the `Advanced Router` and `Forwarding` tab. Then select the `Add_IPv4` button.
 
-![port_forward_1.png](port_forward_1.png)
+ {{< figure src="port_forward_1.png" >}}
 
 You will need to get your Avado Internal IP address to complete the port forwarding rule. To do this, open a new browser tab and navigate to your Avado dashboard (using your Local LAN VPN :)). Click on the computer avatar icon in the upper right corner. Copy the Internal IP.
 
-![avado_ip.png](avado_ip.png)
+ {{< figure src="avado_ip.png" >}}
 
 Now go back to the tab with your router admin page. Paste your Internal IP in the Local IP box with a start and end port of 1194. Leave the External IP as 0.0.0.0 and the start port blank. Set the protocol to UDP and select `Enable`. Don't forget to hit `Save` to save the rule to your router. Then you can logout of your router.
 
-![forwarding_rule_1.png](forwarding_rule_1.png)
+ {{< figure src="forwarding_rule_1.png" >}}
 
 Now you can go back to the OpenVPN client and attempt to connect the remote profile while using your phone's mobile hotspot and your PC to simulate a remote connection. If you have made it this far, congratulations!!
 
-![remote_connect.png](remote_connect.png)
+ {{< figure src="remote_connect.png" >}}
 
 If after follwong the steps above, the remote profile will still not connect, you can open a command prompt on your PC and type `ping %externalhostname%` where %externalhostname% is whatever is there when you click on the computer Avatar in the upper right corner of your Avado Dashboard. For example: `ping 741...d66be5.dyndns.dappnode.io`, where 741...d66be5 is whatever is there. Hit enter and it should resolve to the External IP of your Avado. If it does not, please reach out for additional support on the Avado telegram page. If it does resolve to the External IP of your Avado, go back and ensure that you have followed all of the steps exactly. Make sure you have correctly set the port forwarding rule with the correct internal IP which is usually 192.###.#.# If you still can't connect through the remote profile, please reach out for support on the Avado telegram channel.
 
@@ -130,15 +130,15 @@ https://play.google.com/store/apps/details?id=net.openvpn.openvpn
 
 Once installed, open the app and add the profiles you downloaded in **Steps 2 & 3** by clicking on the `+` button in the lower right corner.
 
-![openvpn_droid_1.png](openvpn_droid_1.png)
+ {{< figure src="openvpn_droid_1.png" >}}
 
 Then, select `File` to import the VPN configuration files that you downloaded. Browse to the location where the VPN configuration files were downloaded using the file explorer and then click on `IMPORT`. Do this for both the local and remote configuration files.
 
-![import_file_droid.png](import_file_droid.png)
+ {{< figure src="import_file_droid.png" >}}
 
 Once you have imported both configurations, simply click on the local profile and it will connect and you can access your Avado in your browser.
 
-![connect_local.png](connect_local.png)
+ {{< figure src="connect_local.png" >}}
 
 Repeat to connect your remote profile. Follow the instructions in **Step 7** to simulate a remote connection using your phone's mobile hotspot and to set a port forwarding rule on your router, if needed.
 
@@ -147,25 +147,25 @@ Repeat to connect your remote profile. Follow the instructions in **Step 7** to 
 Tunnelblick is the recommended VPN client for MacOS. You can download the latest stable release here:
 https://tunnelblick.net/index.html
 
-![tunnelblick_dl.png](tunnelblick_dl.png)
+ {{< figure src="tunnelblick_dl.png" >}}
 
 **EASY VERSION:** Double click on the profile you downloaded and Tunnelblick should be able to automatically import it. If not, proceed as below.
 
 Open the Tunnelblick application and you will see a configuration screen. Select `I have configuration files`.
 
-![config_screen.png](config_screen.png)
+ {{< figure src="config_screen.png" >}}
 
 Drag the configuration files you downloaded in **Steps 2 & 3** into the configurations window.
 
-![add_config.png](add_config.png)
+ {{< figure src="add_config.png" >}}
 
 When you drag each file into the configurations window, it will ask you if you would like to install for all users or only me. That is your choice.
 
-![add_config_2.png](add_config_2.png)
+ {{< figure src="add_config_2.png" >}}
 
 Then simply select the profile you would like to connect, starting with the local configuration. **Make sure you are connected to your home network and not the Avado WiFi**. Then click `Connect` in the lower right corner and a small window will pop up showing your successful connection.
 
-![connect_1.png](connect_1.png)
+ {{< figure src="connect_1.png" >}}
 
 After you have successfully connected to the local configuration, follow the instructions in **Step 7** to connect your remote profile using your phone's mobile hotspot to stimulate a remote connection to your Mac and set a port forwarding rule on your router, if needed. 
 

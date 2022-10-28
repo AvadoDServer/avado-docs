@@ -18,11 +18,11 @@ Documentation: <https://rotki.readthedocs.io/en/latest/>
 ## Installation
 
 Open Rotki on the DappStore page and click **Install**  
-![install.png](install.png)
+ {{< figure src="install.png" >}}
 
 ## Getting Started
 
-![home_a.png](home_a.png)
+ {{< figure src="home_a.png" >}}
 
 There are thee ways to open Rotki:
 1. The easiest method is to open Rotki in the Avado UI (over VPN): Click on the **Open** button of the Rotki package. This opens Rotki inside the Avado UI.
@@ -33,7 +33,7 @@ There are thee ways to open Rotki:
 
 Before you can use Rotki you need to create an account first. This will create a database that stores your configuration.
 
-![create_rotki_account.png](create_rotki_account.png)
+ {{< figure src="create_rotki_account.png" >}}
 
 You can add as many accounts as you want.
 
@@ -43,7 +43,7 @@ The next action is to add the [accounts and balances you want to track](https://
 
 For example, add you ethereum address, by clicking **Add blockchain address* and add your address (e.g. `rotki.eth`)
 
-![add_account.png](add_account.png)
+ {{< figure src="add_account.png" >}}
 
 ### Avado Ethereum Node
 
@@ -57,7 +57,7 @@ It is recommend to use your own **Ethereum node** to fetch Ethereum information:
 
 ### Export your data
 
-![manage_a.png](manage_a.png)
+ {{< figure src="manage_a.png" >}}
 
 To export your data:
 * Open the **Manage** page of Rotki (** My Dapps > Rotki > Manage **)

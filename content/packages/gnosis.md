@@ -18,7 +18,7 @@ Avado makes it easy. At no point in following this Avado wiki guide will you eve
 # Set up a Validator on the Gnosis Beacon Chain
 Getting started from scratch (fresh install) ***Owl memes are encouraged as we build our Gnowledge!***
 
-![gnowledge_avado.jpg](gnowledge_avado.jpg)
+ {{< figure src="gnowledge_avado.jpg" >}}
 
 {{< hint type=tip title=success >}}
  This guide describes the steps of generating keys using the Gnosis GBC Key Generator package and then accessing the official Gnosis Beacn Chain Deposit website to complete the deposit to the Gnosis Beacon Chain deposit contract 0x0B98057eA310F4d31F2a452B414647007d1645d9 
@@ -48,9 +48,9 @@ https://sushi.com/ With MetaMask enabled on Ethereum, click on the network dropd
 
 **Manual instructions** can also be found here: https://www.xdaichain.com/for-users/wallets/metamask/metamask-setup
 
-![chainlist.jpg](chainlist.jpg)
+ {{< figure src="chainlist.jpg" >}}
 
-![xdai_mm.jpg](xdai_mm.jpg)
+ {{< figure src="xdai_mm.jpg" >}}
 
 ## Obtaining GNO
 
@@ -58,24 +58,24 @@ There are a number of ways to obtain GNO. Do your own research and proceed at yo
 
 One easy and cost effective way to obtain GNO on the Gnosis network (formerly xDai) is to bridge Dai from the ETH mainnet to the Gnosis chain using [The xDai Bridge](https://bridge.xdaichain.com/). When you bridge Dai to xDai, you will then already have the xDai in your wallet that is needed to pay the gas on transactions of the Gnosis network (which only cost fractions of a cent!).
 
-![inkedbridge_li.jpg](inkedbridge_li.jpg)
+ {{< figure src="inkedbridge_li.jpg" >}}
 
 Then once you have xDai in the account you wish to use to make your validator deposit, you can use [Honeyswap](https://honeyswap.org/) or [CowSwap](https://cowswap.exchange/#/swap) or to swap xDai for GNO. Remember that for each validator you plan to run on the Gnosis Beacon Chain, you will need exactly 1 GNO. It is highly recommended that you start with 1 validator so that you can become familair with this process before you try to run more.
 
-![inkedhoneyswap_li.jpg](inkedhoneyswap_li.jpg)
+ {{< figure src="inkedhoneyswap_li.jpg" >}}
 
-![cowswap.png](cowswap.png)
+ {{< figure src="cowswap.png" >}}
 
 You can import the GNO token to Metamask by visiting https://blockscout.com/xdai/mainnet/token/0x9C58BAcC331c9aa871AFD802DB6379a98e80CEdb/token-transfers
 and then clikcing on the fox to import the token to Metamask.
 
-![import_gno_token.jpg](import_gno_token.jpg)
+ {{< figure src="import_gno_token.jpg" >}}
 
-![mm_gno_token.jpg](mm_gno_token.jpg)
+ {{< figure src="mm_gno_token.jpg" >}}
 
 ## Step 1 : Install Gnosis Beacon Chain (GBC), Gnosis Chain Validator and Gnosis GBC Key Generator and from the DappStore
 
-![dappstore.jpg](dappstore.jpg)
+ {{< figure src="dappstore.jpg" >}}
 
 The beacon chain may take a few hours to sync the first time you install, depending on the size of the Beacon Chain at the time you are installing.
 
@@ -84,7 +84,7 @@ It is highly recommended that before you proceed to the next steps that you ensu
 
 {{< /hint >}}
 
-![gbc_logs.jpg](gbc_logs.jpg)
+ {{< figure src="gbc_logs.jpg" >}}
 
 {{< hint type=important >}}
 Please note that the Gnosis beacon chain needs a "PoW" chain to point to, just like the ETH2 beacon chain points to the ETH1 mainnet. In this case the proxy for the "PoW" chain is the xDai chain. The Prysm Gnosis Beacon Chain supports two xDai clients at this time, Nethermind and Open Etheruem. In the current Avado package, the default is to use the public xDai rpc https://rpc.xdaichain.com/. Please understand that this is a public rpc run by a third party so this is not a fully decentralized solution at this time but it works fine and limits the resource consumption on your Avado. In order to support full decentralization, Avado will be adding an xDai client (or two) as nodes that you can run on your own. Keep in mind that this will significantly increase the resource load on your Avado with both the CPU and RAM consumption. Using the public rpc, this package will run on an i5 now, but if you run your own xDai node when that becomes available, you will need an i7. **Also when the merge happens in mid 2022, it is unlikley that using an i3/i5 will continue to work with the full package that contains the execution layer and concensus layer in one. Plan your upgrde path accordingy or consider not running it if you are using an i3/i5 and have no plans to upgrade.**
@@ -104,7 +104,7 @@ Have a pen and paper ready to write things down. This is important before you pr
 Open the Key Generator and let Leslie the Launchpad Rhino (yes really) help create validator keys. You will not need to do any command line work to complete this step. Write down the exact password you use in this step and double check it. Then check it again. You will need it later when you start your validator. Enter your your staking key password, the number of keys you wish to generate and your mnemonic language. **Use a strong password that contains 8-10 characters, 1 capital letter, 1 number and 1 special charcater and does not contain too many repeating charcaters or common words.** **Seriously, don't include any common words in your password.** Using a random passowrd generator is a great way to help ensure that your keystore password meets the backend requirements of the validator web ui when you import the keystore as dicussed in Step 4. 
 Then click `Generate Keys` 
 
-![key_gen1.jpg](key_gen1.jpg)
+ {{< figure src="key_gen1.jpg" >}}
 
 
 {{< hint type=info >}}
@@ -123,13 +123,13 @@ Note that if you wish to run more than 1 validator, the EASIEST way to do this i
 
 Click on `Download ZIP file with your generated keys`
 
-![key_gen2.jpg](key_gen2.jpg)
+ {{< figure src="key_gen2.jpg" >}}
 
 After you have downloaded the file, locate it on your device and extract the tar.gz file to as folder. If you are using a Windows 10 device, you may need to download WinZip or 7-Zip to extract the file if you don't aready have something that can extract a tar file. You can download WinZip here: https://www.winzip.com/win/en/tar-gz-file.html or 7-Zip here: https://www.7-zip.org/
 
 Once you have extracted the zip file, open it and view the contents. You will find two json files titled deposit_data-### and keystore-m_###, and two plain text files titled mnemonic and password.
 
-![key_gen3.jpg](key_gen3.jpg)
+ {{< figure src="key_gen3.jpg" >}}
 
 {{< hint type=danger >}}
 It is very important that you backup the textfiles containing your mnemonic and password for the keystore file. The mnemonic is the ONLY way that you will be able to withdraw your stake from the contract down the road when withdrawals are functional so treat it very carefully! How you store this information is your responsibility and it is strongly recommended that you store it offline in cold storage. Remember, paper backups are your friend. **WRITE DOWN YOUR MNEMONIC PHRASE AND KEYSTORE PASSWORD!** If you lose it, no none will be able to help you and you will lose access to your funds.
@@ -146,22 +146,22 @@ It is recommended that you import the keystore file to the validator wallet befo
 
 Open the Validator package on the Avado.
 
-![validator1.jpg](validator1.jpg)
+ {{< figure src="validator1.jpg" >}}
 
 You will then be propmted to create a wallet on the Avado to hold your validator keys. Select Imported Wallet.
 
 Next, you will be prompted to import the keystore file that you created using the key generator. Simply drag the keystore file into the window where indicated and click continue. **Do not drag the whole folder into the window, open the validator_keys folder and drag in only the keystore file.** Enter the keystore password that you used to create the key in Step 3. The click on Submit Keystores. That's it!
 
-![validator2.jpg](validator2.jpg)
+ {{< figure src="validator2.jpg" >}}
 
 
-![facepalm.jpg](facepalm.jpg)
+ {{< figure src="facepalm.jpg" >}}
 
 
 
 After you hit continue, if you have done everything correctly, you will be taken to the web UI and you should see this in the upper right hand corner:
 
-![gbc_status.jpg](gbc_status.jpg)
+ {{< figure src="gbc_status.jpg" >}}
 
 
 
@@ -176,7 +176,7 @@ Make sure your Metamask is set on the Gnosis network (or xDai) as we discussed i
 
 Vist the [Gnosis Beacon Chain Deposit website](https://deposit.gnosischain.com/) and verify that the URL is https://deposit.gnosischain.com/ and then connect your Metamask wallet. Make sure your wallet is set to the Gnosis/xDai network.
 
-![deposit_1.jpg](deposit_1.jpg)
+ {{< figure src="deposit_1.jpg" >}}
 
 
 {{< hint type=tip title=success >}}
@@ -186,7 +186,7 @@ Vist the [Gnosis Beacon Chain Deposit website](https://deposit.gnosischain.com/)
 
 Open the validator_keys folder that was created in Step 3. Drag the deposit data file (**and only the deposit_data file**) into the window that is showing on the Deposit page. Wait for it to confirm the deposit data. Note that this screenshot was taken from an older version of the deposit site and it is no longer required to swap to mGNO prior to making the deposit. As long as you have at least 1 GNO in your wallet when you import the deposit data file, the wizard will do the swap for you behind the curtain. 
 
-![inkeddeposit_5_li.jpg](inkeddeposit_5_li.jpg)
+ {{< figure src="inkeddeposit_5_li.jpg" >}}
 
 
 
@@ -194,15 +194,15 @@ Then you may click on `Deposit`.
 
 You will be asked to check three boxes to acknowledge that you have a pulse.
 
-![deposit_6.jpg](deposit_6.jpg)
+ {{< figure src="deposit_6.jpg" >}}
 
 Let the deposit complete.
 
-![inkeddeposit_7_li.jpg](inkeddeposit_7_li.jpg)
+ {{< figure src="inkeddeposit_7_li.jpg" >}}
 
 That is it for the deposit. Give it time to process, it takes about 2-4 hours for the deposit to be recongized by the GBC. You can check on the status of your desposit by going to https://beacon.gnosischain.com/ and searching for your public key number. **Your public key number can be found by opening the keystore json file with a text editor and looking for "pubkey": "[*yourpublickeynumber*]".** Copy it from there and input into the search field on https://beacon.gnosischain.com/. You should see something like this:
 
-![inkeddeposit_8_li.jpg](inkeddeposit_8_li.jpg)
+ {{< figure src="inkeddeposit_8_li.jpg" >}}
 
 {{< hint type=important >}}
 Please note that it is NOT an ETH1 deposit as shown on beacon.gnosischain.com this is just a consequence of how the software was developed and not every bug has been fixed yet. Same thing when you see your validator in the validator web UI. The total balance is NOT in ETH. It is actually in mGNO.

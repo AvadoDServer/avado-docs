@@ -7,7 +7,7 @@ aliases: ["/en/tutorials/rocketpool"]
 
 # AVADO Rocket Pool ETH staking
 
-![rocketpool.png](rocketpool.png)
+ {{< figure src="rocketpool.png" >}}
 
 This page will describe how to stake ETH with Rocket Pool on your Avado.
 
@@ -58,7 +58,7 @@ A preview of the screens can be found in the video link above.
 
 If you selected "Teku" as beacon chain client and validator, open the [Rocket Pool package page](http://my.ava.do/#/Packages/rocketpool.avado.dnp.dappnode.eth/detail) and replace `prsym` with `teku` (all lower case)
 
-![rocketpoolvariables.png](rocketpoolvariables.png)
+ {{< figure src="rocketpoolvariables.png" >}}
 
 ## Step 3: 5 more steps ;-)
 The following steps are:
@@ -210,13 +210,13 @@ Once you created your minipool, you need to import the keys into the validator p
 The following instructions are for Teku, but are nearly identical for Prysm.
 
 1. Download RocketPool backup (in the RocketPool Dapp)
-  ![backup.png](backup.png)
+   {{< figure src="backup.png" >}}
 2. Check the contents of the backup file:
-  ![backup-contents.png](backup-contents.png)
+   {{< figure src="backup-contents.png" >}}
   (3 validators in this example)
 1. Switch to the Teku settings page and click the "Add validator" field to expand it:
-  ![add_validator.png](../teku/add_validator.png)
-  ![add_validator_exp.png](../teku/add_validator_exp.png)
+   {{< figure src="../teku/add_validator.png" >}}
+   {{< figure src="../teku/add_validator_exp.png" >}}
 1. Next, click "Choose keystore file..." and browse to the keystore file (json) you downloaded from the [Key generator package](/en/tutorials/prysmvalidator#step-3-download-zip-file-with-your-generated-keys)
 1. Enter the keystore password
 1. Finally click "Add validator" to add the validator to Teku
@@ -239,9 +239,9 @@ Teku is a validator for ETH2 - and you can run your minipool through Teku.
 1. **Double check the version number!** It must be 0.0.62!
   If you run an older version, you risk running your validator twice which is a slashable offence.
 1. Download RocketPool backup (in the RocketPool Dapp)
-  ![backup.png](backup.png)
+   {{< figure src="backup.png" >}}
 2.  Check the contents of the backup file:
-  ![backup-contents.png](backup-contents.png)
+   {{< figure src="backup-contents.png" >}}
   (3 validators in this example)
 3. Wait 2 epochs (~30 minutes).
 4. Install the Teku package (http://my.ava.do/#/installer - "Teku ETH2 beacon chain & validator"  
@@ -258,20 +258,20 @@ If you prefer moving your validator to Prysm - follow these steps instead:
 1. **Double check the version number!** It must be 0.0.62!
   If you run an older version, you risk running your validator twice which is a slashable offence.
 1. Download RocketPool backup (in the RocketPool Dapp)
-  ![backup.png](backup.png)
+   {{< figure src="backup.png" >}}
 2.  Check the contents of the backup file:
-  ![backup-contents.png](backup-contents.png)
+   {{< figure src="backup-contents.png" >}}
   (3 validators in this example)
 3. Wait 2 epochs (~30 minutes).
 4. Install the Prysm validator package (http://my.ava.do/#/installer - "Prysm Validator" ) - if you are already staking ETH2 you will already have this and you can skip this step.
 1. Open the Prysm validator Dapp. If you don't run other validators yet, you will see this screen. Select "Import Keystores" and click the "Select wallet" button (If you already have validators running, click "Wallet & Accounts > Account list > Import Keystores" instead)
-  ![onboarding.png](onboarding.png)
+   {{< figure src="onboarding.png" >}}
 1. In your file explorer, locate the content of your backup file, and navigate into the `teku/keys` (yes Teku) folder. Next, drag and drop the `json` key files into the "Browse Files" field.
 1. Select "Keystores have different passwords"
 1. For each keyfile, enter the password (these are stored in the `Teku/passwords` folder)
 1. Click "No" on the slashing protection data
 1. Click continue
-  ![keys.png](keys.png)
+   {{< figure src="keys.png" >}}
 
 Done ! Your validator will pick up the validation process and you will be validating.
 
@@ -289,7 +289,7 @@ Note that this requires that the “fee recipient address” of your Rocket Pool
 * Update the Rocket Pool Avado package to version > 0.0.78
 * Click the **update** button
 * Check the node status: The Merge update should be deployed and the smoothing pool should be joined.
-  ![screenshot_2022-08-26_at_15.25.56.png](screenshot_2022-08-26_at_15.25.56.png){.align-center}
+   {{< figure src="screenshot_2022-08-26_at_15.25.56.png" >}}{.align-center}
 
 
 ## More information

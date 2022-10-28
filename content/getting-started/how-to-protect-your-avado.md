@@ -51,7 +51,7 @@ This is especially important if your Avado will be in a location with no airflow
 
 A small USB fan similar to the one now included in orders should suffice.
 
-![](fans1.jpeg)
+ {{< figure src="fans1.jpeg" >}}
 
 The fan model above is one that has been used by other Avado owners and is linked below:
 

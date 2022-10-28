@@ -38,7 +38,7 @@ Static electricity can damage the delicate inner workings of computers.
 
 For more info on how: [https://www.wikihow.com/Ground-Yourself-to-Avoid-Destroying-a-Computer-with-Electrostatic-Discharge](https://www.wikihow.com/Ground-Yourself-to-Avoid-Destroying-a-Computer-with-Electrostatic-Discharge)
 
-![](ground_yourself.png)
+ {{< figure src="ground_yourself.png" >}}
 
 ### STEP THREE
 
@@ -46,15 +46,15 @@ Unscrew the 6 phillips head screws on the base of the Avado to remove the botto
 
 Place them somewhere they won't be lost. You'll need them again in literally 3 minutes.
 
-![](screw.jpeg)
+ {{< figure src="screw.jpeg" >}}
 
-![](screws.png)
+ {{< figure src="screws.png" >}}
 
 ### STEP FOUR
 
 Locate the CMOS Battery. It is the small silver 3V Lithium Battery that looks like this.
 
-![](avado.jpg)
+ {{< figure src="avado.jpg" >}}
 
 _**Note: In the i3, i5 and HOPR Avado Models the CMOS Battery is located under the RAM.**_
 
@@ -62,9 +62,9 @@ _**Note: In the i3, i5 and HOPR Avado Models the CMOS Battery is located under t
 
 Using a small flat head screw driver gently insert it into the "U" shaped side of the battery seat and slowly lift the Lithium battery out from its pocket.
 
-![](cmos_1.jpg)
+ {{< figure src="cmos_1.jpg" >}}
 
-![](battery.jpg)
+ {{< figure src="battery.jpg" >}}
 
 ### STEP SIX
 

@@ -52,7 +52,7 @@ for setting a fallback provider like Infura will still work until the merge so y
    * Enter the fee recipient address (this is the address where you will receive the priority fees of transactions in the blocks you propose)
    * Click **Apply changes**
    (This will restart Prysm, so Prysm might get out of sync for a minute)
-![prysm_fee_recipient.png](../prysm/prysm_fee_recipient.png){.align-center}
+ {{< figure src="../prysm/prysm_fee_recipient.png" >}}{.align-center}
 
 ## Step 0 : Install Geth as your ETH1 endpoint and let it sync
 Follow this [guide](/tutorials/geth) to setup Geth if you haven't already done so.
@@ -91,7 +91,7 @@ Have a pen and paper ready to write things down. This is important before you pr
 
 {{< /hint >}}
 
-![rhino.243747b9.png](../keygen/rhino.243747b9.png)
+ {{< figure src="../keygen/rhino.243747b9.png" >}}
 
 Open the Key Generator and let Leslie the Launchpad Rhino help create validator keys. Write down the exact password you use in this step and double check it. Then check it again. You will need it later when you start your validator. Enter your your staking key password, the number of keys you wish to generate and your mnemonic language. Use a strong password that contains at least 1 capital letter, 1 number and 1 special charcater and does not contain too many repeating charcaters or common words. Then click `Generate Keys` 
 
@@ -111,7 +111,7 @@ Note that if you wish to create more keys later on using the key generator, you 
 
 Click on `Download ZIP file with your generated keys`
 
-![download_keys.png](../keygen/download_keys.png)
+ {{< figure src="../keygen/download_keys.png" >}}
 
 After you have downloaded the file, locate it on your device and extract the tar.gz file to as folder. If you are using a Windows 10 device, you may need to download WinZip or 7-Zip to extract the file if you don't aready have something that can extract a tar file. You can download WinZip here: https://www.winzip.com/win/en/tar-gz-file.html or 7-Zip here: https://www.7-zip.org/
 
@@ -140,7 +140,7 @@ https://launchpad.ethereum.org/
 
 Since you have already created your keys (without using a command line interface) on the Avado, you will be skipping the first steps of the launchpad. However, you should read through each of the steps because they are loaded with good information on the level of commitment that is required to be a validator on the Ethereum 2.0 network. Start by clicking on `Get Started`. Click continue to read through and accept each of the 10 important "commandments".
 
-![agree.png](../keygen/agree.png)
+ {{< figure src="../keygen/agree.png" >}}
 
 Choose your Eth 1 client. For most of you, this will be Geth or Nethermind. You can disregard the instructions to install the ETH 1 client because if you followed Step 0 of this guide, the Avado has already done this for you. Click `Continue`
 
@@ -148,9 +148,9 @@ Then select Prysm as your ETH 2 client. Click `Continue`
 
 On the next page, you do not need to fill out any number of validators, you can leave this as 0. You also do not need to select an operating system. We are skipping this step so continue to scroll all the way to the bottom of the page and confirm that you are keeping your keys safe and you **HAVE WRITTEN DOWN YOUR MNEMONIC PHRASE.** Then click `Continue`
 
-![gen_keys_zero.png](../keygen/gen_keys_zero.png)
+ {{< figure src="../keygen/gen_keys_zero.png" >}}
 
-![safe.png](../keygen/safe.png)
+ {{< figure src="../keygen/safe.png" >}}
 
 
 {{< hint type=tip title=success >}}
@@ -162,25 +162,25 @@ On the next page, you do not need to fill out any number of validators, you can 
 
 Open the validator_keys folder that was created in Step 3. Drag the deposit data file (**and only the deposit_data file**) into the window that is showing in the Lanchpad page.
 
-![deposit.png](../keygen/deposit.png)
+ {{< figure src="../keygen/deposit.png" >}}
 
-![deposit_data.png](../keygen/deposit_data.png)
+ {{< figure src="../keygen/deposit_data.png" >}}
 
 Once you have dragged the deposit_data file into the window, you will see a blue check mark which indicates a valid deposit data file and you may Click `Continue`.
 
 Now you will connect your wallet. It is recommended to use Metamask, but you may choose whatever option is most comfortable for you. Ensure that your wallet is connected to the Ethereum Mainnet and that the Launchpad is able to connect to the wallet account with which you wish to make the deposit. In this example, I am showing you an account which does not contain any Ether. Make sure you have at least 32 ETH plus enough Ether for the gas fees of making the transaction.
 
-![wallet_connect.png](../keygen/wallet_connect.png)
+ {{< figure src="../keygen/wallet_connect.png" >}}
 
-![link_wallet.png](../keygen/link_wallet.png)
+ {{< figure src="../keygen/link_wallet.png" >}}
 
 Take a deep breath and then click `Continue`. Review all of the terms on the next page and check all of the boxes to continue with the desposit. You will be asked to confirm the transaction in your wallet account.
 
-![agree.png](../keygen/agree.png)
+ {{< figure src="../keygen/agree.png" >}}
 
 That is it for the deposit. Give it time to process. You can check on the status of your desposit by going to beaconcha.in and searching for your public key number. Your public key number can be found by opening the keystore json file. Copy it from there and input into the search field on beaconcha.in. When your deposit goes through, when you look you will see something like this:
 
-![deposit_search.png](../keygen/deposit_search.png)
+ {{< figure src="../keygen/deposit_search.png" >}}
 
 
 ## Step 5 : Import Your Key to the Validator Wallet on the Avado
@@ -190,7 +190,7 @@ It is suggested that you follow the video tutorial to complete this step of impo
 ### open**5.0** https://www.youtube.com/watch?v=-FEttfq0sq8
 
 **5.1** Open the Validator package on the Avado.
-![open_val.png](../keygen/open_val.png)
+ {{< figure src="../keygen/open_val.png" >}}
 
 **5.2.1** After agreeing and opening the Prysm web dashboard, you will then be propmted to create a wallet on the Avado to hold your validator keys. Select Imported Wallet.
 
@@ -200,15 +200,15 @@ It is strongly recommended that you have a pen and paper ready to write down the
 {{< /hint >}}
 
 
-![imported_wallet.png](../keygen/imported_wallet.png)
+ {{< figure src="../keygen/imported_wallet.png" >}}
 
 **5.2.2** Next, you will be prompted to import the keystore file that you created using the key generator. Simply drag the keystore file into the window where indicated and click continue. **Do not drag the whole folder into the window, open the extracted folder and drag in only the keystore file or files if doing more than 1.
 **
-![import_keystore.png](../keygen/import_keystore.png)
+ {{< figure src="../keygen/import_keystore.png" >}}
 
 **5.2.3** Then you will be prompted to enter your keystore password. This is the same password that you used when you created the key with the key generator.
 
-![keystore_unlock.png](../keygen/keystore_unlock.png)
+ {{< figure src="../keygen/keystore_unlock.png" >}}
 
 {{< hint type=info >}}
 Note that there used to be an extra step here: "create a Prysm Web UI Password". Since Prysm v2.0.3 this password was replaced with an automatic JSON Web Token. 
@@ -217,11 +217,11 @@ Note that there used to be an extra step here: "create a Prysm Web UI Password".
 
 **5.4** Lastly, you will be prompted to enter a wallet password. This password is used by the Avado to encrypt your validator wallet and should be a secure password but does not carry the same stringent requirements as the password in the previous step.
 
-![wallet_password.png](../keygen/wallet_password.png)
+ {{< figure src="../keygen/wallet_password.png" >}}
 
 **5.5** After you hit continue, if you have done everything correctly, you will be taken to the web UI and you should see this in the upper right hand corner:
 
-![beacon_status.png](../keygen/beacon_status.png)
+ {{< figure src="../keygen/beacon_status.png" >}}
 
 At this point, your validator should start making attestations automatically when it becomes active as long as you leave the Beacon Chain and Validator packages running 24/7. You can log out of the Prysm Web UI but simply leave your Avado on with the required packages (ETH1, Beacon Chain and Vaildator) running. You can monitor the status of your validator at beaconcha.in or beaconscan.com
 
@@ -243,7 +243,7 @@ It is strongly recommended that you use beaconcha.in to monitor your validator, 
 
 There is a known issue with the prysm web UI and the Brave browser. If you are using Brave, please make sure you turn the shields off for this page or it will not read correctly.
 
-![switch2.jpg](../keygen/switch2.jpg)
+ {{< figure src="../keygen/switch2.jpg" >}}
 
 Here is the list of common errors you may see in red at the bottom of the screen after creating the validator through the Web UI:
 
@@ -252,16 +252,16 @@ Here is the list of common errors you may see in red at the bottom of the screen
 **400 is password not meeting requirements for the web UI.** This is the second prompt for a password that you come to when setting up the Prysm Web UI. This is the most common error BY FAR and it is due to the stringent password requirments of the Prysm Web UI. If you are getting this error, start over with the validator setup and pay careful attention to the password you choose for the Prysm Web UI. A recommended password format is 8-10 characters. Here is a sample of a valid password, you will use a different one. Fs<6@tx8
 
 **0 beacon chain not ready.** Check that the Beacon Chain is installed and running and is synced. If it is not, you should either wait until it is synced or you should reinstall the Beacon Chain package from scratch by clicking on remove volume and then let the Beacon Chain reinstall with the default settings.
-![beacon_sync.png](../keygen/beacon_sync.png)
+ {{< figure src="../keygen/beacon_sync.png" >}}
 
-![remove_vol.png](../keygen/remove_vol.png)
+ {{< figure src="../keygen/remove_vol.png" >}}
 
 If after importing your validator key to the Prysm Web UI, you see this error in the upper right hand corner but the Beacon Chain and Validator logs look okay, please try using another browser to access the Prysm Web UI. There have been several instances of people having problems accessing the Prysm Web UI with the Brave browser and at this time, Avado is not able to fix this as it is related to the Prysm Web UI backend which is not under the control of Avado.
 
-![beacon_unknown.jpg](../keygen/beacon_unknown.jpg)
+ {{< figure src="../keygen/beacon_unknown.jpg" >}}
 
 Sometimes it may be necessary to restart the Beacon Chain and Validator packages if you start missing attestations and can't figure out why. Simply press restart for the Beacon Chain and Validator and let them reload, then monitor your Validator status on beaconcha.in or beaconscan.com to see if your validator resumes it's duties.
-![restart_client.png](../keygen/restart_client.png)
+ {{< figure src="../keygen/restart_client.png" >}}
 
 If you are unable to resolve any other errors you are having, please reach out on the telegram channel and we will add reseolved issues to this guide as the solutions become known.
 

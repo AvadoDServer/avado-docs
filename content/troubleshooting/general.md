@@ -22,7 +22,7 @@ At the console you type:
 
 **cat  /usr/src/dappnode/DNCORE/wifi.dnp.dappnode.eth.env**
 
-![terminal output wifi](wifi-cat.png)
+ {{< figure src="wifi-cat.png" >}}
 
 
 
@@ -30,7 +30,7 @@ If you can't login with the credentials as shown above, you should restart the c
 
 **docker-compose -f docker-compose-wifi.yml up -d**
 
-![terminal output wifi](wifi-docker.png)
+ {{< figure src="wifi-docker.png" >}}
 
 Still no luck ? 
 

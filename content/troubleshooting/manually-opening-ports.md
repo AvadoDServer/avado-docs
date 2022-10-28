@@ -12,7 +12,7 @@ The AVADO OS is be able to open specific ports on your router - so this should h
 
 Go to the AVADO admin UI - and click on the avatar image (the green circle in this picture) you'll get a popup. Take note of the "Internal IP" - we will need it later.
 
-![portforwarding-step0.png](portforwarding-step0.png)
+ {{< figure src="portforwarding-step0.png" >}}
 
 ## Open your router's web UI
 
@@ -21,34 +21,34 @@ Find out how to open the web-UI of your router by looking in your router's manua
 ## Add device for sharing
 Go to internet -> permit access
 click on "add device for sharing"
-![portforwarding-step1.png](portforwarding-step1.png)
+ {{< figure src="portforwarding-step1.png" >}}
 
 ## Select your AVADO box and add sharing
 
 Then select your AVADO from the dropdown list (verify if the IP address displayed corresponds to your internal IP address you looked up in the first step) and click "New sharing"
 
-![portforwarding-step2.png](portforwarding-step2.png)
+ {{< figure src="portforwarding-step2.png" >}}
 
 ## Add port forwardings
 
 Fill in the ports that you  want to forward. In this case we're trying to open ports 30303/TCP and 30303/UDP which are the ports for your Ethereum node (Geth)
 
-![portforwarding-step3a.png](portforwarding-step3a.png)
+ {{< figure src="portforwarding-step3a.png" >}}
 
 and for the second port
 
-![portforwarding-step3b.png](portforwarding-step3b.png)
+ {{< figure src="portforwarding-step3b.png" >}}
 
 ## confirm port forwarding settings
 
 You'll arrive back at the oveerview screen - press "OK" to confirm these settings
 
-![portforwarding-step4.png](portforwarding-step4.png)
+ {{< figure src="portforwarding-step4.png" >}}
 
 ## Verify settings
 
 And an overview to you can see that all is done correctly.
 
-![portforwarding-step5.png](portforwarding-step5.png)
+ {{< figure src="portforwarding-step5.png" >}}
 
 Congratulations ! Ports are now forwarded to your AVADO!

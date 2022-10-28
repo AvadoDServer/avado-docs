@@ -17,17 +17,17 @@ Using `mev-boost` only makes sense if you run an Ethereum validator. So make sur
 
 You can find the **MEV-Boost** package in the Avada DappStore
 
-![install.png](install.png)
+ {{< figure src="install.png" >}}
 
 ## Configure your Validator
 
 You can enable MEV-Boost in your validator ([Teku](http://teku.my.ava.do/settings) or [Prysm](http://prysm-beacon-chain-mainnet.my.ava.do/settings)) by clicking the check box, and applying the changes.
 
-![teku.png](teku.png)
+ {{< figure src="teku.png" >}}
 
 If you check the validator log, you should see entries like this from time to time:
 
-![validatorlog.png](validatorlog.png)
+ {{< figure src="validatorlog.png" >}}
 
 ## Configure MEV-Boost
 
@@ -38,7 +38,7 @@ The default configuration uses the FlashBots relay endpoint:
 https://0xac6e77dfe25ecd6110b8e780608cce0dab71fdd5ebea22a16c0205200f2f8e2e3ad3b71d3499c54ad14d6c21b41a37ae@boost-relay.flashbots.net
 ```
 
-![config.png](config.png)
+ {{< figure src="config.png" >}}
 
 You can find more relay endpoints at <https://boost.flashbots.net/>
 
