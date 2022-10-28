@@ -5,6 +5,8 @@ weight: 0
 aliases: ["/en/tutorials/remote-connect"]
 ---
 
+{{< toc >}}
+
 # What is Remote Connect
 Remote connect is a package that allows remote connections to your AVADO.
 

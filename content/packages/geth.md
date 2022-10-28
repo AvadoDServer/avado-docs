@@ -25,6 +25,8 @@ Refrain from restarting Geth, this will make this process take longer.
 It is normal for the node to appear stuck at 99% synchronization.
 This is because of how the synchronization is performed and is not indicative of a problem.
 No further action should be required on your part just wait until your Chain Status shows synced.
+
+[More details]({{< relref "/faq/#geth99" >}})
 {{< /hint >}}
 
 {{< figure src="geth-synced.png" >}}
