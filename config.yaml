@@ -1,6 +1,6 @@
 ---
 baseURL: https://docs.ava.do/
-title: Avado Docs
+title: Docs
 theme: hugo-geekdoc
 
 pygmentsUseClasses: true
