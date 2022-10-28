@@ -44,12 +44,15 @@ Please make sure that your box has an internet connection from your router. Nota
 
 Try restarting your router by unplugging it and waiting 15 seconds and then plugging it back in. You can also restart your Avado by pressing and holding the button on the front for 5 seconds until it powers off. Wait for a few seconds and then press the button again to power it back up. Checking your cables and restarting your router will often solve the problem of the Avado WiFi not showing up. 
 
-## VPN
+## Connecting to your Avado
 
 ### My VPN isn't working anymore. What should I do?
 
 You have to use the remote connection solution now: [docs]({{< relref "/getting-started/remote-connect" >}})
 
+### I cannot connect to my Avado?
+
+Check the [Connection troubleshooting page]({{< relref "/troubleshooting/connection-troubleshooting" >}}) for help.
 
 ## Device
 

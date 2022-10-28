@@ -151,8 +151,7 @@ You can use this connection from within your own network, or from anywhere in th
 
 ## Troubleshooting
 
-
-In case of trouble - reach out on [Telegram technical support channel](https://t.me/joinchat/IR7AXecB5s4wZDPk) 
+In case of trouble, check the [Connection troubleshooting page]({{< relref "/troubleshooting/connection-troubleshooting" >}}) for help or reach out on the  [Telegram technical support channel](https://t.me/joinchat/IR7AXecB5s4wZDPk) 
 
 
 

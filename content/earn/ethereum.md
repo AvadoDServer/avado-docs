@@ -1,5 +1,6 @@
 ---
 title: Ethereum Staking
+weight: -20
 ---
 
 ## Solo Staking
