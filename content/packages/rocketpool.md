@@ -200,8 +200,9 @@ There is also a link in the interface (last line on this page: http://my.ava.do/
 "More validator info on the Ethereum 2.0 Beacon Chain Explorer"
 https://beaconcha.in/validator/(your address)#deposits
 
-> It is possible to add multiple minipools: click "Add another minipool" to add an extra minipol
-{.is-info}
+{{< hint type=tip >}}
+It is possible to add multiple minipools: click "Add another minipool" to add an extra minipol
+{{< /hint >}}
 
 ## Step 5: Import the validator key in your validator
 

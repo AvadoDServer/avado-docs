@@ -15,16 +15,18 @@ Try restarting your router by unplugging it and waiting 15 seconds and then plug
 
 
 ## How do I change the WiFi password ?
-> **FIRST CONFIGURE YOUR REMOTE CONNECTION CLIENT!!**  It is **HIGHLY recommended** that you do that first before attempting to change your WiFi WPA-Passphrase. If you mess up, you will have to take the walk of shame and reach out to Sponnet on telegram.
-{.is-danger}
+{{< hint type=warning >}}
+**FIRST CONFIGURE YOUR REMOTE CONNECTION CLIENT!!**  It is **HIGHLY recommended** that you do that first before attempting to change your WiFi WPA-Passphrase. If you mess up, you will have to take the walk of shame and reach out to Sponnet on telegram.
+{{< /hint >}}
 
 
 Go to the `System` menu
 Then click the `wifi.dnp.dappnode.eth` package.
 On this page you will see the SSID (The name of the WiFi network) and the WPA_PASSPHRASE. (The password). You can change both here.
 
-> Make sure you select **at least 8 characters** for the password - otherwise it will not be accepted and your WiFi access point will not be reachable any more.
-{.is-warning}
+{{< hint type=important >}}
+Make sure you select **at least 8 characters** for the password - otherwise it will not be accepted and your WiFi access point will not be reachable any more.
+{{< /hint >}}
 
 
 Now press `Update Environment variables` button to save and restart the package. After about 30 seconds you will be able to log on to your updated WiFi network.

@@ -17,8 +17,9 @@ Teku is a good alternative for the overused [Prysm client](/en/tutorials/prysmva
 
 ## Prepare for "The Merge"
 
-> Ethereum will transition from Proof of Work to Proof of Stake soon, around September 15. This section summarizes how you should prepare your Avado box
-{.is-info}
+{{< hint type=important >}}
+Ethereum will transition from Proof of Work to Proof of Stake soon, around September 15. This section summarizes how you should prepare your Avado box
+{{< /hint >}}
 
 What should I do to prepare for the Merge?
 1. Check your Geth package:

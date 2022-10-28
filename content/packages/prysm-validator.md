@@ -11,19 +11,27 @@ Getting started from scratch (fresh install)
 
 
 
->  This guide describes the steps of generating keys using the Key Generator package and then accessing the Ethereum 2.0 Validator Launchpad to complete the deposit to the Ethereum Mainnet contract 0x00000000219ab540356cbb839cbe05303d7705fa. 
-{.is-success}
+{{< hint type=tip title=success >}}
+ This guide describes the steps of generating keys using the Key Generator package and then accessing the Ethereum 2.0 Validator Launchpad to complete the deposit to the Ethereum Mainnet contract 0x00000000219ab540356cbb839cbe05303d7705fa. 
 
-> Proceed at your own risk. You are solely responsible for your stake.
-{.is-warning}
+{{< /hint >}}
 
-> Visiting the official Ethereum 2.0 Lanuchpad is the ONLY way you can make the desposit. Do not attempt to manually send funds to the deposit contract or your will lose your funds.
-{.is-danger}
+{{< hint type=important >}}
+Proceed at your own risk. You are solely responsible for your stake.
+
+{{< /hint >}}
+
+{{< hint type=danger >}}
+Visiting the official Ethereum 2.0 Lanuchpad is the ONLY way you can make the desposit. Do not attempt to manually send funds to the deposit contract or your will lose your funds.
+
+{{< /hint >}}
 
 ## Prepare for "The Merge"
 
-> Ethereum will transition from Proof of Work to Proof of Stake soon, around September 15. This section summarizes how you should prepare your Avado box
-{.is-info}
+{{< hint type=info >}}
+Ethereum will transition from Proof of Work to Proof of Stake soon, around September 15. This section summarizes how you should prepare your Avado box
+
+{{< /hint >}}
 
 What should I do to prepare for the Merge?
 1. Check your Geth package:
@@ -61,30 +69,42 @@ Once you start the installation of the validator, the beacon chain will also ins
 
 ## Step 2: Open the ETH2.0 Key Generator to create your keys and deposit your stake of 32 ETH
 
-> There is a bug in the ETH2.0 Key Generator that results in a **wrong network** error when uploading the keystore to the official launchpad.
-{.is-danger}
+{{< hint type=danger >}}
+There is a bug in the ETH2.0 Key Generator that results in a **wrong network** error when uploading the keystore to the official launchpad.
 
-> Use the **WAGYU Key Generator** until the ETH2.0 Key Generator receives an update.
+{{< /hint >}}
+
+{{< hint type=info >}}
+Use the **WAGYU Key Generator** until the ETH2.0 Key Generator receives an update.
 Create your keys here: https://www.wagyu.gg
 More information about WAGYU: https://medium.com/@shawynot/staking-ethereum-without-the-command-line-83c18dd4ffe8
-{.is-info}
 
-> RETURN TO THIS GUIDE AFTER CREATING YOUR KEYS
-{.is-danger}
+{{< /hint >}}
 
-> Have a pen and paper ready to write things down. This is important before you proceed. You are writing down passwords and a 24 word mnemonic phrase which are your responsibility to keep safe throughout your staking journey. If you lose the 24 word mnemonic phrase, no one will be able to help you.
-{.is-danger}
+{{< hint type=danger >}}
+RETURN TO THIS GUIDE AFTER CREATING YOUR KEYS
+
+{{< /hint >}}
+
+{{< hint type=danger >}}
+Have a pen and paper ready to write things down. This is important before you proceed. You are writing down passwords and a 24 word mnemonic phrase which are your responsibility to keep safe throughout your staking journey. If you lose the 24 word mnemonic phrase, no one will be able to help you.
+
+{{< /hint >}}
 
 ![rhino.243747b9.png](../keygen/rhino.243747b9.png)
 
 Open the Key Generator and let Leslie the Launchpad Rhino help create validator keys. Write down the exact password you use in this step and double check it. Then check it again. You will need it later when you start your validator. Enter your your staking key password, the number of keys you wish to generate and your mnemonic language. Use a strong password that contains at least 1 capital letter, 1 number and 1 special charcater and does not contain too many repeating charcaters or common words. Then click `Generate Keys` 
 
-> There is a known issue with the key generator password criteria. **Please do not use $ in your password** or it will not work.
-{.is-danger}
+{{< hint type=danger >}}
+There is a known issue with the key generator password criteria. **Please do not use $ in your password** or it will not work.
+
+{{< /hint >}}
 
 
-> Note that if you wish to create more keys later on using the key generator, you MUST use the same keystore password for all future keys that you create and stake with on the Avado.
-{.is-info}
+{{< hint type=info >}}
+Note that if you wish to create more keys later on using the key generator, you MUST use the same keystore password for all future keys that you create and stake with on the Avado.
+
+{{< /hint >}}
 
 
 ## Step 3: Download zip file with your generated keys
@@ -97,8 +117,10 @@ After you have downloaded the file, locate it on your device and extract the tar
 
 Once you have extracted the zip file, open it and view the contents. You will find two json files titled deposit_data-### and keystore-m_###, and two plain text files titled mnemonic and password.
 
-> It is very important that you backup the textfiles containing your mnemonic and password for the keystore file. The mnemonic is the ONLY way that you will be able to withdraw your stake from the contract down the raod when withdrawals are functional in Phase 2 so treat it very carefully! How you store this information is your responsibility and it is strongly recommended that you store it offline in cold storage. Remember, paper backups are your friend. **WRITE DOWN YOUR MNEMONIC PHRASE AND KEYSTORE PASSWORD!** If you lose it, no none will be able to help you and you will lose access to your funds.
-{.is-danger}
+{{< hint type=danger >}}
+It is very important that you backup the textfiles containing your mnemonic and password for the keystore file. The mnemonic is the ONLY way that you will be able to withdraw your stake from the contract down the raod when withdrawals are functional in Phase 2 so treat it very carefully! How you store this information is your responsibility and it is strongly recommended that you store it offline in cold storage. Remember, paper backups are your friend. **WRITE DOWN YOUR MNEMONIC PHRASE AND KEYSTORE PASSWORD!** If you lose it, no none will be able to help you and you will lose access to your funds.
+
+{{< /hint >}}
 
 You can view a transcript of the logs from the key generator as Leslie the Rhino helped to generate your keys by clicking on `show a transcript of key generation`
 
@@ -107,8 +129,10 @@ Once you have verified that you have downloaded your keys to your device and you
 
 ## Step 4 : Visit the Ethereum Launchpad to make your deposit to the mainnet contract
 
-> Warning! You are about to make the desposit on the official Ethereum 2.0 Launchpad for the mainnet. This is a serious commitment and cannot be reversed once you complete the desposit. Visiting the official Ethereum 2.0 Lanuchpad is the **ONLY** way you can make the desposit. **Do not attempt to manually send funds to the deposit contract or your will lose your funds.**
-{.is-danger}
+{{< hint type=danger >}}
+Warning! You are about to make the desposit on the official Ethereum 2.0 Launchpad for the mainnet. This is a serious commitment and cannot be reversed once you complete the desposit. Visiting the official Ethereum 2.0 Lanuchpad is the **ONLY** way you can make the desposit. **Do not attempt to manually send funds to the deposit contract or your will lose your funds.**
+
+{{< /hint >}}
 
 Click on the link in the second bullet item of the key generator where it says Done! `Ethereum Launchpad`.
 
@@ -129,8 +153,10 @@ On the next page, you do not need to fill out any number of validators, you can 
 ![safe.png](../keygen/safe.png)
 
 
-> **Now this is where we get serious. It is time to make the deposit.**
-{.is-success}
+{{< hint type=tip title=success >}}
+**Now this is where we get serious. It is time to make the deposit.**
+
+{{< /hint >}}
 
 {.is-warning}
 
@@ -168,8 +194,10 @@ It is suggested that you follow the video tutorial to complete this step of impo
 
 **5.2.1** After agreeing and opening the Prysm web dashboard, you will then be propmted to create a wallet on the Avado to hold your validator keys. Select Imported Wallet.
 
-> It is strongly recommended that you have a pen and paper ready to write down the passwords that you create in the next steps so that you can recreate them in the future when needed.
-{.is-danger}
+{{< hint type=danger >}}
+It is strongly recommended that you have a pen and paper ready to write down the passwords that you create in the next steps so that you can recreate them in the future when needed.
+
+{{< /hint >}}
 
 
 ![imported_wallet.png](../keygen/imported_wallet.png)
@@ -182,8 +210,10 @@ It is suggested that you follow the video tutorial to complete this step of impo
 
 ![keystore_unlock.png](../keygen/keystore_unlock.png)
 
-> Note that there used to be an extra step here: "create a Prysm Web UI Password". Since Prysm v2.0.3 this password was replaced with an automatic JSON Web Token. 
-{.is-info}
+{{< hint type=info >}}
+Note that there used to be an extra step here: "create a Prysm Web UI Password". Since Prysm v2.0.3 this password was replaced with an automatic JSON Web Token. 
+
+{{< /hint >}}
 
 **5.4** Lastly, you will be prompted to enter a wallet password. This password is used by the Avado to encrypt your validator wallet and should be a secure password but does not carry the same stringent requirements as the password in the previous step.
 
@@ -195,11 +225,15 @@ It is suggested that you follow the video tutorial to complete this step of impo
 
 At this point, your validator should start making attestations automatically when it becomes active as long as you leave the Beacon Chain and Validator packages running 24/7. You can log out of the Prysm Web UI but simply leave your Avado on with the required packages (ETH1, Beacon Chain and Vaildator) running. You can monitor the status of your validator at beaconcha.in or beaconscan.com
 
-> **If you have followed all the steps up to this point, congratulations you will be validating very soon!!!**
-{.is-success}
+{{< hint type=tip title=success >}}
+**If you have followed all the steps up to this point, congratulations you will be validating very soon!!!**
 
-> It is strongly recommended that you use beaconcha.in to monitor your validator, rather than relying on the prysm web UI. You can and should search your validator public key number on beaconcha.in soon after you have completed the deposit. To get your validator public key number, open the keystore json file with a text editor and you will see it. Copy it to your clipboard and then search it on beaconcha.in and bookmark this page as you will likely want to end up coming back to it daily to monitor your validator performance.
-{.is-success}
+{{< /hint >}}
+
+{{< hint type=tip title=success >}}
+It is strongly recommended that you use beaconcha.in to monitor your validator, rather than relying on the prysm web UI. You can and should search your validator public key number on beaconcha.in soon after you have completed the deposit. To get your validator public key number, open the keystore json file with a text editor and you will see it. Copy it to your clipboard and then search it on beaconcha.in and bookmark this page as you will likely want to end up coming back to it daily to monitor your validator performance.
+
+{{< /hint >}}
 
 
 

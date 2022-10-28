@@ -63,8 +63,10 @@ enter the networkID of your AVADO and press **Join**
 
 ![macos-join2.png](macos-join2.png)
 
-> Make sure to check the **Allow Global** and **Allow DNS** checkboxes or things will not work.
-{.is-warning}
+{{< hint type=important >}}
+Make sure to check the **Allow Global** and **Allow DNS** checkboxes or things will not work.
+
+{{< /hint >}}
 
 ### Windows instructions
 
@@ -75,8 +77,10 @@ Click the orange icon to get the pop-up menu and select **Join Network**
 Enter the networkID of your AVADO and press **Join**
 
 ![win-join2.png](win-join2.png)
-> Make sure to check the **Allow Global** and **Allow DNS** checkboxes or things will not work.
-{.is-warning}
+
+{{< hint type=important >}}
+Make sure to check the **Allow Global** and **Allow DNS** checkboxes or things will not work.
+{{< /hint >}}
 
 ### Android instructions
 
@@ -104,8 +108,9 @@ Go back to your AVADO. After a few seconds you will see the new client automatic
 The only thing you need to do now is check the box to enable access to this client.
 
 ![enable-and-rename.png](enable-and-rename.png)
->  Tip: you can click the **description** to rename your device to a name that you can easily remember the device that you gave access to. 
-{.is-success}
+{{< hint type=tip >}}
+ You can click the **description** to rename your device to a name that you can easily remember the device that you gave access to. 
+{{< /hint >}}
 
 
 ## Step 6 : Switch back to your home WiFi
@@ -123,11 +128,15 @@ Click on the connection so that it has a checkmark in front of it. If you click 
 
 ![screenshot_2021-12-14_at_14.25.25.png](screenshot_2021-12-14_at_14.25.25.png)
 
-> If you see **REQUESTING_CONFIGURATION** please give it a minute or 2 to switch to "OK".
-{.is-warning}
+{{< hint type=important >}}
+If you see **REQUESTING_CONFIGURATION** please give it a minute or 2 to switch to "OK".
 
-> If you are using the Remote Connect method - please use the url **http://my.ava.do** instead of the old http://my.avado/ since the old URL will not work on this connection.
-{.is-warning}
+{{< /hint >}}
+
+{{< hint type=important >}}
+If you are using the Remote Connect method - please use the url **http://my.ava.do** instead of the old http://my.avado/ since the old URL will not work on this connection.
+
+{{< /hint >}}
 
 
 ## Step 7 : disconnect and reconnect
