@@ -1,11 +1,12 @@
 ---
-title: Welcome to the Avado Documentation website
 description: Avado Documentation welcome page
 geekdocNav: true
 geekdocAlign: center
 geekdocAnchor: false
 aliases: ["/en/home"]
 ---
+
+# Welcome to the Avado Documentation website
 
 Congratulations on being part of the AVADO community !
 
