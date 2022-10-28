@@ -1,5 +1,5 @@
 ---
-title: Setting up a ETH staking via Rocket Pool
+title: Rocket Pool
 description: Setting up a ETH beacon chain validator with Rocket Pool on Avado
 tags: [eth, ethereum, rocketpool, tutorial]
 ---
