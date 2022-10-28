@@ -6,7 +6,7 @@ aliases: ["/en/tutorials/how-to-protect-your-avado"]
 ---
 {{< toc >}}
 
-# How to protect your Avado for Optimal Use & a Longer Lifespa
+# How to protect your Avado for Optimal Use & a Longer Lifespan
 
 Your Avado is a high performance piece of computer hardware specifically designed and optimised for blockchain use.
 
