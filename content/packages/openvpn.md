@@ -4,7 +4,7 @@ description: How to setup remote access to your AVADO using VPN
 ---
 
 {{< hint type=warning title="OpenVPN access has been replaced by remote connect package">}}
-Please continue to the [remote-connect](/tutorials/remote-connect) page to read the correct instructions how to connect to your AVADO.
+Please continue to the [remote-connect]({{< relref "/getting-started/remote-connect" >}}) page to read the correct instructions how to connect to your AVADO.
 {{< /hint >}}
 
 # OBSOLETE: Setting up VPN (virtual private network) Access
@@ -75,7 +75,7 @@ Start by importing the Local (LAN) profile. Select `File` and then follow the pr
 
 Once you have imported the file, you will see a screen telling you that the file has been imported. Select the check box for `Connect after import` and then click on `Add.`
 
- {{< figure src="import_file_2.png" >}}
+<!-- {{< figure src="import_file_2.png" >}} -->
 
 If you have followed the steps correctly and you are connected to your home network (not Avado WiFi), you should see the following screen indicating you are connected to your VPN. 
 

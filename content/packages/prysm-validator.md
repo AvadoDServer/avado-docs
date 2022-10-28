@@ -13,24 +13,20 @@ Getting started from scratch (fresh install)
 
 {{< hint type=tip title=success >}}
  This guide describes the steps of generating keys using the Key Generator package and then accessing the Ethereum 2.0 Validator Launchpad to complete the deposit to the Ethereum Mainnet contract 0x00000000219ab540356cbb839cbe05303d7705fa. 
-
 {{< /hint >}}
 
 {{< hint type=important >}}
 Proceed at your own risk. You are solely responsible for your stake.
-
 {{< /hint >}}
 
 {{< hint type=danger >}}
 Visiting the official Ethereum 2.0 Lanuchpad is the ONLY way you can make the desposit. Do not attempt to manually send funds to the deposit contract or your will lose your funds.
-
 {{< /hint >}}
 
 ## Prepare for "The Merge"
 
 {{< hint type=info >}}
 Ethereum will transition from Proof of Work to Proof of Stake soon, around September 15. This section summarizes how you should prepare your Avado box
-
 {{< /hint >}}
 
 What should I do to prepare for the Merge?
@@ -39,9 +35,7 @@ What should I do to prepare for the Merge?
     * Are you running a **full** node? (Prysm needs a full client after the merge, light clients will no longer work)
     * Is Geth fully synced? If you sync from scratch, sync now, because syncing takes a while. If your Geth installation has been running for a long time and has grown large in size, consider removing Geth and installing a new, clean copy from the Dappstore to create a fresh database and minimize disk consumption. 
     
-	* The steps listed here:
-    https://wiki.ava.do/en/tutorials/geth#pruning-your-geth-node
-for setting a fallback provider like Infura will still work until the merge so you can keep validating while you perform Geth maintenance. After the merge happens, Geth maintenance will require some downtime for your validator. 
+	* The steps listed in the [Geth docs]({{< relref  "geth" >}}) for setting a fallback provider like Infura will still work until the merge so you can keep validating while you perform Geth maintenance. After the merge happens, Geth maintenance will require some downtime for your validator. 
 
 2. Check your Prysm packages:
    * Beacon chain: Avado version `>10.0.46` based on Prysm version `v3.0.0`)
@@ -55,7 +49,7 @@ for setting a fallback provider like Infura will still work until the merge so y
  {{< figure src="../prysm/prysm_fee_recipient.png" >}}{.align-center}
 
 ## Step 0 : Install Geth as your ETH1 endpoint and let it sync
-Follow this [guide](/tutorials/geth) to setup Geth if you haven't already done so.
+Follow this [guide]({{< relref "geth" >}}) to setup Geth if you haven't already done so.
 
 Continue to Step 1 after it has completely synchronized.
 

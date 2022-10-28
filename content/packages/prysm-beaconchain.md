@@ -38,8 +38,8 @@ Scroll down. You should see no errors.
 
 Next possible steps:
 
-1.  [Install: “Prysm ETH2.0 Validator”](https://wiki.ava.do/en/tutorials/prysmvalidator)
-2.  [Install:  "ETH2.0 Key Generator"](https://wiki.ava.do/en/tutorials/prysmvalidator)
+1.  [Install: “Prysm ETH2.0 Validator”]({{< relref prysm-validator >}})
+2.  [Install:  "ETH2.0 Key Generator"]({{< relref prysm-validator >}})
 
 ## AVADO support channel on telegram
 

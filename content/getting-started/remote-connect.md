@@ -93,9 +93,9 @@ Install the ZeroTier One app from the Google Play Store. Once opened, click on t
 
 ### iOS instructions
 
-See Andriod instructions above it works the exact same way!
+See Android instructions above it works the exact same way!
 
-TODO : if you want to add instructions and screenshots - [apply for an account](https://wiki.ava.do/register) on the wiki and start editing ! 
+TODO : if you want to add instructions and screenshots click the edit button above.
 
 
 ## Step 5 : enable client access on the AVADO

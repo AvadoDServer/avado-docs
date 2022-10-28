@@ -42,7 +42,7 @@ Try restarting your router by unplugging it and waiting 15 seconds and then plug
 
 # VPN
 ## I reseted my modem/router to factory settings/ I have a new modem/router my VPN isn't working anymore. What should I do?
-You have to use the remote connection solution   here is the link of our wiki explaining how you can do that: https://wiki.ava.do/en/tutorials/remote-connect
+You have to use the remote connection solution now: [docs]({{< relref "/getting-started/remote-connect" >}})
 
 # Internet Speed and Bandwidth
 It is recommended to have 20MBps Up- and Download Speed. In addition you should have unmetered traffic. Blockchain applications consume a lot of data. Depending on how many packages you run simultaniously - you should expect your AVADO to consume at between 3 to 5 TB of traffic per month. If you have an unmetered broadband connection - this should however not impact your internet experience overall. 

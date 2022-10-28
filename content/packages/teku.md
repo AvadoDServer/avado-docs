@@ -15,29 +15,6 @@ Teku is an open-source Ethereum consensus client (sometimes called an Ethereum 2
 
 Teku is a good alternative for the overused [Prysm client](/en/tutorials/prysmvalidator)
 
-## Prepare for "The Merge"
-
-{{< hint type=important >}}
-Ethereum will transition from Proof of Work to Proof of Stake soon, around September 15. This section summarizes how you should prepare your Avado box
-{{< /hint >}}
-
-What should I do to prepare for the Merge?
-1. Check your Geth package:
-    * Is your Geth package up to date? (Avado version `>10.0.45` based on Geth version `v1.10.23`)
-    * Are you running a **full** node? (Prysm needs a full client after the merge, light clients will no longer work)
-    * Is Geth fully synced? If you sync from scratch, sync now, because syncing takes a while. If your Geth installation has been running for a long time and has grown large in size, consider removing Geth and installing a new, clean copy from the Dappstore to create a fresh database and minimize disk consumption. 
-    
-	* The steps listed here:
-    https://wiki.ava.do/en/tutorials/geth#pruning-your-geth-node
-for setting a fallback provider like Infura will still work until the merge so you can keep validating while you perform Geth maintenance. After the merge happens, Geth maintenance will require some downtime for your validator. 
-
-2. Check your Teku package: Avado version `>0.016` based on Teku `v22.8.1`
-3. Configure the “Fee recipient address”:
-   * Open the **Teku** package
-   * Click the red banner to navigate to the settings page
-   * Enter the fee recipient address (this is the address where you will receive the priority fees of transactions in the blocks you propose)
-   * Click **Apply changes** button
-
 ## Prerequisites
 
 Before running the Teku beacon chain it is recommend to run the [geth execution client]({{< relref "geth" >}}).
