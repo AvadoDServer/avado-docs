@@ -17,16 +17,13 @@ Teku is a good alternative for the overused [Prysm client](/en/tutorials/prysmva
 
 ## Prerequisites
 
-Before running the Teku beacon chain it is recommend to run the [geth execution client]({{< relref "geth" >}}).
-
-For now this is not required, but it will be after the merge!
-
+Before running the Teku consensus client, you need to install and run the [geth execution client]({{< relref "geth" >}}).
 
 ## Settings
 
 Setting up Teku is really easy and the defaults are probably OK for you.
 
- {{< figure src="teku-settings.png" >}}
+{{< figure src="teku-settings.png" >}}
 
 If you messed up, you can use the "Reset defaults" to reset to the default Avado settings
 

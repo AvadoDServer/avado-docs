@@ -14,6 +14,7 @@ This page will describe how to stake ETH with Rocket Pool on your Avado.
 Although this Avado packages makes it very easy to run a Rocket Pool node on your Avado, make sure you are up for the task. Make sure you read <https://docs.rocketpool.net/guides/node/responsibilities.html> to know your risks and resposabilities.
 
 ## Rocket Pool
+
 Rocket Pool is the first truly decentralised Ethereum staking pool.
 A decentralised network of node operators earn rewards for rETH holders.
 
