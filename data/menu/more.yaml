@@ -4,7 +4,6 @@ more:
     ref: "https://ava.do/shop"
     icon: "cart-shopping-solid"
     external: true
-  - name: View source
-    ref: "https://github.com/AvadoDServer/avado-docs"
-    external: true
+  - name: Report documentation issue
+    ref: "/specials/docs-issue.md"
     icon: "gdoc_github"
