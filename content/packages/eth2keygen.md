@@ -46,7 +46,7 @@ Note that if you wish to create more keys later on using the key generator, you 
 {{< /hint >}}
 
 
-### Download zip file with your generated keys
+### Download zip file with your generated keys {#download}
 
 1. Click on `Download ZIP file with your generated keys`
 {{< figure src="../eth2keygen/download_keys.png" >}}

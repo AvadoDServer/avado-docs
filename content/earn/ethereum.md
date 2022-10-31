@@ -21,18 +21,24 @@ Solo staking is the **gold standard** of ETH staking. It is the purest and the l
 {{< tweet user="superphiz" id="1561737594421002249" >}}
 
 To stake solo stake ETH you need to:
-1.  Run an **Execution Client**: An execution client is software that ...  
+1.  Run an **Execution Client** _(a.k.a. Execution Engine or ETH1 client)_: An execution client is software that listens for Ethereum transactions, executes them and holds all necessary ETH information in its database.  
     {{< button relref="/packages/geth" >}}Install Geth execution client {{< /button >}}
-2. Run a **Consensus Client** _(a.k.a. Beacon Chain client)_: A Consensus client is ...  
-    {{< button relref="/packages/teku" >}}Run a consensus client Teku{{< /button >}} or {{< button relref="/packages/teku" size="small" >}}Run a consensus client Prysm{{< /button >}}
+2. Run a **Consensus Client** _(a.k.a. Beacon Chain client or ETH2 client)_: A Consensus client is software that runs the proof of stake consensus algorithm which enables the Ethereum network to agree on blocks from the execution clients. 
+    {{< button relref="/packages/teku" >}}Install Consensus Client Teku{{< /button >}} or {{< button relref="/packages/teku" size="small" >}}Install Consensus Client Prysm{{< /button >}}
 3. **Generate keys** and **deposit 32 ETH to the Deposit Contract**  
    {{< button relref="/packages/eth2keygen" >}}Create your validator keys{{< /button >}}
-4. (Optional) install MEV-Boost to earn extra rewards when it is your turn to propose blocks.  
+4. **Import keys** into your **Validator**: The validator package creates and validates new blocks in the chain. This is the work that get rewarded with ETH. In [Teku]({{< relref "/packages/teku" >}}) the validator is bundled with the Consensus Client. In [Prysm]({{< relref "/packages/prysm-beaconchain" >}}), this is a separate package that needs to be installed.
+5. (Optional) install MEV-Boost to earn extra rewards when it is your turn to propose blocks.  
    {{< button relref="/packages/mev-boost" >}}Install MEV-Boost{{< /button >}}
 
 Next you need to **monitor** and **keep your node online**.
 
-**Note**: If ever desired, you can exit as a validator which eliminates the requirement to be online, and stops any further rewards. Be aware that until the planned Shanghai upgrade withdrawing those funds will not be possible.
+**Note**: No withdrawing for now (until the planned Shanghai upgrade).
+
+{{< hint type=danger >}}
+**Always make sure you run your validators keys only once!** Do **NOT** run your validators on multiple clients or Avado nodes. This would result in your stake getting slashed.  
+Temporarily being offline is not a real issue. You'll will just miss out on some rewards.
+{{< /hint >}}
 
 ## Rocket Pool
 

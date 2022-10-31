@@ -67,7 +67,6 @@ enter the networkID of your AVADO and press **Join**
 
 {{< hint type=important >}}
 Make sure to check the **Allow Global** and **Allow DNS** checkboxes or things will not work.
-
 {{< /hint >}}
 
 ### Windows instructions
