@@ -26,12 +26,10 @@ As soon as Teku is installed, it automatically synchronizes with the Ethereum be
 
 {{< figure src="fee_recipient_address.png" >}}
 
-{{< hint type=info >}}
-You can also set a different fee recipient address for each validator. This is required if you mix full validators with [Rocket Pool validators]({{< relref "rocketpool" >}})
-{{< /hint >}}
-
 
 ## Add validators
+
+To run a validator, you need to [create Validator keys first]({{< relref eth2keygen >}})
 
 1. To add a validator click the **Add validator** field to expand it:
    {{< figure src="add_validator.png" >}}
@@ -41,6 +39,9 @@ You can also set a different fee recipient address for each validator. This is r
 4. (Optional) If you have a slashing protection file, upload the file here.
 5. Finally click **Add validator** to add the validator to Teku
 
+{{< hint type=info >}}
+You can also set a different fee recipient address for each validator. This is required if you mix full validators with [Rocket Pool validators]({{< relref "rocketpool" >}})
+{{< /hint >}}
 
 ## Next steps
 
@@ -72,7 +73,10 @@ Check the state root of the displayed trused sources make sure the state root ma
 {{< figure src="check_checkpoint.png" >}}
 
 
-
 ## Memory
 
 If you run many validators, it is recommend to increase Teku's memory limit. Open <http://my.ava.do/#/Packages/teku.avado.dnp.dappnode.eth/detail> and look for the **JAVA_OPTS** environment variable. Next  increase the default `-Xmx3g` (i.e. maximum 3 gigabytes of 'heap space') to `-Xmx5g` (i.e. maximum 5 gigabytes of 'heap space')
+
+
+## AVADO support channel
+Telegram: [AVADO - Ethereum Club](https://t.me/joinchat/IdBKSAiIvw-q1-1p)

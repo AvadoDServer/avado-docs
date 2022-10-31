@@ -27,7 +27,7 @@ To stake solo stake ETH you need to:
     {{< button relref="/packages/teku" >}}Install Consensus Client Teku{{< /button >}} or {{< button relref="/packages/teku" size="small" >}}Install Consensus Client Prysm{{< /button >}}
 3. **Generate keys** and **deposit 32 ETH to the Deposit Contract**  
    {{< button relref="/packages/eth2keygen" >}}Create your validator keys{{< /button >}}
-4. **Import keys** into your **Validator**: The validator package creates and validates new blocks in the chain. This is the work that get rewarded with ETH. In [Teku]({{< relref "/packages/teku" >}}) the validator is bundled with the Consensus Client. In [Prysm]({{< relref "/packages/prysm-beaconchain" >}}), this is a separate package that needs to be installed.
+4. **Import keys** into your **Validator**: The validator package creates and validates new blocks in the chain. This is the work that get rewarded with ETH. In [Teku]({{< relref "/packages/teku" >}}) the validator is bundled with the Consensus Client. In [Prysm]({{< relref "/packages/prysm" >}}), this is a separate package that needs to be installed.
 5. (Optional) install MEV-Boost to earn extra rewards when it is your turn to propose blocks.  
    {{< button relref="/packages/mev-boost" >}}Install MEV-Boost{{< /button >}}
 

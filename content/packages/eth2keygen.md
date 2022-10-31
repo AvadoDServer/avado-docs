@@ -4,11 +4,17 @@ title: ETH Staking Key Generator and Deposit
 
 {{< toc >}}
 
+{{< hint type=tip >}}
+ This guide describes the steps of generating keys using the Key Generator package and then accessing the Ethereum 2.0 Validator Launchpad to complete the deposit to the Ethereum Mainnet contract `0x00000000219ab540356cbb839cbe05303d7705fa`. 
+{{< /hint >}}
+
 TODO:
 * intro
 * Alternative : Waygu
 
  {{< figure src="../eth2keygen/rhino.243747b9.png" width="200" >}}
+
+
 
 ## The Avado ETH Key generator
 
@@ -25,6 +31,10 @@ More information about WAGYU: https://medium.com/@shawynot/staking-ethereum-with
 {{< hint type=danger >}}
 Have a pen and paper ready to write things down. This is important before you proceed. You are writing down passwords and a 24 word mnemonic phrase which are your responsibility to keep safe throughout your staking journey.  
 ☠️☣️😱 **If you lose the 24 word mnemonic phrase, no one will be able to help you.** 😱☣️☠️
+{{< /hint >}}
+
+{{< hint type=danger >}}
+Visiting the official Ethereum 2.0 Lanuchpad is the ONLY way you can make the desposit. Do not attempt to manually send funds to the deposit contract or your will lose your funds.
 {{< /hint >}}
 
 ### Video demo

@@ -7,7 +7,7 @@ aliases: ["/en/tutorials/geth"]
 
 This guide describes the steps of installing and configuring Geth, the recommended Ethereum Execution client.
 
-Since "The Merge" on September 15 2022, Geth needs a beacon chain, consensus client to function. Make sure you install either [Teku]({{< relref teku >}}) or [Prsym]({{< relref prysm-validator >}}). This is required to run a full Ethereum node.
+Since "The Merge" on September 15 2022, Geth needs a beacon chain, consensus client to function. Make sure you install either [Teku]({{< relref teku >}}) or [Prsym]({{< relref prysm >}}). This is required to run a full Ethereum node.
 
 ## Installation instructions
 
