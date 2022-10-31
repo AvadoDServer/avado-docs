@@ -10,3 +10,4 @@ title:  Report documentation issues
   {{< button href="https://github.com/AvadoDServer/avado-docs/issues/new" >}}File the issue in our GitHub project{{< /button >}}
 
 
+[How to add content?](../authoring_content)

@@ -23,6 +23,6 @@ Step 4 - Now you MUST wait a minimum of 5 FINALIZED epochs before moving and imp
 
 Step 5 – Once you have waited at least 5 FINALIZED epochs it’s the same process as when you originally setup your ETH2 validator, just in the NEW location.
 
-Step 6 – From here you can follow the same instructions from the Avado wiki setting up ETH2 staking, start at Step 5.1
+Step 6 – From here you can follow the same instructions from the Avado Docs for setting up ETH2 staking, start at Step 5.1
 
 Reach out on [Telegram](/support/telegram/#staking-support) if you have questions.

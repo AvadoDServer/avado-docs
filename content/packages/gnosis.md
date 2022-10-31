@@ -10,7 +10,7 @@ It is not difficult to follow the steps in this guide to start staking on the Gn
 {{< /hint >}}
 
 {{< hint type=tip title=success >}}
-Avado makes it easy. At no point in following this Avado wiki guide will you ever need to access a command line to run a script. Official Gnosis docs are here and you can and should read them but be warned, the methods are complicated! Read the Gnosis docs but return to this guide for the "easy" method. https://docs.gnosischain.com/
+Avado makes it easy. At no point in following this Avado guide will you ever need to access a command line to run a script. Official Gnosis docs are here and you can and should read them but be warned, the methods are complicated! Read the Gnosis docs but return to this guide for the "easy" method. https://docs.gnosischain.com/
 
 {{< /hint >}}
 

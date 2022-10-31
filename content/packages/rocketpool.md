@@ -78,7 +78,8 @@ To complete the onboarding wizard you will need these things:
 1. An Ethereum wallet with 16 ETH + some gas to deposit it in your minipool (0.4 ETH should be enough)
 1. An Ethereum wallet with the neccesary amount of RPL to stake.
 1. An Ethereum wallet to receive your staking rewards into. This can be an empty wallet, or a cold storage wallet - as you prefer.
-Check the Avado Rocket Pool Wiki page to learn what it takes to run a Rocket Pool node - and info on how to obtain RPL.
+
+Check the Avado Rocket Pool page to learn what it takes to run a Rocket Pool node - and info on how to obtain RPL.
 
 Please wait until your ETH1 node is synced
 
@@ -128,7 +129,7 @@ Click Yes to confirm
 Warning
 This should be an address you control (ex a MetaMask address). All of your RPL checkpoint rewards, your staked RPL, and your Beacon Chain ETH will be sent there when you claim your checkpoint rewards or exit your validator.
 
-Please read the info on the wiki carefully before setting your withdrawal address!
+Please read the info here carefully before setting your withdrawal address!
 
 Copy paste your withdrawel address
 

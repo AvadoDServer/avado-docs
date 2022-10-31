@@ -74,10 +74,6 @@ If this worries you, you can:
 ## Can I upgrade my AVADO storage
 It is not currently possible to upgrade the drive storage. You can try the clean up option.
 
-If you are running a GETH node you can run light-client to solve your problems temporary. You can check how to set up light client from this page: https://wiki.ava.do/en/tutorials/geth
-
-Best option would be upgrading your device to i7 8TB.
-
 ## Packages/Dapps 
 
 ### How can I update my packages/Dapps to the newest version?
