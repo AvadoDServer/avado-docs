@@ -7,6 +7,8 @@ aliases: ["/en/tutorials/avalanche-node"]
 
 {{< youtube JM7idIZi8mw >}}
 
+[Generic info about staking Avalanche on Avado](/earn/avalanche)
+
 ## Setting up Avalanche node
 
 How to install and run it:
@@ -68,3 +70,4 @@ More information
 * [https://docs.avax.network/](https://docs.avax.network/) : avalanche documentation
 * [https://wallet.avax.network/](https://wallet.avax.network/) : avalanche wallet, but use the one on your AVADO ([https://avalanchego.avadopackage.com](https://avalanchego.avadopackage.com/))
 * [https://explorer.avax.network/validators](https://explorer.avax.network/validators) : avalanche active validators
+* *[Earn by staking Avalanche on Avado](/earn/avalanche)

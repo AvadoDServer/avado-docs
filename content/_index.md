@@ -10,11 +10,7 @@ aliases: ["/en/home"]
 
 Congratulations on being part of the AVADO community !
 
-We have bundled some resources for you with  answers to common questions that people have with regards to setting up and running an AVADO node.
-
-If you'd like to read a tutorial on how to set up your AVADO and its packages, check the Tutorials in the menu on the left.
-
-If you are experiencing trouble setting up your node , please check the [faq](/faq)
+We have bundled some resources for you with answers to common questions that people have with regards to setting up and running an AVADO node.
 
 Please use the navigation menu on the left to browse the docs.
 
@@ -22,9 +18,9 @@ Please use the navigation menu on the left to browse the docs.
 
 {{< columns >}}
 
-### [Getting started](getting-started)
+### Get Started
 
-blabla
+Check the [Getting started](getting-started) page to get started
 
 <--->
 
@@ -47,23 +43,25 @@ We host a number of [YouTube video's](https://www.youtube.com/avadocloud) that g
 
 ### Telegram
 
-Search any telegram channel for questions already asked...
-Just click on the magnifying glass (at the top bar of the telegram window) to go directly to the search field.
-Don't hesitate to ask any questions you may have!
+[Ask for Help on Telegram]({{< relref "/support/telegram" >}})
 
 <--->
 
-### XXX
+### Earn ETH with Ethereum staking
 
-XXX
+Earn ETH with [Ethereum staking](/earn/ethereum/)
+
 
 <--->
 
-### YYY
+### FAQ
 
-YYY
+If you are experiencing trouble setting up your node, please check the [Frequently Asked Questions](/faq)
+
 
 {{< /columns >}}
 
+
+If you look for instructions on how to use any of the Avado packages, check the **Packages** category in the menu on the left.
 
 

@@ -290,7 +290,7 @@ Note that this requires that the “fee recipient address” of your Rocket Pool
 * Update the Rocket Pool Avado package to version > 0.0.78
 * Click the **update** button
 * Check the node status: The Merge update should be deployed and the smoothing pool should be joined.
-   {{< figure src="screenshot_2022-08-26_at_15.25.56.png" >}}{.align-center}
+   {{< figure src="screenshot_2022-08-26_at_15.25.56.png" >}}
 
 
 ## More information

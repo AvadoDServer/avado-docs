@@ -21,6 +21,11 @@ If you come across scammers - please expose them in our public channels to help 
 The good news is that apart from the occasional scammer - our channels are full with people that want to actually help you 😀
 {{< /hint >}}
 
+{{< hint type=tip title="Search any telegram channel for questions already asked..." >}}
+Just click on the magnifying glass (at the top bar of the telegram window) to go directly to the search field.
+Don't hesitate to ask any questions you may have!
+{{< /hint>}}
+
 Here's a list of the different AVADO community support channels.
 
 ### Welcome
