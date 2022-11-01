@@ -3,8 +3,6 @@ title: Create your DApp for the AVADO DAppstore
 aliases: ["/en/developers/building-an-avado-package"]
 ---
 
-# Create your DApp for the AVADO DAppstore
-
 ## Convenience is most important
 Let's start with some context.
 AVADO devices are used in more than 60 countries on all continents. Even though this means a very diverse culture of our users, we do find that our users all share the same motivation why they bought the AVADO. They are looking for **privacy** and **convenience**!
