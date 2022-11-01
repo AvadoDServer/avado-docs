@@ -13,16 +13,26 @@ aliases: ["/en/tutorials/move-eth2-validators"]
 
 ## Moving ETH2 Validators to a new location
 
-Step 1 – The NEW location where you want to move your validators to must be fully setup and ready to import your keys. GETH and Beacon chain must be fully synced in the new location and the validator package installed.
+Step 1
+: The NEW location where you want to move your validators to must be fully setup and ready to import your keys. GETH and Beacon chain must be fully synced in the new location and the validator package installed.
 
-Step 2 – Shutdown the validator & Beacon chain packages where your ETH2 validators are currently running.
+Step 2
+: Shutdown the validator & Beacon chain packages where your ETH2 validators are currently running.
 
-Step 3 – Uninstall the validator & Beacon chain packages. BE SURE TO ALSO REMOVE ALL DATA VOLUMES.
+Step 3
+: Uninstall the validator & Beacon chain packages. BE SURE TO ALSO REMOVE ALL DATA VOLUMES.
 
-Step 4 - Now you MUST wait a minimum of 5 FINALIZED epochs before moving and importing your Keystore files to the new location
+Step 4
+: Now you MUST wait a minimum of 2 FINALIZED epochs before moving and importing your Keystore files to the new location
 
-Step 5 – Once you have waited at least 5 FINALIZED epochs it’s the same process as when you originally setup your ETH2 validator, just in the NEW location.
+Step 5
+: Once you have waited at least 2 FINALIZED epochs it’s the same process as when you originally setup your ETH2 validator, just in the NEW location.
 
-Step 6 – From here you can follow the same instructions from the Avado Docs for setting up ETH2 staking, start at Step 5.1
+Step 6
+: From here you can follow the same instructions from the Avado Docs for setting up ETH2 staking, start at Step 5.1
 
 Reach out on [Telegram](/support/telegram/#staking-support) if you have questions.
+
+## Links
+
+* [EthStaker migration guide](https://ethstaker.gitbook.io/ethstaker-knowledge-base/tutorials/validator-key-migration)
