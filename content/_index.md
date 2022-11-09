@@ -12,7 +12,6 @@ Congratulations on being part of the AVADO community !
 
 We have bundled some resources for you with answers to common questions that people have with regards to setting up and running an AVADO node.
 
-<!-- Please use the navigation menu on the left to browse the docs. -->
 
 <!-- ## Overview -->
 
