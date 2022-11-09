@@ -31,7 +31,7 @@ We host a number of [YouTube video's](https://www.youtube.com/avadocloud) that g
 ## Support
 
 [Ask for Help on Telegram]({{< relref "/support/telegram" >}})  
-- [Frequently Asked Questions](/faq)
+[Frequently Asked Questions](/faq)
 
 
 {{< /columns >}}
