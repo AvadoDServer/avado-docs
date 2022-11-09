@@ -58,3 +58,7 @@ We also have some vibrant specialized AVADO thematic channels for all your quest
 
 - [AVADO - Watercooler](https://t.me/joinchat/HDO_G2NLn2vsuiFX) : This is the channel for all Off topic discussion. Keep it family friendly please
 - [AVADO - Crypto is Money Club](https://t.me/joinchat/L_KgihrlQTE4MDdk) : Crypto talk, where crypto veterans and newbies talk price, projects and trends..
+
+{{< hint type=warning title="Warning" >}}
+The list above are the only official AVADO groups. Make sure you are not invited in other groups claiming to offer AVADO support.
+{{< /hint>}}

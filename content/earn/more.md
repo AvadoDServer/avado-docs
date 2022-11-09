@@ -3,13 +3,15 @@ title: More ways to earn
 weight: 50
 ---
 
+There are more ways to earn passive income on AVADO.
+
 ## Gnosis
 
-[Gnosis staking](/packages/gnosis)
+Run a [Gnosis validator](/packages/gnosis)
 
 ## Qtum
 
-[Qtum staking](/packages/qtum)
+Participate in [Qtum staking](/packages/qtum)
 
 ## Mysterium
 

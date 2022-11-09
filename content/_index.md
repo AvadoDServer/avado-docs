@@ -12,51 +12,50 @@ Congratulations on being part of the AVADO community !
 
 We have bundled some resources for you with answers to common questions that people have with regards to setting up and running an AVADO node.
 
-Please use the navigation menu on the left to browse the docs.
+<!-- Please use the navigation menu on the left to browse the docs. -->
 
-## Overview
+<!-- ## Overview -->
 
 {{< columns >}}
 
-### Get Started
+## Getting Started
 
-Check the [Getting started](getting-started) page to get started
-
-<--->
-
-### Shipping, delivery and returns
-
-Check our [AVADO delivery](/support/delivery) page for more info.
+[Getting started with your AVADO](getting-started)
 
 <--->
 
-### Youtube
+## Video's
 
 We host a number of [YouTube video's](https://www.youtube.com/avadocloud) that go through the setup of certain packages step by step
+
+<--->
+
+## Support
+
+- [Ask for Help on Telegram]({{< relref "/support/telegram" >}})
+- [Frequently Asked Questions](/faq)
+
 
 {{< /columns >}}
 
 
 
-
 {{< columns >}}
 
-### Telegram
 
-[Ask for Help on Telegram]({{< relref "/support/telegram" >}})
+## ETH staking
 
-<--->
-
-### Earn ETH with Ethereum staking
-
-Earn ETH with [Ethereum staking](/earn/ethereum/)
-
+- [Solo staking](/earn/ethereum/)
+- [Rocketpool staking](/earn/ethereum/#rocket-pool)
+- [MEV boost](/packages/mev-boost/)
 
 <--->
 
-### FAQ
+## AVAX staking
 
-If you are experiencing trouble setting up your node, please check the [Frequently Asked Questions](/faq)
+[Avalanche staking](/earn/avalanche/)
+
+<--->
 
 
 {{< /columns >}}
@@ -64,4 +63,9 @@ If you are experiencing trouble setting up your node, please check the [Frequent
 
 If you look for instructions on how to use any of the Avado packages, check the **Packages** category in the menu on the left.
 
+
+
+## Shipping
+
+Check our [AVADO delivery](/support/delivery) page for more info.
 
