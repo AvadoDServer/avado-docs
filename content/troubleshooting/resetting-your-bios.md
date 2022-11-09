@@ -81,3 +81,8 @@ Done 😃
 We hope this resolves your issue, if not please refer back to the Avado Telegram group chat for further assistance.
 
 _**If you have any questions on anything above or any suggested improvements please feel free to reach out on telegram @nebnitram**_
+
+## AVADO tech support on Telegram
+
+[AVADO - Technical Support](https://t.me/joinchat/IR7AXecB5s4wZDPk) 
+

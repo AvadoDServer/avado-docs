@@ -6,21 +6,17 @@ creatordisplayname: Administrator
 aliases: ["/en/avado-delivery"]
 ---
 
-You probably ordered your AVADO here: <https://ava.do/shop>
+If you are requested to send your device back for repair - please contact Barnd Lapp on Telegram to get a return shipping label for your device.
 
 ## Official telegram handles and Shipping addresses
 
-{{< hint type=important title="We will never DM first" >}}
-Please click on the profiles below to verify that you are talking to the correct person.
+{{< hint type=important title="We will never send you a Direct Message (DM) first" >}}
+Please click on the link below to make sure that you are talking to the correct person.
 {{< /hint >}}
 
 * Bernd Lapp - <https://t.me/CoachB>
-* Stefaan Ponnet - <https://t.me/Sponnet2>
 
-CoachB is the only person you can contact for sending back a broken device.
-
-If you are asked to send the device back, our shipping addresses are as follows:
-
+When you are asked to send the device back, our shipping addresses are as follows:
 
 {{< columns >}}
 

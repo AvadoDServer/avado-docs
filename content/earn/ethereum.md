@@ -3,18 +3,20 @@ title: Ethereum Staking
 weight: -20
 ---
 
+On this page:
+
 {{< toc >}}
 
-[Ethereum Staking](https://ethereum.org/en/staking/solo) with Avado helps secure the Ehtereum network and [earns you ETH rewards](https://ava.do/#ethvalidator). 
+[Ethereum Staking](https://ethereum.org/en/staking/solo) with AVADO helps secure the Ehtereum network. In exchange your will receive ETH rewards. 
 
-To stake ETH on an Avado you need 32 ETH to run a [solo validator](#solo-staking) or 17.6 ETH to run a [Rocket Pool validator](#rocket-pool).
+To stake ETH on an AVADO you need 32 ETH to run a [solo validator](#solo-staking) or 17.6 ETH to run a [Rocket Pool validator](#rocket-pool).
 
-Avado make staking ETH really easy, but it is unfortunately not risk free.
+AVADO makes staking ETH really easy, but it is unfortunately not risk free.
 Make sure you understand the risks by reading:
 * <https://ethereum.org/en/staking/solo/#considerations-before-staking-solo>
 * <https://docs.rocketpool.net/guides/node/responsibilities.html>
 
-## Solo Staking
+## ETH Solo Staking
 
 Solo staking is the **gold standard** of ETH staking. It is the purest and the least risky way of staking.
 
@@ -36,19 +38,23 @@ Next you need to **monitor** and **keep your node online**.
 **Note**: No withdrawing for now (until the planned Shanghai upgrade).
 
 {{< hint type=danger >}}
-**Always make sure you run your validators keys only once!** Do **NOT** run your validators on multiple clients or Avado nodes. This would result in your stake getting slashed.  
+**Always make sure you run your validators keys only once!** Do **NOT** run your validators on multiple clients or AVADO nodes. This would result in your stake getting slashed.  
 Temporarily being offline is not a real issue. You'll will just miss out on some rewards.
 {{< /hint >}}
 
-## Rocket Pool
+## Staking ETH with Rocket Pool
 
 {{< figure src="/packages/rocketpool/rocketpool.png" >}}
-[Rocket Pool](https://rocketpool.net/) is a truly decentralised Ethereum staking pool. It allows you to stake with only 16 ETH from yourself plus 16 ETH from the Rocket Pool staking pool. As insurance you also need 1.6 worth of ETH in Rocket Pool's RPL token.
+[Rocket Pool](https://rocketpool.net/) is a decentralised Ethereum staking pool. It allows you to stake with only 16 ETH from yourself plus 16 ETH from the Rocket Pool staking pool. As insurance you also need 1.6 worth of ETH in Rocket Pool's RPL token.
 
 To run a Rocket Pool node you need to:
 1. {{< button relref="/packages/geth" >}}Run an execution client (Geth){{< /button >}}
 2. {{< button relref="/packages/teku" >}}Run a consensus client (Teku){{< /button >}}
-3. {{< button relref="/packages/rocketpool" >}}Set up a Rocket Pol node{{< /button >}}
+3. {{< button relref="/packages/rocketpool" >}}Set up a Rocket Pool node{{< /button >}}
 4. {{< button relref="/packages/mev-boost" >}}Set up MEV-boost{{< /button >}}
 
 Next you need to **monitor** and **keep your node online**.
+
+## Monitoring your validator(s)
+
+The easiest and recommended way to monitor your validators is to create an account on [beachoncha.in](https://beachoncha.in) and register your validators' public keys in your account, you can then opt in to get e-mail alerts whenever you miss an attestation or when you propose a block

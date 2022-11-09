@@ -4,11 +4,13 @@ description: Manually  opening ports on your router to your AVADO
 aliases: ["/en/troubleshooting/manually-opening-ports"]
 ---
 
+{{<toc>}}
+
 Certain packages - like blockchain nodes - usually need to open a couple of ports on your router to work well. 
 
 The AVADO OS is be able to open specific ports on your router - so this should happen automatically, but not always: if your router is not set to accept these configurations through uPNP - then you need to open ports manually, and that is what we'll explain here.
 
-## Prerequisite : find out the internal IP address of your AVADO
+## Find out the internal IP address of your AVADO
 
 Go to the AVADO admin UI - and click on the avatar image (the green circle in this picture) you'll get a popup. Take note of the "Internal IP" - we will need it later.
 

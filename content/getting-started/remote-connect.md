@@ -5,6 +5,8 @@ weight: 0
 aliases: ["/en/tutorials/remote-connect"]
 ---
 
+On this page:
+
 {{< toc >}}
 
 # What is Remote Connect
@@ -21,7 +23,7 @@ So let's get it set up !
 ## Step 0 : Update your AVADO
 
 This tutorial assumes that your AVADO is up to date with all latest package versions. 
-Go to [https://ava.do/start](https://ava.do/start) to check if your AVADO is up to date, or install available updates.
+Go to [https://ava.do/start](https://ava.do/start) to make sure your AVADO is up to date.
 
 ## Step 1 : Install package
 
@@ -45,9 +47,12 @@ Meanwhile - you can download the remote connect client for your device and insta
 Go to [http://my.ava.do/#/Packages/remoteconnect.avado.dnp.dappnode.eth](http://my.ava.do/#/Packages/remoteconnect.avado.dnp.dappnode.eth)
 
 You will see your unique network ID - and a default network name.
-(Tip: You can click the network name to change it - so you can organize if you have multiple AVADO's)
 
  {{< figure src="id.png" >}}
+
+{{< hint type=tip >}}
+ You can click the **name** to rename your AVADO's network so you can recognize it in case you have multiple AVADO's
+{{< /hint >}}
 
 Use the icon next to the AVADO network ID to copy it to your clipboard
 
@@ -96,7 +101,7 @@ Install the ZeroTier One app from the Google Play Store. Once opened, click on t
 
 See Android instructions above it works the exact same way!
 
-TODO : if you want to add instructions and screenshots click the edit button above.
+TODO : if you want to contribute to these instructions and add some screenshots click the edit button at the top of this page and go ahead.
 
 
 ## Step 5 : enable client access on the AVADO
