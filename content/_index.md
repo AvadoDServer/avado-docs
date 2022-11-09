@@ -45,7 +45,7 @@ We host a number of [YouTube video's](https://www.youtube.com/avadocloud) that g
 
 [Solo staking](/earn/ethereum/)  
 [Rocketpool staking](/earn/ethereum/#rocket-pool)  
-- [MEV boost](/packages/mev-boost/)
+[MEV boost](/packages/mev-boost/)
 
 <--->
 
