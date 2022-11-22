@@ -5,9 +5,9 @@ tags: [eth, ethereum, rocketpool, tutorial]
 aliases: ["/en/tutorials/rocketpool"]
 ---
 
-# AVADO Rocket Pool ETH staking
+{{< toc >}}
 
- {{< figure src="rocketpool.png" >}}
+{{< figure src="rocketpool.png" >}}
 
 This page will describe how to stake ETH with Rocket Pool on your Avado.
 
@@ -27,272 +27,208 @@ https://medium.com/rocket-pool/rocket-pool-staking-protocol-part-1-8be4859e5fbd
 ## Prerequisites
 
 * **Ethereum execution client (Geth)**: Make sure the Ethereum exectution client package (Geth) is <b>installed</b> and <b>synced</b>
-* **Ethereum beacon chain client (Prysm)**: Make sure the Ethereum beacon chain package (Prysm) is <b>installed</b> and <b>synced</b>
+* **Ethereum Consensus client (Prysm or Teku)**: Make sure the Ethereum Consensus client package is <b>installed</b> and <b>synced</b>
+* **MEV-Boost**: Make sure the MEV-Boost package is <b>installed</b> and <b>enabled</b> in the settings of your Consensus client
 * **Ether**: Make sure you have enough Ether
     * 16 ETH for your half of the validator deposit
     * 1.6 ETH worth of RPL (158 RPL), you can get RPL via https://app.uniswap.org/
     * some extra ETH to pay for gas, lets say 16,4 ETH in your wallet
 
-## Step 0 : Install Geth as your ETH1 endpoint and let it sync
-Follow this [guide]({{< relref "geth" >}}) to setup Geth if you haven't already done so.
 
-Continue to Step 1 after it has completely synchronized.
+## Demo video 
 
-## Step 1 : Install Ethereum beacon chain client (Teku/Prysm)
-In the Dapp store look for "Teku" (recommended) or "ETH2.0 Beacon chain monitor" and click on install (if you did not install it yet).
+Youtube tutorial on how to create your minipool. Note that video is slightly outdated. The process has some extra steps now, but the video still gives a good overview of the process in general.
 
-Continue to Step 2 after it has completely synchronized.
+{{< youtube 9YKdzP5TZDo >}}
 
-## Step 2: Install Rocket Pool
-Watch this video:
-Youtube tutorial on how to create your minipool
-https://www.youtube.com/watch?v=9YKdzP5TZDo
+## Step 0 : Install packages
 
-Install the "Rocketpool node"-Dapp:
-http://my.ava.do/#/installer
+1. **Ethereum Execution client**: Follow this [guide]({{< relref "geth" >}}) to setup Geth if you haven't already done so.
+2. **Ethereum Consensu client**: Both [Teku]({{< relref "teku" >}}) (recommended) and [Prysm]({{ relref "prsym" }}) are supported.
+3. **MEV-Boost**: Follow this [guide]({{< relref "mev-boost" >}}) if you haven't done so yet.
+4. **Rocket Pool**: Select the **Rocketpoool node** package in the [DappStore](http://my.ava.do/#/installer) and click **install**
 
-Very simple: follow the steps as mentioned on this page:
-http://my.ava.do/#/Packages/rocketpool.avado.dnp.dappnode.eth
-A preview of the screens can be found in the video link above.
 
-### Step 3.1: Teku
+## Step 1: Configure Rocket Pool
 
-If you selected "Teku" as beacon chain client and validator, open the [Rocket Pool package page](http://my.ava.do/#/Packages/rocketpool.avado.dnp.dappnode.eth/detail) and replace `prsym` with `teku` (all lower case)
+Check the settings on the [RocketPool manage page](http://my.ava.do/#/packages/rocketpool.avado.dnp.dappnode.eth/detail):
+* **NETWORK**: `mainnet`
+* **EXECUTIONCLIENT**: `geth`
+* **CONSENSUSCLIENT**: 
+    * For Teku use `teku`
+    * For Prsym use `prysm`
 
- {{< figure src="rocketpoolvariables.png" >}}
+If you changed any of the settings, click **Update environment variables**
 
-## Step 3: 5 more steps ;-)
-The following steps are:
-1. Init wallet
-2. Fund Node
-3. Register node
-4. Withdrawal address
-5. Add minipool
+{{< figure src="environment_variables.png" >}}
 
-### STEP 3.1: INIT WALLET
-First screen contains the following information:
+## Step 2: Initialize, fund and register Rocketpool Node
 
-To complete the onboarding wizard you will need these things:
-1. A fully synced Ethereum node. Install the Ethereum Node (Geth) from the DappStore
-1. A fully synced Beacon chain. Install the Prysm ETH2.0 Beacon Chain from the DappStore
-1. An Ethereum wallet with 16 ETH + some gas to deposit it in your minipool (0.4 ETH should be enough)
-1. An Ethereum wallet with the neccesary amount of RPL to stake.
-1. An Ethereum wallet to receive your staking rewards into. This can be an empty wallet, or a cold storage wallet - as you prefer.
+{{< hint type=tip title="Wait" >}}
+Make sure the Execution and Consensus client are fully synced before you proceed.  
+You can check the progress at the top right of the [RocketPool configure page](http://my.ava.do/#/Packages/rocketpool.avado.dnp.dappnode.eth)
+{{< figure src="sync_status.png" >}}
+{{< /hint >}}
 
-Check the Avado Rocket Pool page to learn what it takes to run a Rocket Pool node - and info on how to obtain RPL.
+After you verified the information on the Welcome page, click **Start setup** to setup your Rocketpool Node and first minipool. 
 
-Please wait until your ETH1 node is synced
+### Initialize wallet
 
-Do not forget to backup your wallet
+Enter a **secure** password (twice) and click **Init wallet**.
 
-### STEP 3.2: FUND NODE
+Next download a backup of your wallet.
 
-Fund wallet
-Now you need to fund your Rocketpool hot wallet.
+### Fund wallet
 
-Send 16.4 ETH to 0x45bea5da5d62fb0c9e761f330e24************  (16 ETH + 0.4 ETH gas money)
+{{< hint type=tip >}}
+You may want to wait for a quiet period with lower gas fees on the Ethereum network for the following steps. It will greatly reduce the total gas cost of calling smart contracts in the following steps.  
+You can check the current gas price in the top right or on e.g. the [ultrasound money](https://ultrasound.money/) website. 
+{{< /hint >}}
 
-(0.4 is a safe margin to create everything - including the expensive minipool contract deploy. The remaining gas can be withdrawn from this wallet later)
-Send a minimum of 158 RPL to 0x45bea5da5d62fb0c9e761f330e24************ 
-(maximum allowed stake is 2355 RPL - the more you stake, the more you will earn.
-(All RPL sent to this wallet will be used as your stake later - so please send exactly the desired stake amount)
-Current Wallet balances:
+Send `16.4 ETH` to your wallet (16 ETH + 0.4 ETH gas money). `0.4` is a safe margin to create everything, including the expensive minipool contract deploy. 
+The remaining gas can be withdrawn from this wallet later.
 
-ETH: 0 ETH
-RPL: 0 RPL
+Next, send at least the minimum required amount of RPL to your wallet. This is required as collateral and you will also get rewards for running minipools in RPL tokens. The more RPL you stake, the more you will earn. All RPL sent to this wallet will be used as your stake later - so please send exactly the desired stake amount.
 
-FYI: as of 2022 03 25 this amounts to :
-16 Ethereum (ETH @ 3180 USD) is +/- 50880 US Dollar
-Source: https://coinmarketcap.com/nl/currencies/ethereum/
-158 Rocket Pool (RPL @ 31 USD) = 5528 US Dollar
-Source: https://coinmarketcap.com/nl/currencies/rocket-pool/
+* https://coinmarketcap.com/nl/currencies/ethereum/
+* https://coinmarketcap.com/nl/currencies/rocket-pool/
 
 Hit "Refresh balances" to update your balance of crypto sent to your address.
 
-You will go to the next step once you have funded your wallet sufficiently.
+You will advance to the next step once the necessary funds have arrived in your wallet.
 
-### STEP 3.3: REGISTER NODE
-If you do mupltiple transactions to fund your ETH and/or RPL, please reload screen with menu saying "Welcome Setup Status"
+### Register node
 
-Add first the sufficient amoutns of ETH and RPL. See Status tab.
-Be sure to have enough ETH!
-Not adding enough ETH will 
+To register your node on the Rocketpool smart contracts, click **Register Node**,  confirm and wait for the transaction to finish.
 
+The *Transaction details on Etherscan* link will show more details about the transactions on the Etherscan website.
 
 
-### STEP 3.4: WITHDRAWEL ADDRESS
-You need to set a withdrawal address for your node.
-Very simple step = click the button "Register Node"
-Click Yes to confirm
+### Withdrawal address
 
-=> Warning massage:
-Warning
-This should be an address you control (ex a MetaMask address). All of your RPL checkpoint rewards, your staked RPL, and your Beacon Chain ETH will be sent there when you claim your checkpoint rewards or exit your validator.
-
-Please read the info here carefully before setting your withdrawal address!
-
-Copy paste your withdrawel address
-
-=> message
-Double check that this withdrawal address (0x497199231d4b60Cd9869E2995E7239D1c99*****) is correct and this is an address you have full control over. Are you sure you want to continue?
-Yes I own and control this address
-No
-
-=> REMARKs
-The withdrawal address you set is where everything is sent to when you collect your rewards, but also if you later want to exit your minipool and get the 16 ETH back.
-The remark that they make is that IF you enter a wrong address there - you cannot change it afterwards, so if make a mistake there, you could lose your funds.
-What we do to mitigate this is to validate the input to see if it's a correct ETH address - if you type in anything other than a valid ETH address, it will not continue
-What would be better is (and that is what they suggest) is that you link it to your metamask - and have you sign somehting that proves that you have accees to that wallet
-I agree that that's better - but if in any other dapp I type in a wrong ETH address - I will also lose my funds...
-
-
-### STEP 3.5: ADD MINIPOOL
-
-1. approve RPL
-Click button
-Yes (to confirm)
-
-
-2. Stake RPL
-Click "Stake *** RPL"-button
-Yes (to confirm)
-
-3. Deposit 16 ETH and create MiniPool
-Click "Deposit 16 ETH and create MiniPool"-button
-Yes (to confirm)
-
-Your MiniPool has been successfully created! Click the button below to go to the status page.
-
-Transaction details on Etherscan
-
-Warning: 
-If your funds go down the 16 ETH, the message is like a confirmation but there is a red error massage.
-
-Recommended
-Download the backup file that is proposed.
-
-
-There are 6 Txn fees to be payed in ETH!
-- Register Node (0.008566689547)
-- Set Withdrawal Address (0.002167425665)
-- Approve (0.001726074857)
-- Stake RPL (0.00893108866)
-- Deposit (0.110217334572)
-- Stake (0.00871277676)
-
-
-=> Message
-The commission you will receive from other deposits is +/- 14.55%.
-
-Check and double check...
-https://beaconcha.in/validators/eth1deposits
-Verify your deposit here by entering your address
-
-
-Check when if other 16 ETH have been added...
-https://eth2-validator-queue.web.app/ "Eth2 Validator Queue Stats"
-It takes around 12 hours ....
-
-
-When the other 16 ETH have been added...
-Check when your validator will be added...
-https://beaconcha.in/validators (and add your address)
-OR
-There is also a link in the interface (last line on this page: http://my.ava.do/#/Packages/rocketpool.avado.dnp.dappnode.eth)
-"More validator info on the Ethereum 2.0 Beacon Chain Explorer"
-https://beaconcha.in/validator/(your address)#deposits
-
-{{< hint type=tip >}}
-It is possible to add multiple minipools: click "Add another minipool" to add an extra minipol
+{{< hint type=caution >}}
+Check your withdrawal address at least twice. If you make a mistake here, you can not change the address later if you don't have the private keys of this address.
 {{< /hint >}}
 
-## Step 5: Import the validator key in your validator
 
-Once you created your minipool, you need to import the keys into the validator package. If you don't have one yet. We recommend to run Teku, but Prysm is also a good option.  
-The following instructions are for Teku, but are nearly identical for Prysm.
+Next, you need to set a withdrawal address for your node. This must be an address you control (preferably a cold wallet, but Metamask wallet also works). All of your RPL checkpoint rewards, your staked RPL, and your Beacon Chain ETH will be sent there when you claim your checkpoint rewards or exit your validator.
 
-1. Download RocketPool backup (in the RocketPool Dapp)
-   {{< figure src="backup.png" >}}
-2. Check the contents of the backup file:
+Enter your (cold) wallet address and, after you validated the address twice (**important!**), click **Register Node** and confirm.
+
+### Join smoothing pool and initialize Fee distributor
+
+The Smoothing Pool is a way to reduce the randomness associated with block proposals on the Beacon Chain. If you've ever had a streak of bad luck and gone months without a proposal, you may find the Smoothing Pool quite exciting.
+
+The Smoothing Pool is a collective pool for block rewards. The rewards in the smoothing pool are distributed fairly to every member of the pool every month.
+
+[Minipools that were created before the "Redstone release"  need to initialize the fee distributor before they can extra minipools]
+
+
+## Step 3: Create minipool
+
+1. Approve RPL
+   * Click button
+   * Yes (to confirm)
+   * Wait for transaction to finish
+2. Stake RPL
+   * Click "Stake"-button
+   * Yes (to confirm)
+   * Wait for transaction to finish
+3. Deposit 16 ETH and create MiniPool
+   * Click "Deposit 16 ETH and create MiniPool"-button
+   * Yes (to confirm)
+   * Wait for transaction to finish
+
+
+## Step 4: Download and store your backup
+
+Open to the **Setup** page and click **Download Rocket Pool Data Backup**
+
+Check the contents of the backup file (3 validators in this example):
    {{< figure src="backup-contents.png" >}}
-  (3 validators in this example)
+
+{{< hint type=caution title="Security risk" >}}
+🔑 This backup contains the private keys to your hot wallet and also the private key of your validator(s). Make sure to handle the backup with care, so that it does not get stolen! 🔑
+{{< /hint >}}
+
+## Step 5: Configure your validator
+
+Once you created your minipool, you need to:
+1. Import the keys into the validator package (i.e. Teku or Prysm).
+2. Make sure your validators use the Rocket Pool smoothing pool (`0xd4E96eF8eee8678dBFf4d535E033Ed1a4F7605b7`) as **fee recipient address**
+3. Make sure **[MEV-Boost]({{< relref "mev-boost" >}})** is enabled.
+
+
+### Configure validators
+
+{{< hint type=caution title="Slashing risk" >}}
+☢️ As always, make sure you run the validator only once! Never run your keys on multiple validators or machines at once. You will get slashed if you do this! ☢️
+{{< /hint >}}
+
+{{< tabs "configure_validator" >}}
+{{< tab "Automatic method" >}}
+
+If you have created a minipool and it is not imported into your validator yet you will see an error banner on top of the Rocket Pool wizard:
+{{< figure src="add_validator.png" >}}
+
+Click the **Add validators to Prysm/Teku** to add the validator automatically.
+{{< /tab >}}
+
+{{< tab "Manual method: Teku" >}}
 1. Switch to the Teku settings page and click the "Add validator" field to expand it:
    {{< figure src="../teku/add_validator.png" >}}
    {{< figure src="../teku/add_validator_exp.png" >}}
-1. Next, click "Choose keystore file..." and browse to the keystore file (json) you downloaded from the [Key generator package](/en/tutorials/prysmvalidator#step-3-download-zip-file-with-your-generated-keys)
-1. Enter the keystore password
-1. Finally click "Add validator" to add the validator to Teku
-1. Repeat if you have multiple keys
+2. In your file explorer, locate the content of your backup file, and navigate into the `teku/keys` (yes Teku) folder. Next, drag and drop the `json` key files into the "Browse Files" field.
+4. For each keyfile, enter the password (these are stored in the `Teku/passwords` folder)
+4.  Finally click "Add validator" to add the validator to Teku
+5.  Repeat if you have multiple keys
+{{< /tab >}}
+{{< tab "Manual method: Prysm" >}}
 
-If you did everything right, you will see a table with your validators at the top of the page. Click on the "BeaconChain" icons to get more details on the status and performance of your validator on the beaconcha.in website.
-
-## 2022-04-06: Update 0.0.62
-
-Since version 0.0.62 the Avado RocketPool package no longer includes its own validator. So you need to move your validators to a separate validator package when you update. To avoid any risk of slashing, we decided to make this a (one time) manual process.
-
-We recommend moving your validator to *Teku* to support a client diversity - but we provide instructions to move to Prysm too if you want to keep validating through Prysm. Choose which validator you want to go for and follow either one of of the following instructions.
-
-
-### Moving your validators to Teku
-
-Teku is a validator for ETH2 - and you can run your minipool through Teku.
-
-1. Update the RocketPool package on Avado to version 0.0.62
-1. **Double check the version number!** It must be 0.0.62!
-  If you run an older version, you risk running your validator twice which is a slashable offence.
-1. Download RocketPool backup (in the RocketPool Dapp)
-   {{< figure src="backup.png" >}}
-2.  Check the contents of the backup file:
-   {{< figure src="backup-contents.png" >}}
-  (3 validators in this example)
-3. Wait 2 epochs (~30 minutes).
-4. Install the Teku package (http://my.ava.do/#/installer - "Teku ETH2 beacon chain & validator"  
-5. Open the Teku package
-6. Click "Add Validator"
-
-
-
-### Moving your validators to Prysm
-
-If you prefer moving your validator to Prysm - follow these steps instead:
-
-1. Update the RocketPool package on Avado to version 0.0.62
-1. **Double check the version number!** It must be 0.0.62!
-  If you run an older version, you risk running your validator twice which is a slashable offence.
-1. Download RocketPool backup (in the RocketPool Dapp)
-   {{< figure src="backup.png" >}}
-2.  Check the contents of the backup file:
-   {{< figure src="backup-contents.png" >}}
-  (3 validators in this example)
-3. Wait 2 epochs (~30 minutes).
-4. Install the Prysm validator package (http://my.ava.do/#/installer - "Prysm Validator" ) - if you are already staking ETH2 you will already have this and you can skip this step.
 1. Open the Prysm validator Dapp. If you don't run other validators yet, you will see this screen. Select "Import Keystores" and click the "Select wallet" button (If you already have validators running, click "Wallet & Accounts > Account list > Import Keystores" instead)
    {{< figure src="onboarding.png" >}}
-1. In your file explorer, locate the content of your backup file, and navigate into the `teku/keys` (yes Teku) folder. Next, drag and drop the `json` key files into the "Browse Files" field.
-1. Select "Keystores have different passwords"
-1. For each keyfile, enter the password (these are stored in the `Teku/passwords` folder)
-1. Click "No" on the slashing protection data
-1. Click continue
+2. In your file explorer, locate the content of your backup file, and navigate into the `teku/keys` (yes Teku) folder. Next, drag and drop the `json` key files into the "Browse Files" field.
+3. Select "Keystores have different passwords"
+4. For each keyfile, enter the password (these are stored in the `Teku/passwords` folder)
+5.  Click "No" on the slashing protection data
+6.  Click continue
    {{< figure src="keys.png" >}}
+{{< /tab >}}
+{{< /tabs >}}
 
-Done ! Your validator will pick up the validation process and you will be validating.
+### Configure the Fee Recipient address
 
-## Redstone release (2022-08)
+Because the Avado Rocket Pool package uses the Smoothing Pool, the validators need to use the smoothing pool address as the fee recipient address.
 
-Rocket Pool deployed a major upgrade called “Redstone” with major changes to how Rocket Pool works. For Avado users this means:
-* All users join a smoothing pool which collectively pools the priority fees of transactions post merge. This is a way to effectively reduce the randomness associated with block proposals on the Beacon Chain.
-**This requires clicking the “Update” button in the new Avado package**
-Note that this requires that the “fee recipient address” of your Rocket Pool validators must be set to the smoothing pool’s address. The Avado package configures this automatically for you. **If you manually change this address, you will get punished.**
-* The rewards system has changed. The rewards are no longer claimed automatically. You can now claim at your own discretion when the gas fees are low
+The smoothing pool address is [`0xd4E96eF8eee8678dBFf4d535E033Ed1a4F7605b7`](https://etherscan.io/address/0xd4E96eF8eee8678dBFf4d535E033Ed1a4F7605b7)
 
-### Rocket Pool staking merge ready checklist
+If you used the automatic method above, this address is configured automatically.
+If you change this address, an error banner will appear on top of the Rocket Pool wizard:
 
-* Make your Execution Client (Geth) and Beacon Chain Client (Teku or Prysm) are up to date
-* Update the Rocket Pool Avado package to version > 0.0.78
-* Click the **update** button
-* Check the node status: The Merge update should be deployed and the smoothing pool should be joined.
-   {{< figure src="screenshot_2022-08-26_at_15.25.56.png" >}}
+{{< figure src="fee_recipient_address.png" >}}
 
+Click the **Correct the fee recipient address** button to correct the fee recipient address.
+
+For Teku, you can edit the fee recipient address on the settings if plan to only run minipool validators. If you mixed solo staking nodes and rocket pool nodes, you can set the fee recipient address per validator in the validator list.
+
+## Step 6: Wait and monitor
+
+It will take a while for Rocket Pool to deposit the second 16 ETH to the deposit contract and for your validator to get to the front of the queue.
+You can track the status by clicking the 🚀 logo of the validator on the status page. This takes you to the <https://rocketscan.io> website and shows you the complete history of your minipool.
+
+## Step 7: Claim rewards
+
+On a monthly basis, rewards can be claimed via the **Rewards** page. Note that claiming rewards involves a smart contract call and will need gas money from your hot wallet. For most users it is smarter to wait multiple months before withdrawing rewards.
+
+{{< figure src="rewards.png" >}}
+
+The **Claim rewards** button withdraws all rewards to your withdrawal address.
+
+The **Clain and restake RPL rewards** button, withdraws the ETH rewards, and restakes the RPL rewards to your Rocket Pool node.
+
+## Adding more minipools
+
+It is possible to add multiple minipools. On the setup page, click **Add another minipool** to add an extra minipool.
 
 ## More information
 * Node operator commision details:
@@ -301,13 +237,6 @@ https://docs.rocketpool.net/overview/faq/#how-does-the-protocol-protect-the-valu
 https://coinmarketcap.com/currencies/rocket-pool-eth/
 * Token value (RPL)
 https://coinmarketcap.com/nl/currencies/rocket-pool/
-
-## Major benefits of running a Rocket Pool node
-Here are the major benefits of running a Rocket Pool node:
-- You only need 16 ETH instead of 32 ETH to run a validator yourself
-- You earn half of the validator's total ETH rewards, plus an extra commission (varies from an additional 5 to 20 percentage points)
-- You earn interest on the RPL you stake as supplemental insurance
-- You can participate in the DAO and get to vote on changes to Rocket Pool's protocol or settings"
 
 ## AVADO support channel
 Need community help?
