@@ -47,6 +47,12 @@ Temporarily being offline is not a real issue. You'll will just miss out on some
 {{< figure src="/packages/rocketpool/rocketpool.png" >}}
 [Rocket Pool](https://rocketpool.net/) is a decentralised Ethereum staking pool. It allows you to stake with only 16 ETH from yourself plus 16 ETH from the Rocket Pool staking pool. As insurance you also need 1.6 worth of ETH in Rocket Pool's RPL token.
 
+Benefits of running a Rocket Pool node:
+- You only need 16 ETH instead of 32 ETH to run a validator
+- You earn half of the validator's total ETH rewards, plus an extra commission (varies from an additional 5 to 20 percentage points)
+- You earn interest on the RPL you stake as supplemental insurance
+- You can participate in the DAO and get to vote on changes to Rocket Pool's protocol or settings"
+
 To run a Rocket Pool node you need to:
 1. {{< button relref="/packages/geth" >}}Run an execution client (Geth){{< /button >}}
 2. {{< button relref="/packages/teku" >}}Run a consensus client (Teku){{< /button >}}
