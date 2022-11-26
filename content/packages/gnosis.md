@@ -4,21 +4,56 @@ description: Instructions on how to start validating on the Gnosis Beacon chain
 aliases: [/en/tutorials/gnosis_beacon_chain]
 ---
 
+{{< toc >}}
+
+# 🚀 The merge 🚀
+
+🗓️ *[The Gnosis Merge](https://docs.gnosischain.com/specs/hard-forks/merge) is currently scheduled for ~ Wednesday the **7th of December 2022**. Please be sure to update your nodes before **November 30th.***
+
+{{< hint type=caution title="Slashing risk" >}}
+⚠️ Never run the same key on two different validators at the same time. ⚠️ 
+This is a slashable offense. So be careful in the next steps.
+{{< /hint >}}
+
+What you have to do:
+1. 🦉 Make sure your **Nethermind Gnosis** ("Execution client") package is up to date: you should have version `0.0.20` or newer.
+2. ⚠️ Prysm is no longer support, so you have to replace it with **Teku**:
+   1. 👀 Verify you have a backup of your **deposit files** and **passwords** (If you don't, do *not* proceed to the next step and [ask for help](#avado-support-channel) instead) 
+   2. 🚮 Remove the **Gnosis Validator** and **Gnosis Beacon Chain** packages:
+       * Open the "[Gnosis Beacon Chain management page](http://my.ava.do/#/Packages/prysm-gnosis-beacon-chain.avado.dnp.dappnode.eth/detail)" and click **Remove**
+       * Open the "[Gnosis Validator management page](http://my.ava.do/#/Packages/prysm-gnosis-validator.avado.dnp.dappnode.eth/detail)" and click **Remove**
+   4. ➕ Install the **Teku-Gnosis** package from the [DappStore](http://my.ava.do/#/installer/teku-gnosis.avado.dnp.dappnode.eth)
+   5. ✏️ Configure you **fee recipient address**: Open the [Settings page](http://teku-gnosis.my.ava.do/settings) and enter the address where you want to receive the fees of your proposed blocks.
+   6. 🔑 Import your keys: Open the [Avado Teku Gnosis package](http://teku-gnosis.my.ava.do/), open the **Add validator** box and (per key):
+      * Click **Choose keystore file...** and select your keystore file
+      * Enter the corresponding password
+      * Click **Add validator**
+      * Repeat for all your keys. If your keys all have the same password, you leave the password field as is, and immediately click **Add Validator** after selecting the next keystore file.
+  7. 🧑‍💻 Check the status:
+     * Check peers: You should have both **inbound** and **outbound** peers. If you only have outbound peers, check your firewall.
+     * Check your validators on the Gnosis Beacon Chain Dashboard. You can do this by clicking the green bar with the 📡 logo.
+
+{{< figure src="teku-gnosis.png" >}}
+
+{{< hint type=important >}}
+The Gnosis chain is moving to Proof of Stake soon. The information below will be outdated soon.
+{{< /hint >}}
+
+# Set up a Validator on the Gnosis Beacon Chain
+
+
 {{< hint type=important >}}
 It is not difficult to follow the steps in this guide to start staking on the Gnosis beacon chain but it involves a few steps to configure your Metamask wallet for the Gnosis network (formerly xDai) and to bridge funds from the ETH mainnet across to the Gnosis network. These steps can feel intimdating at first but it is really not that hard if you follow the guide and soon it will all make sense and you will enjoy the luxury of operating on an ETH sidechain with ulta-low transaction fees in xDai.
-
 {{< /hint >}}
 
 {{< hint type=tip title=success >}}
 Avado makes it easy. At no point in following this Avado guide will you ever need to access a command line to run a script. Official Gnosis docs are here and you can and should read them but be warned, the methods are complicated! Read the Gnosis docs but return to this guide for the "easy" method. https://docs.gnosischain.com/
-
 {{< /hint >}}
 
 
-# Set up a Validator on the Gnosis Beacon Chain
 Getting started from scratch (fresh install) ***Owl memes are encouraged as we build our Gnowledge!***
 
- {{< figure src="gnowledge_avado.jpg" >}}
+{{< figure src="gnowledge_avado.jpg" >}}
 
 {{< hint type=tip title=success >}}
  This guide describes the steps of generating keys using the Gnosis GBC Key Generator package and then accessing the official Gnosis Beacn Chain Deposit website to complete the deposit to the Gnosis Beacon Chain deposit contract 0x0B98057eA310F4d31F2a452B414647007d1645d9 
