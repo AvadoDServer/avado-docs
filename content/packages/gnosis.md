@@ -33,6 +33,7 @@ What you have to do:
   8. 🧑‍💻 Check the status:
      * Check peers: You should have both **inbound** and **outbound** peers. If you only have outbound peers, check your firewall.
      * Check your validators on the Gnosis Beacon Chain Dashboard. You can do this by clicking the green bar with the 📡 logo.
+  9. Note that your Avado may run at 100% CPU for quite a while. As a point of reference: on an Avado i7, Nethermind-gnosis took about 12 hours of high CPU usage (sync from scratch). Teku-gnosis took 24 hours to drop from ~200% to ~100% CPU usage.
 
 {{< figure src="teku-gnosis.png" >}}
 
