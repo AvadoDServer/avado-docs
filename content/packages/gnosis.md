@@ -30,7 +30,8 @@ What you have to do:
       * Click **Add validator**
       * Repeat for all your keys. If your keys all have the same password, you leave the password field as is, and immediately click **Add Validator** after selecting the next keystore file.
   7. 🔥 Teku Gnosis uses port `9006` for its p2p communication. Manually open this port if your are not using UPnP.
-  8. 🧑‍💻 Check the status:
+  8. ⏳ Be patient: Syncing takes some time. You will see high CPU usage for a while. (As a point of reference: on an Avado i7, Nethermind-gnosis took about 12 hours of high CPU usage (sync from scratch). Teku-gnosis took 24 hours to drop from ~200% to ~100% CPU usage.)
+  9. 🧑‍💻 Check the status:
      * Check peers: You should have both **inbound** and **outbound** peers. If you only have outbound peers, check your firewall.
      * Check your validators on the Gnosis Beacon Chain Dashboard. You can do this by clicking the green bar with the 📡 logo.
 
