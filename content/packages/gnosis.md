@@ -17,7 +17,7 @@ This is a slashable offense. So be careful in the next steps.
 
 What you have to do:
 1. 🦉 Make sure your **Nethermind Gnosis** ("Execution client") package is up to date: you should have version `0.0.20` or newer.
-2. ⚠️ Prysm is no longer support, so you have to replace it with **Teku**:
+2. ⚠️ The old Gnosis package (Prysm-based) is no longer support, so you have to replace it with **Teku-Gnosis**:
    1. 👀 Verify you have a backup of your **deposit files** and **passwords** (If you don't, do *not* proceed to the next step and [ask for help](#avado-support-channel) instead) 
    2. 🚮 Remove the **Gnosis Validator** and **Gnosis Beacon Chain** packages:
        * Open the "[Gnosis Beacon Chain management page](http://my.ava.do/#/Packages/prysm-gnosis-beacon-chain.avado.dnp.dappnode.eth/detail)" and click **Remove**
