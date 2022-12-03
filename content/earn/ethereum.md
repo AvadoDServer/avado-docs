@@ -63,4 +63,4 @@ Next you need to **monitor** and **keep your node online**.
 
 ## Monitoring your validator(s)
 
-The easiest and recommended way to monitor your validators is to create an account on [beachoncha.in](https://beachoncha.in) and register your validators' public keys in your account, you can then opt in to get e-mail alerts whenever you miss an attestation or when you propose a block
+The easiest and recommended way to monitor your validators is to create an account on [beaconcha.in](https://beaconcha.in) and register your validators' public keys in your account, you can then opt in to get e-mail alerts whenever you miss an attestation or when you propose a block
