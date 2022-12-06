@@ -31,6 +31,50 @@ No further action should be required on your part just wait until your Chain Sta
 
 {{< figure src="geth-synced.png" >}}
 
+
+## Geth syncing process breakdown
+
+⌛️ Syncing geth is a lengthy process, so you will need patience. This section gives a breakdown of the different phases and how you check geth's progress and can help you assess if your log looks normal. It also illustrates why geth seems stuck at 99%?
+
+The metrics and statistics were gathered on an **Avado i7/2TB** with:
+* 1 Gbps fibre line
+* strong USB fan
+* extra Geth options : `--cache 8192`, port 30303 open on router
+* extra Teku options : `-Xmx5g`, port 9000 open on router
+
+It took *~20.5 hrs* from start to the time when the validator came back online (started attesting). Your numbers will vary, depending on your network speed and Avado type. In particular, phase 1 is very network intensive, so if you have a slower network, this phase will take much longer. All phases are heavy on the ssd, so do use a fan to cool the Avado, so the ssd does not have to throttle.
+
+The geth syncing process starts with some initialization and starts looking for peers. When it has found a few --opening port 30303 on the router helps a lot here--, it starts the actual syncing progress. The the main process may be divided into 5 major phases:
+
+1. Import block headers / block receipts
+   - this phase imports the main bulk of the blockchain data
+   - dashboard initially shows Nan% then gradually runs up to 99%
+   - network intensive (peak data rate `>250Mbps`)
+   - log shows `imported new block headers` and `imported new block receipts`. At the end of these lines it shows the “age” of the block imported.  this will count down from many years/months/weeks (most ancient) to eventually weeks/days/hours (most recent)
+   - this phase took about *~7 hrs*
+2. State sync in progress
+   - this phase builds the internal states
+   - dashboard stays at 99% all of this time
+   - cpu and disk i/o intensive (cpu `>50%`, ssd temperature `>70℃`)
+   - log shows `state sync in progress` with an “eta” countdown - not very accurate but gives you a sense of its progress
+   - this phase took about *~11 hrs*
+3. State heal in progress
+   - this phase catches up between the computed state and the newly arriving data
+   - dashboard continues to be “stuck” at 99%
+   - slightly less hectic (cpu `<20%`, ssd temperature `<70℃`)
+   - log shows `state heal in progress`
+   - there is a “pending” number but fluctuates and not obvious when it will end, but it will eventually get there
+   - this phase took about *~2 hrs*
+4. wait for sync to complete
+   - at this point dashboard shows 100%, but geth may not be quite done yet
+   - if you had already started your consensus client (Teku syncs almost instantly) it was just following the chain and logging `waiting for execution layer sync`.
+   - once geth finished syncing, Teku will start attesting.
+   - (if you’re using rocketpool, once geth finished syncing, you’ll be able to load/restore the validator keys via the rocketpool interface)
+   - this phase took me ~0.5 hrs
+5. State snapshot
+   - this phase generates snapshots for other nodes to sync. This overlaps with the last part of phase 4. So you start to see `generating state snapshot`,  `aborting/resuming state snapshot generation`, etc. in the log even before syncing finished. These messages are expected. There is an “eta” to show when the process is expected to finish, which could take another few hours, and remains cpu intensive. All this happens in the background, and does not affect attestation.  
+
+
 ## Optional Configuration and Tuning
 
 The following steps are not required for your node to work correctly. The following steps allow you to tweak Geth for your context by using non-default settings. You do not need to do any of the following if you do not want to.
