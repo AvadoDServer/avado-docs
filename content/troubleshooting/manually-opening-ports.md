@@ -8,7 +8,24 @@ aliases: ["/en/troubleshooting/manually-opening-ports"]
 
 Certain packages - like blockchain nodes - usually need to open a couple of ports on your router to work well. 
 
-The AVADO OS is be able to open specific ports on your router - so this should happen automatically, but not always: if your router is not set to accept these configurations through uPNP - then you need to open ports manually, and that is what we'll explain here.
+Adrian Sutton from the Teku team wrote a great blog post about this: <https://www.symphonious.net/2021/08/14/exploring-eth2-why-open-ports-matter>
+
+The AVADO OS is able to automatically open specific ports on your router via [UPnP](https://en.wikipedia.org/wiki/Universal_Plug_and_Play).
+If UPnP is not enabled on your router, you need to open ports manually. The process is explained on this page.
+
+## Avado Ports
+
+| Dapp                   | Port     | Protocols |
+|------------------------|----------|-----------|
+| Geth (mainnet)         | 30303    | TCP/UDP   |
+| Nethermind (mainnet)   | 40303    | TCP/UDP   |
+| Nethermind (Gnosis)    | 30305    | TCP/UDP   |
+| Prysm Beacon chain (mainnet)        | 12000    | UDP       |
+|                        | 13000    | TCP       |
+| Teku (mainnet)         | 9000     | TCP/UDP   |
+| Teku (Gnosis)          | 9006     | TCP/UDP   |
+| Qtum                   | 3888     | TCP       |
+
 
 ## Find out the internal IP address of your AVADO
 
