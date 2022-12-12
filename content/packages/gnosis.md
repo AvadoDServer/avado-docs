@@ -6,6 +6,31 @@ aliases: [/en/tutorials/gnosis_beacon_chain]
 
 {{< toc >}}
 
+# Temporary Bootnodes for Dec 2022: "No peers"
+
+On 7 Dec 2022, a subset of Bootnodes that are baked into the Gnosis client releases stopped functioning normally. This resulted in instances of new nodes being unable to find peers unless they specified custom bootnodes. This became a problem for newly-introduced nodes. [More info](<https://docs.gnosischain.com/updates/20221208-temporary-bootnodes>)
+
+If you see **no** or **0 peers** in either Nethermind-Gnosis or Teku-Gnosis you can apply the fix below.
+
+_Running nodes are unaffected. So if you do have peers. Don't change anything!_
+
+## 0 peers in Teku-Gnosis:
+{{< figure src="zero-peers-teku-gnosis.png" >}}
+
+Open the [Nethermind manage page](http://my.ava.do/#/Packages/teku-gnosis.avado.dnp.dappnode.eth/detail) and add this to the `EXTRA_OPTS` field:
+```
+--p2p-discovery-bootnodes=enr:-Ly4QClooKhmB409-xLE52rTmC2h9kZBO_VFXR-kjqLDdduuZoxsjfwTxa1jscQMBpqmezG_JCwPpEzEYRM_1UCy-0gCh2F0dG5ldHOIAAAAAAAAAACEZXRoMpCCS-QxAgAAZP__________gmlkgnY0gmlwhKXoiruJc2VjcDI1NmsxoQLLYztVAaOL2dhsQf884Vth9ro6n9p2yj-osPfZ0L_NwYhzeW5jbmV0cwCDdGNwgiMog3VkcIIjKA
+```
+
+## 0 peers in Nethermind-Gnosis:
+Open the [Nethermind manage page](http://my.ava.do/#/Packages/nethermind-gnosis.avado.dnp.dappnode.eth/detail) and add this to the `EXTRA_OPTS` field:
+```
+--Discovery.Bootnodes enode://a8558c4449bdb4ed47b8fd0ceaee8cf56272cd308e98e693a838d58b9abd2411b71b9b7e2d63a50b140fd9b0a2e05e83f338c3906dd925e9f178f0feda0c4ca7@165.232.138.187:30303
+
+```
+(make sure there is a `space` between the different arguments)
+
+
 # 🚀 The merge 🚀
 
 🗓️ *[The Gnosis Merge](https://docs.gnosischain.com/specs/hard-forks/merge) is currently scheduled for ~ Wednesday the **7th of December 2022**. Please be sure to update your nodes before **November 30th.***
@@ -263,6 +288,22 @@ Once the GBC recognizes your deposit your validator will be assigned a Validator
 
 {{< /hint >}}
 
+## Common issues
+
+Check the [Teku-Gnosis logs](http://my.ava.do/#/Packages/teku-gnosis.avado.dnp.dappnode.eth/detail) and the [Nethermind-Gnosis logs](http://my.ava.do/#/Packages/nethermind-gnosis.avado.dnp.dappnode.eth/detail):
+
+### Nethermind-Gnosis
+
+Problem: `nginx: [emerg] cannot load certificate ...`
+: Fix: Restart Nethermind-gnosis
+
+Proble: `Failed to create CoreCLR, HRESULT: 0x80070008`
+: Fix: Make sure the Dappmanager core package is up to date (i.e. newer than 0.0.42)
+
+### Teku-Gnosis
+
+Problem: `Waiting for the JWT Token`
+: Fix: Restart Nethermind (and check the Nethermind logs for errors listed above)
 
 ## AVADO support channel
 Telegram: [AVADO - Gnosis Staking](https://t.me/AvadoXDAI)
