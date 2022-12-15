@@ -158,7 +158,7 @@ Problem: `nginx: [emerg] cannot load certificate ...`
 : Fix: Restart Nethermind-gnosis
 
 Proble: `Failed to create CoreCLR, HRESULT: 0x80070008`
-: Fix: Make sure the Dappmanager core package is up to date (i.e. newer than 0.0.42)
+: Fix: Make sure the Dappmanager core package is up to date (i.e. at least 0.0.42)
 
 ### Teku-Gnosis
 
