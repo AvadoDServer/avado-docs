@@ -157,7 +157,10 @@ Check the [Teku-Gnosis logs](http://my.ava.do/#/Packages/teku-gnosis.avado.dnp.d
 Problem: `nginx: [emerg] cannot load certificate ...`
 : Fix: Restart Nethermind-gnosis
 
-Proble: `Failed to create CoreCLR, HRESULT: 0x80070008`
+Problem: `Failed to create CoreCLR, HRESULT: 0x80070008`
+: Fix: Make sure the Dappmanager core package is up to date (i.e. at least 0.0.42)
+
+Problem: `Waiting for peers...`
 : Fix: Make sure the Dappmanager core package is up to date (i.e. at least 0.0.42)
 
 ### Teku-Gnosis
@@ -166,7 +169,7 @@ Problem: `Waiting for the JWT Token`
 : Fix: Restart Nethermind (and check the Nethermind logs for errors listed above)
 
 Problem: `Connected Peers: 0`
-: Fix: Make sure Teku Gnosis is up to date (i.e. new than 0.0.1)
+: Fix: Make sure port `30305` is open ([More info]({{< relref "/troubleshooting/manually-opening-ports#avado-ports" >}}))
 
 ## AVADO support channel
 Telegram: [AVADO - Gnosis Staking](https://t.me/AvadoXDAI)
