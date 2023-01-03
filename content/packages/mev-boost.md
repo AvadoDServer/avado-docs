@@ -34,7 +34,8 @@ If you check the validator log, you should see entries like this from time to ti
 For most users the default configuration should be OK, but you can  configure MEV-Boost via the Avado UI on <http://my.ava.do/#/Packages/mevboost.avado.dnp.dappnode.eth>
 
 The default configuration uses the **bloXroute** (ethical) and **Ultra Sound** relay endpoints:
-```        https://0xad0a8bb54565c2211cee576363f3a347089d2f07cf72679d16911d740262694cadb62d7fd7483f27afd714ca0f1b9118@bloxroute.ethical.blxrbdn.com,https://0xa1559ace749633b997cb3fdacffb890aeebdb0f5a3b6aaa7eeeaf1a38af0a8fe88b9e4b1f61f236d2e64d95733327a62@relay.ultrasound.money
+```
+  https://0xad0a8bb54565c2211cee576363f3a347089d2f07cf72679d16911d740262694cadb62d7fd7483f27afd714ca0f1b9118@bloxroute.ethical.blxrbdn.com,https://0xa1559ace749633b997cb3fdacffb890aeebdb0f5a3b6aaa7eeeaf1a38af0a8fe88b9e4b1f61f236d2e64d95733327a62@relay.ultrasound.money
 ```
 
 {{< figure src="config.png" >}}
