@@ -68,7 +68,7 @@ Avado runs a server that offers recent snapshots. This is configured by default.
 If you do not want to use this, clear the `initial-state` setting on the settings page. You can also select a different source.
 
 You can verify the checkpoint sync by opening the check page. 
-Check the state root of the displayed trused sources make sure the state root matches. If all state roots match, all is good. You can find more trusted sources on <https://eth-clients.github.io/checkpoint-sync-endpoints/>
+Check the state root of the displayed trusted sources make sure the state root matches. If all state roots match, all is good. You can find more trusted sources on <https://eth-clients.github.io/checkpoint-sync-endpoints/>
 
 {{< figure src="check_checkpoint.png" >}}
 

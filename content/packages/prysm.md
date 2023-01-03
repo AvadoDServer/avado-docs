@@ -6,6 +6,8 @@ aliases: [/en/tutorials/prysmvalidator]
 ---
 {{< figure src="avatar.png" >}}
 
+{{< toc >}}
+
 [Prysm](https://docs.prylabs.network/) is an Ethereum proof-of-stake client written in Go by Prysmatic Labs.
 
 Prysm is split in two Avado packages:
@@ -70,7 +72,28 @@ It is strongly recommended that you use <https://beaconcha.in> to monitor your v
 {{< /hint >}}
 
 
-## 6.0 Troubleshooting
+## Checkpoint sync
+
+Prysm enables you to be up and running in only a few minutes by downloading a recent finalized checkpoint state from a trusted source rather than syncing from genesis.
+
+### Configure
+
+[EthStaker](https://ethstaker.cc/) runs a server that offers recent checkpoint snapshots. To use it, add following arguments to the `EXTRA_OPTS` field on <http://my.ava.do/#/Packages/prysm-beacon-chain-mainnet.avado.dnp.dappnode.eth/detail>:
+```
+--checkpoint-sync-url=https://beaconstate.ethstaker.cc
+--genesis-beacon-api-url=https://beaconstate.ethstaker.cc
+```
+
+If your Prysm already started syncing from genesis: click **Reset** to make sure **checkpoint sync** is used.
+
+### Check
+
+You can verify the checkpoint sync by opening the check page. 
+Check the state root of the displayed trusted sources make sure the state root matches. If all state roots match, all is good. You can find more trusted sources on <https://eth-clients.github.io/checkpoint-sync-endpoints/>
+
+
+
+## Troubleshooting
 
 There is a known issue with the prysm web UI and the Brave browser. If you are using Brave, please make sure you turn the shields off for this page or it will not read correctly.
 
