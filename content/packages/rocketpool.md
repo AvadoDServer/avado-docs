@@ -230,6 +230,8 @@ The **Clain and restake RPL rewards** button, withdraws the ETH rewards, and res
 
 It is possible to add multiple minipools. On the setup page, click **Add another minipool** to add an extra minipool.
 
+If you registered your node before the [Redstone update](https://docs.rocketpool.net/guides/redstone/whats-new.html) (August 2022), you first need to "Initialize Fee Distributor" before you can add an extra minipool. Simply press the **Initialize** button on the Setup page. This is required to keep track of your average minipool commission.
+
 ## More information
 * Node operator commision details:
 https://docs.rocketpool.net/overview/faq/#how-does-the-protocol-protect-the-value-of-reth
