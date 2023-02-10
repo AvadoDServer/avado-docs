@@ -15,7 +15,7 @@ Praising is easy!
 
 To praise somebody, for example `@sponnet`, type the following in any Avado channel:
 ```
-/praise @sponnet "for helping me understand my exotic firewall issue and help me bring my Avado back online."
+/praise @sponnet "for helping me understand my exotic firewall issue and helping me bring my Avado back online."
 ```
 
 See more examples of praise: [Writing excellent Praise](https://givepraise.xyz/docs/writing-excellent-praise)
