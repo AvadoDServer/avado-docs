@@ -20,7 +20,8 @@ If UPnP is not enabled on your router, you need to open ports manually. The proc
 | Geth (mainnet)         | 30303    | TCP/UDP   |
 | Nethermind (mainnet)   | 40303    | TCP/UDP   |
 | Nethermind (Gnosis)    | 30305    | TCP/UDP   |
-| Prysm Beacon chain (mainnet)        | 12000    | UDP       |
+| Erigon (mainnet)       | 30309    | TCP/UDP   |
+| Prysm Beacon chain (mainnet)| 12000    | UDP       |
 |                        | 13000    | TCP       |
 | Teku (mainnet)         | 9000     | TCP/UDP   |
 | Teku (Gnosis)          | 9006     | TCP/UDP   |
