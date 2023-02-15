@@ -24,8 +24,8 @@ When you are asked to send the device back, our shipping addresses are as follow
 
 ```
 AVADO AG
-Hasenbuelweg 206
-300 Zug
+Hasenbuelweg 20
+6300 Zug
 Switzerland
 ```
 <--->
