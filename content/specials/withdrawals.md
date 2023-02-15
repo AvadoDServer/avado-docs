@@ -7,6 +7,12 @@ Exciting news: Ethereum staking withdrawals are coming soon. The official Ethere
 The update is expected to happen early April 2023:
 {{< tweet user="christine_dkim" id="1624069668460761091" >}}
 
+{{< figure 
+    src="withdrawals.png"
+    width=500px
+    title="This is what withdrawals will look like (Zhejiang test network)"
+    link="https://zhejiang.beaconcha.in/validator/62474#withdrawals"
+ >}}
 
 ## TLDR;
 
@@ -35,11 +41,11 @@ If you are a solo staker (32ETH) , you have to check your withdrawal address. Re
 
 You can check what address you have by checking your validator on https://beaconcha.in and checking the “Deposits” tab. 
 
- {{< 
+{{< 
     figure src="0x00_solo.png"
     title="The withdrawal credential starts with `0x00`, so this validator will need to set a withdrawal address"
     link="https://beaconcha.in/validator/42#deposits"
- >}}
+>}}
 
  {{< 
  figure src="0x01_rocketpool.png" 

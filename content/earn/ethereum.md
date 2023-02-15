@@ -26,7 +26,7 @@ To stake solo stake ETH you need to:
 1.  Run an **Execution Client** _(a.k.a. Execution Engine or ETH1 client)_: An execution client is software that listens for Ethereum transactions, executes them and holds all necessary ETH information in its database.  
     {{< button relref="/packages/geth" >}}Install Geth execution client {{< /button >}}
 2. Run a **Consensus Client** _(a.k.a. Beacon Chain client or ETH2 client)_: A Consensus client is software that runs the proof of stake consensus algorithm which enables the Ethereum network to agree on blocks from the execution clients. 
-    {{< button relref="/packages/teku" >}}Install Consensus Client Teku{{< /button >}} or {{< button relref="/packages/teku" size="small" >}}Install Consensus Client Prysm{{< /button >}}
+    {{< button relref="/packages/teku" >}}Install Consensus Client Teku{{< /button >}} or {{< button relref="/packages/prysm" size="small" >}}Install Consensus Client Prysm{{< /button >}}
 3. **Generate keys** and **deposit 32 ETH to the Deposit Contract**  
    {{< button relref="/packages/eth2keygen" >}}Create your validator keys{{< /button >}}
 4. **Import keys** into your **Validator**: The validator package creates and validates new blocks in the chain. This is the work that get rewarded with ETH. In [Teku]({{< relref "/packages/teku" >}}) the validator is bundled with the Consensus Client. In [Prysm]({{< relref "/packages/prysm" >}}), this is a separate package that needs to be installed.
