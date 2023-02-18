@@ -7,6 +7,10 @@ On this page:
 
 {{< toc >}}
 
+{{< hint type=important title="Withdrawals update" >}}
+Exciting news: Ethereum staking withdrawals are coming soon. [Read more]({{< ref "/specials/withdrawals" >}})
+{{< /hint >}}
+
 [Ethereum Staking](https://ethereum.org/en/staking/solo) with AVADO helps secure the Ehtereum network. In exchange your will receive ETH rewards. 
 
 To stake ETH on an AVADO you need 32 ETH to run a [solo validator](#solo-staking) or 17.6 ETH to run a [Rocket Pool validator](#rocket-pool).
