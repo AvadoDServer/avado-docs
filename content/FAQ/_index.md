@@ -71,8 +71,17 @@ If this worries you, you can:
 
 ## Avado Storage
 
-## Can I upgrade my AVADO storage
+## Can I upgrade my AVADO disk size
 It is not currently possible to upgrade the drive storage. You can try the clean up option.
+If your device seems to use a lot of the available storage, try to re-install some packages, this might help reduce the disk space needed as some packages bloat over time.
+- go to my dapps
+- then look at the right side and click on the "manage" option
+- now you can choose between "Pause", "Restart", "Reset" or "Remove" the package
+- choose "Remove"
+- do this with all clients packages first (starting with Geth)
+- once the package is removed go to the "System" Menue tab and select "Disk Cleanup" at the bottom of the page
+- Now check the disk space available if its enough go ahead and re-install the package you removed
+- If it is not enough, go through the steps above with the next package
 
 ## Packages/Dapps 
 
