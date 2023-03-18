@@ -2,7 +2,6 @@
 title: Discord
 description: How to get into the Avado discord
 type: page
-draft: true
 ---
 
 {{< hint type=note title=Disclaimer >}}
