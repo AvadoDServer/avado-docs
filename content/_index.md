@@ -57,7 +57,9 @@ We host a number of [YouTube video's](https://www.youtube.com/avadocloud) that g
 ## Social Media
 
 [Youtube](https://www.youtube.com/@avadocloud)  
-[Twitter](https://twitter.com/AvadoCloud)
+[Twitter](https://twitter.com/AvadoCloud)  
+[Linkedin](https://www.linkedin.com/company/avadocloud/?viewAsMember=true)  
+[Reddit](https://www.reddit.com/r/AVADO/)
 
 {{< /columns >}}
 
