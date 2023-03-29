@@ -7,6 +7,8 @@ Exciting news: Ethereum staking withdrawals are coming soon. The official Ethere
 [The update is scheduled for April 12, 2023](https://blog.ethereum.org/2023/03/28/shapella-mainnet-announcement)
 <!-- {{< tweet user="TimBeiko" id="1640722906744487936" >}} -->
 
+Your Execution client (Geth or Nethermind) and Beacon Chain client (Teku or Prysm) need to be updated. We recommend to check that automatic updates are enabled, so you get the required updates automatically.
+
 ## TLDR;
 
 {{< mermaid class="text-center" >}}
