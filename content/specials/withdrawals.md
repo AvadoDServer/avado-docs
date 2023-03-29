@@ -9,6 +9,14 @@ Exciting news: Ethereum staking withdrawals are coming soon. The official Ethere
 
 Your Execution client (Geth or Nethermind) and Beacon Chain client (Teku or Prysm) need to be updated. We recommend to check that automatic updates are enabled, so you get the required updates automatically.
 
+|              | ready for Shapella? |
+|--------------|---------------------|
+| Geth         | ✅ (10.0.52, based on Geth v1.11.5) |
+| Nethermind   | Pending (0.0.34, based on Nethermind v1.17.3) |
+| Teku         | Pending (0.0.31, based on Teku v23.3.1) |
+| Prysm Beacon Chain | Pending (0.0.55, based on Prysm v4.0.1) |
+| Prysm Validator    | Pending (0.0.52, based on Prysm v4.0.1) |
+
 ## TLDR;
 
 {{< mermaid class="text-center" >}}
