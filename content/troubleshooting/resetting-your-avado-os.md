@@ -58,7 +58,6 @@ You will be asked for a password
 
 ```
 [sudo] password for avado: _
-
 ```
 
 now type `avado` and press enter
@@ -71,9 +70,4 @@ AVADO login:
 
 When this is done - you should be able to connect back to the WiFi and the AVADO has been restored in its factory state.
 
-_**If you have any questions on anything above or any suggested improvements please feel free to reach out on telegram @nebnitram**_
-
-## AVADO tech support on Telegram
-
-[AVADO - Technical Support](https://t.me/joinchat/IR7AXecB5s4wZDPk) 
-
+**If you have any questions on anything above or any suggested improvements please feel free to reach out on [Discord]({{< discord >}})**
