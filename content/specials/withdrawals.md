@@ -16,6 +16,7 @@ Your Execution client (Geth or Nethermind) and Beacon Chain client (Teku or Prys
 | Teku         | Pending (0.0.31, based on Teku v23.3.1) |
 | Prysm Beacon Chain | Pending (0.0.55, based on Prysm v4.0.1) |
 | Prysm Validator    | Pending (0.0.52, based on Prysm v4.0.1) |
+| MEV-Boost    |  Pending (0.0.9, based on MEV-Boost 1.5.0) |
 
 ## TLDR;
 
