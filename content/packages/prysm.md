@@ -12,6 +12,14 @@ aliases: [/en/tutorials/prysmvalidator]
 Exciting news: Ethereum staking withdrawals are coming soon. [Read more]({{< ref "/specials/withdrawals" >}})
 {{< /hint >}}
 
+{{< hint type=note title="Prysm UI deprecation notice" >}}
+The Prysm team is deprecating its web UI. 
+{{< figure src="deprecation.png" >}}
+
+Don't worry! Avado will introduce a new UI (similar to Teku's UI), before the Prysm UI is removed.
+{{< /hint >}}
+
+
 [Prysm](https://docs.prylabs.network/) is an Ethereum proof-of-stake client written in Go by Prysmatic Labs.
 
 Prysm is split in two Avado packages:
