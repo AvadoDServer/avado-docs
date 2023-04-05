@@ -81,8 +81,8 @@ Follow the instructions on the page and if you have any questions, feel free to 
 
 * Adding custom tokens:
 [https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-View-See-Your-Tokens-and-Custom-Tokens-in-Metamask](https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-View-See-Your-Tokens-and-Custom-Tokens-in-Metamask)
-* Adding custom xDAI network to MetaMask:  
-[https://www.xdaichain.com/for-users/wallets/metamask/metamask-setup](https://www.xdaichain.com/for-users/wallets/metamask/metamask-setup)
+* Adding custom Gnosis network to MetaMask:  
+(https://docs.gnosischain.com/tools/wallets/metamask/)
 * AVADO NFT contract address:  
 [https://blockscout.com/xdai/mainnet/tokens/0xC3b0E0943A4bC80a15dfd60E15343f691581f254/token-transfers](https://blockscout.com/xdai/mainnet/tokens/0xC3b0E0943A4bC80a15dfd60E15343f691581f254/token-transfers)
 * wxHOPR contract address:  
