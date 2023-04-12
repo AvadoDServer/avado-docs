@@ -21,6 +21,10 @@ The Ethereum protocol allows for only 16 addresses configurations per block (12s
 
 **We recommend to wait a few days before setting your withdrawal address**, let the queue settle first. **You will not loose any rewards if you wait**, it will just take a bit longer before you can use them.
 
+## Video
+
+<!-- {{< youtube id="x9_Jrw8GEkM" title="ETH Withdrawal address tool">}} -->
+
 ## Check your keys
 
 If you have validators that need their withdrawal address set, they will show up in a table.
@@ -71,3 +75,4 @@ Review the information and review the information again.
 
 If you are 100% sure, click the **confirm** button.
 
+If you have multiple validators, repeat the process for each of your validators.
