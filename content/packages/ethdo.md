@@ -23,7 +23,7 @@ The Ethereum protocol allows for only 16 addresses configurations per block (12s
 
 ## Video
 
-<!-- {{< youtube id="x9_Jrw8GEkM" title="ETH Withdrawal address tool">}} -->
+{{< youtube id="2GhErHuao3c" title="ETH Withdrawal address tool">}}
 
 ## Check your keys
 
