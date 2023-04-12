@@ -17,6 +17,7 @@ Your Execution client (Geth or Nethermind) and Beacon Chain client (Teku or Prys
 | Prysm Beacon Chain | ✅ (0.0.55, based on Prysm v4.0.1)        |
 | Prysm Validator    | ✅ (0.0.52, based on Prysm v4.0.1)        |
 | MEV-Boost          | ✅ (0.0.9, based on MEV-Boost 1.5.0)      |
+| ETH Withdrawal address tool     | ✅ (0.0.1)                   |
 
 ## TLDR;
 
@@ -54,7 +55,7 @@ That said, the upcoming RocketPool upgrade, Atlas, will require some actions, bu
 ### Solo staker?
 
 If you are a solo staker (32ETH), there are two scenarios: Your validators either have a withdrawal credential that starts with 
-`0x01` (new stakers) or `0x00` (og stakers). The withdrawal credentials have to be set to `0x01` for the automatic payout of the rewards. If you have a `0x00` address, **you can set your withdrawal address with a tool Avado will release on April 12**. *🤞We promise, no command line interface will be required🤞*
+`0x01` (new stakers) or `0x00` (og stakers). The withdrawal credentials have to be set to `0x01` for the automatic payout of the rewards. If you have a `0x00` address, [**you can set your withdrawal address with a tool Avado will release on April 12**](/packages/ethdo/). *🤞We promise, no command line interface will be required🤞* [More info](/packages/ethdo/)
 
 Once the Shapella fork happens (April 12), we expect a huge queue to set withdrawal addresses. Only 16 addresses can be configured per block (12s), so it will take a while before your change will get through. **We recommend to wait a few days before setting your withdrawal address**, let the queue settle first. **You will not loose any rewards if you wait**, it will just take a bit longer before you can use them.
 
