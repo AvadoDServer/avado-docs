@@ -1,5 +1,5 @@
 ---
-title: Telegram
+title: Telegram 
 ---
 
 We take user support very seriously and want you to have a good experience setting up your device.
