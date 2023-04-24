@@ -24,6 +24,8 @@ Go to: <https://nft.ava.do> connect your wallet and sign the minting transaction
 
 Join the discord and verify your NFT following the instruction in the `#collabland-join` channel. 
 
+[Join Discord]({{< discord >}})  
+
 ## Step 3
 
 You will be asked to verify using collabland. [Insert photos and collabland process] 
