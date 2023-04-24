@@ -30,7 +30,8 @@ We host a number of [YouTube video's](https://www.youtube.com/avadocloud) that g
 
 ## Support
 
-[Discord]({{< discord >}})  
+[Discord](/support/discord)
+
 [Frequently Asked Questions](/faq)  
 
 
