@@ -6,7 +6,7 @@ aliases: ["/en/tutorials/teku"]
 ---
 
 {{< hint type=important title="Withdrawals update" >}}
-Exciting news: Ethereum staking withdrawals are coming soon. [Read more]({{< ref "/specials/withdrawals" >}})
+Exciting news: Ethereum staking withdrawals are live! [Read more]({{< ref "/specials/withdrawals" >}})
 {{< /hint >}}
 
 Teku is an open-source Ethereum consensus client (sometimes called an Ethereum 2.0 client) written in Java. Teku contains a full beacon node implementation and a validator client for participating in consensus.
