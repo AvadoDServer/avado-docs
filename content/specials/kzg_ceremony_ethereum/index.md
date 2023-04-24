@@ -84,7 +84,7 @@ Our approach to collecting entropy was both unique and entertaining. Here's a st
 <--->
 {{< img name="more_beer_more_entropy" size="medium" lazy=false >}}
 {{< /columns >}}
-1. **Postprocess the entropy and contribute it to the Ethereum KZG Ceremony.** We processed the captured entropy and contributed it to the Ethereum KZG Ceremony to help secure the network.  
+1. **Postprocess the entropy and contribute it to the Ethereum KZG Ceremony.** We processed the captured entropy and contributed it to the Ethereum KZG Ceremony to help secure the network.  We used address [`0x8dD4e78567201d1d9F8459a265F4d0ae81ae3C83`](https://ceremony.ethereum.org/#/record) for our contribution (#83341).
   {{< img name="moving_online" size="small">}}
 1. **Wipe the Avado box.** After collecting the entropy, we shut down the Avado box. Because it was running a Live Distribution, this wipes all data. To be extra sure we also destroyed the USB stick and emptied the beers.
 {{< columns >}}
