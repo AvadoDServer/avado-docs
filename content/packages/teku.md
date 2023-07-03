@@ -83,4 +83,4 @@ If you run many validators, it is recommend to increase Teku's memory limit. Ope
 
 
 ## AVADO support channel
-Telegram: [AVADO - Ethereum Club](https://t.me/joinchat/IdBKSAiIvw-q1-1p)
+Discord: https://discord.gg/Vp6Ggsy56P
