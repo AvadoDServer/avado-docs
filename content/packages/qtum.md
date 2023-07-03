@@ -44,8 +44,8 @@ For more information on how QTUM Staking works:
 
 * here is a video by Matt Long explaining in detail how to un-stake your QTUM
 
-* {{< youtube _wOMgDHI5jy8 >}}
+{{< youtube wOMgDHI5jy8 >}}
 
 ## Need support?
 
-*   [AVADO - Qtum Staking Discord channel][(https://discord.gg/jNdBF7ERRn) : Where Qtum stakers hang out
+*   AVADO - Qtum Staking Discord channel[https://discord.gg/jNdBF7ERRn] : Where Qtum stakers hang out
