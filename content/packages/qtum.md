@@ -1,9 +1,10 @@
 ---
-title: QTUM staking
-description: Setting up QTUM staking
+title: QTUM staking & un-staking
+description: Setting up QTUM staking and later withdraw your stake
 tags: 
   - qtum
   - staking
+  - unstaking
 aliases:
   - /en/tutorials/qtum
 ---
@@ -38,6 +39,12 @@ For more information on how QTUM Staking works:
 
 * [https://blog.qtum.org/qtum-staking-guide-when-block-reward-4c01ea9f789b](https://blog.qtum.org/qtum-staking-guide-when-block-reward-4c01ea9f789b)
 * [Avado Qtum AMA Page](https://medium.com/avado-node/ama-session-avado-and-qtum-df4bb8dd7fbd)
+
+* ## Unstaking your QTUM
+
+* here is a video by Matt Long explaining in detail how to un-stake your QTUM
+
+* https://youtu.be/wOMgDHI5jy8
 
 ## Need support?
 
