@@ -48,4 +48,5 @@ For more information on how QTUM Staking works:
 
 ## Need support?
 
-*   AVADO - Qtum Staking Discord channel[https://discord.gg/jNdBF7ERRn] : Where Qtum stakers hang out
+*   AVADO - Qtum Staking Discord channel:
+*   [https://discord.gg/jNdBF7ERRn] 
