@@ -79,7 +79,7 @@ Check the state root of the displayed trusted sources make sure the state root m
 
 ## Memory
 
-If you run many validators, it is recommend to increase Teku's memory limit. Open <http://my.ava.do/#/Packages/teku.avado.dnp.dappnode.eth/detail> and look for the **JAVA_OPTS** environment variable. Next  increase the default `-Xmx3g` (i.e. maximum 3 gigabytes of 'heap space') to `-Xmx5g` (i.e. maximum 5 gigabytes of 'heap space')
+If you run many validators, it is recommend to increase Teku's memory limit. Open <http://my.ava.do/#/Packages/teku.avado.dnp.dappnode.eth/detail> and look for the **JAVA_OPTS** environment variable. Next  increase the default `-Xmx3g` (i.e. maximum 3 gigabytes of 'heap space') to `-Xmx8g` (i.e. maximum 8 gigabytes of 'heap space')
 
 
 ## AVADO support channel
