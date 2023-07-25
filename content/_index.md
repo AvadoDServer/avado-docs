@@ -72,6 +72,3 @@ If you look for instructions on how to use any of the Avado packages, check the 
 
 Check our [AVADO delivery](/support/delivery) page for more info.
 
-{{< hint type=important title="Exciting news: Ethereum staking withdrawals are coming on April 12, 2023" >}}
-[Read more]({{< ref "/specials/withdrawals" >}})
-{{< /hint >}}
