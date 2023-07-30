@@ -31,7 +31,7 @@ Step 5
 Step 6
 : From here you can follow the same instructions from the Avado Docs for setting up ETH2 staking, start at Step 5.1
 
-Reach out on [Telegram](/support/telegram/#staking-support) if you have questions.
+Reach out on [Discord](https://discord.gg/Vp6Ggsy56P) if you have questions.
 
 ## Links
 
