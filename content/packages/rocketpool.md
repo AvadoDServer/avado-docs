@@ -233,13 +233,22 @@ It is possible to add multiple minipools. On the setup page, click **Add another
 If you registered your node before the [Redstone update](https://docs.rocketpool.net/guides/redstone/whats-new.html) (August 2022), you first need to "Initialize Fee Distributor" before you can add an extra minipool. Simply press the **Initialize** button on the Setup page. This is required to keep track of your average minipool commission.
 
 ## More information
-* Node operator commision details:
+* Node operator commission details:
 https://docs.rocketpool.net/overview/faq/#how-does-the-protocol-protect-the-value-of-reth
 * Token value (rETH)
 https://coinmarketcap.com/currencies/rocket-pool-eth/
 * Token value (RPL)
 https://coinmarketcap.com/nl/currencies/rocket-pool/
 
+## Common issues
+
+<!--  -->
+
+Problem: `Error calculating lifetime node rewards: rewards file .... doesn't exist`
+: Fix: Restart the [RocketPool package](http://my.ava.do/#/Packages/rocketpool.avado.dnp.dappnode.eth/detail) and wait for the files to download (Check the [logs](http://my.ava.do/#/Packages/rocketpool.avado.dnp.dappnode.eth/detail)) before you open the **Rewards** page again.
+
+{{< figure src="missing-rewards-file.png" >}}
+
 ## AVADO support channel
 Need community help?
-Telegram: [AVADO - Rocketpool staking](https://t.me/+82CX5K76Fd4xN2M8)
+Discord: [AVADO - Rocketpool-staking](https://discord.com/channels/888744455987929119/1057722135931539526)
