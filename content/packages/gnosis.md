@@ -148,9 +148,32 @@ Check the status of your validators on the Gnosis Beacon Chain Dashboard. You ca
 
 At this point, your validator should start making attestations automatically when it becomes active as long as you leave the Gnosis Beacon Chain and Validator packages running 24/7.
 
+## Shapella
+
+Similar to Ethereum, the Gnosis chain has also successfully undergone a [Shapella update](https://www.gnosis.io/blog/shapella-upgrade-activated). This update enables withdrawals for staked GNO. Reward payments are automatically and regularly sent to a designated **withdrawal address**. For these automatic withdrawals to function, your validators require a withdrawal credential that starts with `0x01`. You can easily verify this on the [Teku-Gnosis page](http://teku-gnosis.my.ava.do/) on your Avado. If the address is not yet set, the withdrawals column will display yellow `todo` tags.
+
+{{< figure
+    src="../ethdo/dappstore.jpg"
+    width=300px
+>}}
+
+To configure the withdrawal address, you can utilize Avado's Withdrawal Address Tool. The only difference from the Ethereum process is that you need to configure the network environment variable first.
+
+### Steps
+
+1. Install the [ETH Withdrawal Address Tool](http://my.ava.do/#/installer/).
+2. Switch the network from Ethereum's `mainnet` to `gnosis`:
+   1. Open the [management page](http://my.ava.do/#/Packages/ethdo.avado.dappnode.eth/detail).
+   2. In the **Environment variables** section, replace the `NETWORK` value from `mainnet` to `gnosis` and click **Update environment variables**.
+3. Follow the instructions explained in [Setting Withdrawal Credentials](../ethdo/#set-withdrawal-credentials).
+
+{{< figure src="ethdo_network.png" >}}
+
+{{< figure src="ethdo_gnosis.png" >}}
+
 ## Common issues
 
-Check the [Teku-Gnosis logs](http://my.ava.do/#/Packages/teku-gnosis.avado.dnp.dappnode.eth/detail) and the [Nethermind-Gnosis logs](http://my.ava.do/#/Packages/nethermind-gnosis.avado.dnp.dappnode.eth/detail):
+Check the [Teku-Gnosis logs](http://my.ava.do/#/Packages/teku-gnosis.avado.dnp.dappnode.eth/detail) and the [Nethermind-Gnosis logs](http://my.ava.do/#/Packages/nethermind-gnosis.avado.dnp.dappnode.eth/detail):  
 
 ### Nethermind-Gnosis
 

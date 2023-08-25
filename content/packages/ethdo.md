@@ -10,10 +10,10 @@ title: ETH Withdrawal address tool
 {{< toc >}}
 
 
-Since the [**Shapella = Shanghai + Capella upgrade**](https://ethereum.org/en/staking/withdrawals/) update, Ethereum now supports staking withdrawals.  This allowes stakers to unlock their ETH staking rewards. Reward payments are automatically and regularly sent to their **withdrawal address** (aka *'partial withdrawals'*). Users can also exit staking entirely, unlocking their full validator balance (aka *'full withdrawals'*).
+Since the [**Shapella = Shanghai + Capella upgrade**](https://ethereum.org/en/staking/withdrawals/) update, Ethereum now supports staking withdrawals.  This allows stakers to unlock their ETH staking rewards. Reward payments are automatically and regularly sent to their **withdrawal address** (aka *'partial withdrawals'*). Users can also exit staking entirely, unlocking their full validator balance (aka *'full withdrawals'*).
 [Read more]({{< ref "/specials/withdrawals" >}})
 
-For withdrawals to work, you validators need a withdrawal credential that starts with `0x01`. You can use this package to check and, if necesary, set your withdrawal address.
+For withdrawals to work, your validators need a withdrawal credential that starts with `0x01`. You can use this package to check and, if necessary, set your withdrawal address.
 
 ## ⏳ Timing recommendations ⏳
 
