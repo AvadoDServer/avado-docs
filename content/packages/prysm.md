@@ -84,6 +84,26 @@ It is strongly recommended that you use <https://beaconcha.in> to monitor your v
 {{< /hint >}}
 
 
+## Exit validators
+
+{{< hint type=warning title=Warning >}}
+⚠️ Please make sure you understand the consequences of performing a validator exit. This action cannot be reverted.
+{{< /hint >}}
+
+1. Open the **Wallet & Accounts > Account List** in the legacy Prysm validator UI: <http://eth2validator.my.ava.do:7500/dashboard/wallet/accounts>
+2. Click the **Exit Validator** button
+   {{< figure src="../prysm/exit_button.png" >}}
+3. On the **Account Exit** page, select the validators you want to exit
+    {{< figure src="../prysm/exit_page.png" >}}
+4. Type `agree` into **Confirmation** field
+5. Click **Confirm**
+    {{< figure src="../prysm/exit_confirm.png" >}}
+
+After a while, the [status of the validator](http://prysm-beacon-chain-mainnet.my.ava.do/) will change from `active_ongoing` over `active_exiting` to `exited_unslashed`
+
+{{< figure src="../prysm/exit_before.png" >}}
+{{< figure src="../prysm/exit_after.png" >}}
+
 ## Checkpoint sync
 
 Prysm enables you to be up and running in only a few minutes by downloading a recent finalized checkpoint state from a trusted source rather than syncing from genesis.
