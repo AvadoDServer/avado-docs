@@ -5,9 +5,9 @@ aliases: ["/en/tutorials/geth"]
 
 {{< toc >}}
 
-This guide describes the steps of installing and configuring Geth, the recommended Ethereum Execution client.
+This guide describes the steps of installing and configuring Geth, an Ethereum Execution client.
 
-Since "The Merge" on September 15 2022, Geth needs a beacon chain, consensus client to function. Make sure you install either [Teku]({{< relref teku >}}) or [Prsym]({{< relref prysm >}}). This is required to run a full Ethereum node.
+Since "The Merge" on September 15 2022, Geth needs a beacon chain, consensus client to function. Make sure you install either [Nimbus]({{< relref nimbus >}}), [Teku]({{< relref teku >}}) or [Prsym]({{< relref prysm >}}). This is required to run a full Ethereum node.
 
 ## Installation instructions
 
@@ -151,4 +151,4 @@ Process:
 Once it syncs back up you should see a nice reduction in the disk usage since you have succesfully pruned the Geth package. The Beacon node will resume using your local client when it's ready.
 
 ## AVADO support channel
-Telegram: [AVADO - Ethereum Club](https://t.me/joinchat/IdBKSAiIvw-q1-1p)
+Discord: https://discord.gg/Vp6Ggsy56P
