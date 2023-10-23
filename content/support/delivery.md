@@ -6,7 +6,7 @@ creatordisplayname: Administrator
 aliases: ["/en/avado-delivery"]
 ---
 
-If you are requested to send your device back for repair - please contact Barnd Lapp on Telegram to get a return shipping label for your device.
+If you are requested to send your device back for repair - please fill in this form <https://forms.gle/FWG8E2XyfgEfwA8y5> to get a return shipping label for your device.
 
 ## Official telegram handles and Shipping addresses
 
@@ -33,29 +33,11 @@ Switzerland
 
 ```
 AVADO AG
-c/o Poulakis/Lapp
-Nauheimer Strasse 28
-65468 Trebur
-Germany
-```
-<--->
-### US West Coast
-
-```
-SOUNDSTAKING NW
-820 NE 120th St
-Seattle, WA
-98125-4940
-USA
-```
-<--->
-### US East Coast
-
-```
-SOUNDSTAKING NE
-7 Katie Ct
-07728 Freehold, NJ
-USA
+c/o Michiel Ponnet
+Clemenshoek 50
+Reet
+2840 Rumst
+Belgium
 ```
 {{< /columns >}}
 
