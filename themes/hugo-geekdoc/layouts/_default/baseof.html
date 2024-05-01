@@ -40,12 +40,14 @@
             {{ partial "menu" . }}
           </aside>
         {{ end }}
-
-
         <div class="gdoc-page">
+          
+  <blockquote class="gdoc-hint danger">
+    <div class="gdoc-hint__title flex align-center"><i class="fa danger" title="Old docs warning"></i></div>
+    <div class="gdoc-hint__text">You are looking at an archived version of the docs. <br/>Please go to to <a href="https://docs.ava.do/">https://docs.ava.do/</a> for the current documentation.</div>
+  </blockquote>
+
           {{ template "main" . }}
-
-
           <div class="gdoc-page__footer flex flex-wrap justify-between">
             {{ partial "menu-nextprev" . }}
           </div>
